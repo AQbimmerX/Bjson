@@ -262,10 +262,10 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F10/F11 – Disable Welcome 3 Gongs",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
     ]
   },
   {
@@ -648,20 +648,20 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F10/F11 – Seatbelt Reminders & Warnings",
     "steps": [
-      "1. Duration of the SBR (Seatbelt Reminder) warnings - ACSM -> 3001 -> GWF_SBR_WARNDAUER -> wert_01 / Werte=5A set to Werte = 01 (for 1 second)  ((typically 90s) - 5A HEX = 90 Decimal)",
-      "2. Disable seat belt status display - passenger - ACSM -> 3000 Ausstattungsflags -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "3. Disable seat belt status display - driver - ACSM -> 3000 Ausstattungsflags -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "4. Disable seat belt reminder - passenger - ACSM -> 3000 Ausstattungsflags -> SBR_BF_GWF_SBR_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
-      "5. Disable seat belt reminder - driver - ACSM -> 3000 Ausstattungsflags -> SBR_FA_GWF_SBR_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
-      "6. Disable sound on disconnect SB - passenger - ACSM -> 3000 Ausstattungsflags -> SPW_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
-      "7. Disable sound on disconnect SB - driver - ACSM -> 3000 Ausstattungsflags -> SPW_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
-      "8. Disable seat belt reminder - passenger - ACSM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv (Depend on Build Date)",
-      "9. Disable seat belt reminder - driver - ACSM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv (Depend on Build Date)",
-      "10. Disable sound on disconnect SB - passenger - ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv (Depend on Build Date)",
-      "11. Disable sound on disconnect SB - driver - ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv (Depend on Build Date)"
+      "1. Duration of the SBR (Seatbelt Reminder) warnings - ASCM -> 3001 -> GWF_SBR_WARNDAUER -> wert_01 / Werte=5A set to Werte = 01 (for 1 second)  ((typically 90s) - 5A HEX = 90 Decimal)",
+      "2. Disable seat belt status display - passenger - ASCM -> 3000 Ausstattungsflags -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "3. Disable seat belt status display - driver - ASCM -> 3000 Ausstattungsflags -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "4. Disable seat belt reminder - passenger - ASCM -> 3000 Ausstattungsflags -> SBR_BF_GWF_SBR_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
+      "5. Disable seat belt reminder - driver - ASCM -> 3000 Ausstattungsflags -> SBR_FA_GWF_SBR_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
+      "6. Disable sound on disconnect SB - passenger - ASCM -> 3000 Ausstattungsflags -> SPW_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
+      "7. Disable sound on disconnect SB - driver - ASCM -> 3000 Ausstattungsflags -> SPW_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00 (Depend on Build Date)",
+      "8. Disable seat belt reminder - passenger - ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv (Depend on Build Date)",
+      "9. Disable seat belt reminder - driver - ASCM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv (Depend on Build Date)",
+      "10. Disable sound on disconnect SB - passenger - ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv (Depend on Build Date)",
+      "11. Disable sound on disconnect SB - driver - ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv (Depend on Build Date)"
     ]
   },
   {
@@ -1133,19 +1133,19 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F22 – Turn Off Seat-Belt Reminder Chimes",
     "steps": [
-      "1. Driver - ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
-      "2. Passenger  - ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
+      "1. Driver - ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
+      "2. Passenger  - ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F22 – Disable Welcome 3 Gongs",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
     ]
   },
   {
@@ -1337,10 +1337,10 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F36 – Disable initial 3 chime seatbelt warning",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv / Werte=00"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv / Werte=00"
     ]
   },
   {
@@ -1492,7 +1492,7 @@
       "17. Owner’s Manual in Motion - Part 3 (Only tested with HU_NBT, not sure about HU_CIC) - HU_NBT -> 3000 -> SL21_IBA_3 -> aktiv set to nicht_aktiv",
       "18. The speed when it auto disables top camera view (FF = 255 km/h) - REM/PMA -> ????? -> V_SCHWELLE_1 -> werte = 24 set to werte = FF",
       "19. The speed when it auto disables rear camera view (FF = 255 km/h) - REM/PMA -> ????? -> V_SCHWELLE_2 -> werte = 0F set to werte = FF",
-      "20. The distance when it auto disables top camera view (FF = 255 meters) - ACSM -> ????? -> D_SCHWELLE_1 -> werte = 32 set to werte = FF",
+      "20. The distance when it auto disables top camera view (FF = 255 meters) - ASCM -> ????? -> D_SCHWELLE_1 -> werte = 32 set to werte = FF",
       "21. The distance when it auto disables rear camera view (FF = 255 meters) - REM/PMA -> ????? -> D_SCHWELLE_2 -> werte = 0A set to werte = FF",
       "22. Activate Side View Camera at any speed - Part 1 - TRSVC -> 3000 -> SV_Activate_Speed_Limit -> werte = 0F set to werte = FF",
       "23. Activate Side View Camera at any speed - Part 2 - TRSVC -> 3000 -> SV_Deactivate_Speed_Limit -> werte = 0F set to werte = FF"
@@ -1588,19 +1588,19 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F30/F32 – Safety Features & Precautions",
     "steps": [
-      "1. Duration of the Seatbelt Reminder warnings (typically 90s) - ACSM -> 3001 -> GWF_SBR_WARNDAUER -> Werte=5A set to Werte = 01 (for 1 second)",
-      "2. Disable seat belt status display - passenger - ACSM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "3. Disable seat belt status display - driver - ACSM -> 3000 -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "4. Disable seat belt reminder - passenger - ACSM -> 3000 -> SBR_BF_GWF_SBR_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "5. Disable seat belt reminder - driver - ACSM -> 3000 -> SBR_FA_GWF_SBR_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "6. Disable seat belt reminder - passenger - ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "7. Disable seat belt reminder - driver - ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "8. Disable sound on disconnect SB - passenger - ACSM -> 3000 -> SBR_PreWarning_Beifahrer / SPW_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "9. Disable sound on disconnect SB - driver - ACSM -> 3000 -> SBR_PreWarning_Fahrer / SPW_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
-      "10. Disable initial 3 chime seatbelt warning - ACSM -> 3000 -> Initialwarnung_GWF_IW -> aktiv / Werte=01 set to nicht_aktiv / Werte=00"
+      "1. Duration of the Seatbelt Reminder warnings (typically 90s) - ASCM -> 3001 -> GWF_SBR_WARNDAUER -> Werte=5A set to Werte = 01 (for 1 second)",
+      "2. Disable seat belt status display - passenger - ASCM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "3. Disable seat belt status display - driver - ASCM -> 3000 -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "4. Disable seat belt reminder - passenger - ASCM -> 3000 -> SBR_BF_GWF_SBR_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "5. Disable seat belt reminder - driver - ASCM -> 3000 -> SBR_FA_GWF_SBR_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "6. Disable seat belt reminder - passenger - ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "7. Disable seat belt reminder - driver - ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "8. Disable sound on disconnect SB - passenger - ASCM -> 3000 -> SBR_PreWarning_Beifahrer / SPW_BF -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "9. Disable sound on disconnect SB - driver - ASCM -> 3000 -> SBR_PreWarning_Fahrer / SPW_FA -> aktiv / Werte=01 set to nicht_aktiv / Werte=00",
+      "10. Disable initial 3 chime seatbelt warning - ASCM -> 3000 -> Initialwarnung_GWF_IW -> aktiv / Werte=01 set to nicht_aktiv / Werte=00"
     ]
   },
   {
@@ -2287,30 +2287,30 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F48 – SeatBelt Reminders/Sound OFF",
     "steps": [
-      "1. ACSM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv",
-      "2. ACSM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv",
-      "3. ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
-      "4. ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv",
+      "2. ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv",
+      "3. ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
+      "4. ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F48 – Disable Welcome 3 Gongs",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F48 – SeatBelt Reminder Lights OFF",
     "steps": [
-      "1. ACSM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv – werte=00",
-      "2. ACSM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv – werte=00"
+      "1. ASCM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv – werte=00",
+      "2. ASCM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv – werte=00"
     ]
   },
   {
@@ -2815,30 +2815,30 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F01 – SeatBelt Reminders/Sound OFF",
     "steps": [
-      "1. ACSM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv – werte=00",
-      "2. ACSM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv – werte=00",
-      "3. ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv – werte=00",
-      "4. ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv – werte=00"
+      "1. ASCM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv – werte=00",
+      "2. ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv – werte=00",
+      "3. ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv – werte=00",
+      "4. ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv – werte=00"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F01 – Disable Welcome 3 Gongs",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F01 – SeatBelt Reminder Lights OFF",
     "steps": [
-      "1. ACSM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv – werte=00",
-      "2. ACSM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv – werte=00"
+      "1. ASCM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv – werte=00",
+      "2. ASCM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv – werte=00"
     ]
   },
   {
@@ -3223,30 +3223,30 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F25 – SeatBelt Reminders/Sound OFF",
     "steps": [
-      "1. ACSM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv",
-      "2. ACSM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv",
-      "3. ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
-      "4. ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv",
+      "2. ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv",
+      "3. ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
+      "4. ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F25 – Disable Welcome 3 Gongs",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F25 – SeatBelt Reminder Lights OFF",
     "steps": [
-      "1. ACSM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv",
-      "2. ACSM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv",
+      "2. ASCM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv"
     ]
   },
   {
@@ -3710,16 +3710,16 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F15 – Disable driver/passenger seatbelt chime & red cluster icon",
     "steps": [
-      "1. ACSM -> 3000 -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv set to nicht_aktiv",
-      "2. ACSM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv set to nicht_aktiv",
-      "3. ACSM -> 3000 -> Initialwarnung_GWF_IW -> aktiv set to nicht_aktiv",
-      "4. ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> aktiv set to nicht_aktiv",
-      "5. ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> aktiv set to nicht_aktiv",
-      "6. ACSM -> 3000 -> SBR_PreWarning_Fahrer -> aktiv set to nicht_aktiv",
-      "7. ACSM -> 3000 -> SBR_PreWarning_Beifahrer -> aktiv set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv set to nicht_aktiv",
+      "2. ASCM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv set to nicht_aktiv",
+      "3. ASCM -> 3000 -> Initialwarnung_GWF_IW -> aktiv set to nicht_aktiv",
+      "4. ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> aktiv set to nicht_aktiv",
+      "5. ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> aktiv set to nicht_aktiv",
+      "6. ASCM -> 3000 -> SBR_PreWarning_Fahrer -> aktiv set to nicht_aktiv",
+      "7. ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> aktiv set to nicht_aktiv"
     ]
   },
   {
@@ -4292,30 +4292,30 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F85 – SeatBelt Reminders/Sound OFF",
     "steps": [
-      "1. ACSM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv",
-      "2. ACSM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv",
-      "3. ACSM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
-      "4. ACSM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> SBR_PreWarning_Fahrer -> - set to nicht_aktiv",
+      "2. ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> - set to nicht_aktiv",
+      "3. ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - set to nicht_aktiv",
+      "4. ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F85 – Disable Welcome 3 Gongs",
     "steps": [
-      "1. ACSM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " F85 – SeatBelt Reminder Lights OFF",
     "steps": [
-      "1. ACSM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv",
-      "2. ACSM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv"
+      "1. ASCM -> 3000 -> Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF -> - set to nicht_aktiv",
+      "2. ASCM -> 3000 -> Gurtzustandsanzeige_Fahrer_GFW_GZA_FA -> - set to nicht_aktiv"
     ]
   },
   {
@@ -5131,14 +5131,6 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT_EVO",
-    "description": " If your car has CarPlay enabled and it is not fullscreen already, you can change that",
-    "steps": [
-      "1. HU_NBT_EVO -> 3000_HMU -> CarPlay_Fullscreen -> - set to aktiv"
-    ]
-  },
-  {
-    "series": "",
     "ecu": "FEM_BODY",
     "description": " If your car has foldable mirrors and you want them to immediately fold them once you lock the car without holding the lock button for three seconds, there isn’t an easy way.+ The only option you really have is reducing the holding time for the button to zero",
     "steps": [
@@ -5219,52 +5211,52 @@
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " Active PDC with Brake Intervention",
     "steps": [
-      "1. ACSM -> 1B2D -> a_pdc -> Initwert set to aktiv",
-      "2. ACSM -> 1B2D -> a_pdc_fp -> Initwert set to aktiv",
+      "1. ASCM -> 1B2D -> a_pdc -> Initwert set to aktiv",
+      "2. ASCM -> 1B2D -> a_pdc_fp -> Initwert set to aktiv",
       "3. HU_MGU -> 3.00E+52  -> ACTIVE_PDC -> Default set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " Seat Belt Display – Passenger",
     "steps": [
-      "1. ACSM -> 1B29 -> SbrDispBltStPasEnb -> nicht_aktiv set to aktiv"
+      "1. ASCM -> 1B29 -> SbrDispBltStPasEnb -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " Seat Belt Display – Driver",
     "steps": [
-      "1. ACSM -> 1B29 -> SbrDispBltStDriveEnb -> nicht_aktiv set to aktiv"
+      "1. ASCM -> 1B29 -> SbrDispBltStDriveEnb -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " Initial Seatbelt Warning",
     "steps": [
-      "1. ACSM -> 1B29 -> SbrIwEnb -> aktiv set to nicht_aktiv"
+      "1. ASCM -> 1B29 -> SbrIwEnb -> aktiv set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " Deactivate Seatbelt Warning – Passenger",
     "steps": [
-      "1. ACSM -> 1B29 -> SbrVariantPas -> SBR_mit_SBE set to SBR_deaktiviert_ohne_SBE"
+      "1. ASCM -> 1B29 -> SbrVariantPas -> SBR_mit_SBE set to SBR_deaktiviert_ohne_SBE"
     ]
   },
   {
     "series": "",
-    "ecu": "ACSM",
+    "ecu": "ASCM",
     "description": " Deactivate Seatbelt Warning – Driver",
     "steps": [
-      "1. ACSM -> 1B29 -> SbrVariantDriv -> SBR_ohne_SBE set to SBR_deaktiviert_ohne_SBE"
+      "1. ASCM -> 1B29 -> SbrVariantDriv -> SBR_ohne_SBE set to SBR_deaktiviert_ohne_SBE"
     ]
   },
   {
@@ -5320,7 +5312,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف أضواء تذكير حزام الأمان للراكب",
         "description": "تعيين Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF إلى nicht_aktiv.",
         "steps": [
@@ -5329,7 +5321,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف أضواء تذكير حزام الأمان للسائق",
         "description": "تعيين Gurtzustandsanzeige_Fahrer_GFW_GZA_FA إلى nicht_aktiv.",
         "steps": [
@@ -5338,7 +5330,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "تعطيل 3 رنات ترحيب (Disable Welcome 3 Gongs)",
         "description": "تعيين Initialwarnung_GWF_IW إلى nicht_aktiv.",
         "steps": [
@@ -5347,7 +5339,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للسائق (SBR_PreWarning_Fahrer)",
         "description": "تعيين SBR_PreWarning_Fahrer إلى nicht_aktiv.",
         "steps": [
@@ -5356,7 +5348,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للراكب (SBR_PreWarning_Beifahrer)",
         "description": "تعيين SBR_PreWarning_Beifahrer إلى nicht_aktiv.",
         "steps": [
@@ -5365,7 +5357,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للسائق (SeatBeltReminder_SBR_Fahrer)",
         "description": "تعيين SeatBeltReminder_SBR_Fahrer إلى nicht_aktiv.",
         "steps": [
@@ -5374,7 +5366,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للراكب (SeatBeltReminder_SBR_Beifahrer)",
         "description": "تعيين SeatBeltReminder_SBR_Beifahrer إلى nicht_aktiv.",
         "steps": [
@@ -6369,7 +6361,7 @@
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "FEMBODY",
+        "ecu": "FEM_BODY",
         "title": "LEDs on while backing up",
         "description": "FDL code to enable LEDs while backing up.",
         "steps": [
@@ -6490,7 +6482,7 @@
         "source": "20220916_175608.jpg"
     },
     {
-        "ecu": "FEMBODY",
+        "ecu": "FEM_BODY",
         "title": "Enable Fog Lights with High Beams",
         "description": "FDL code to enable fog lights with high beams.",
         "steps": [
@@ -6560,7 +6552,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف أضواء تذكير حزام الأمان للراكب",
         "description": "تعيين Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF إلى nicht_aktiv.",
         "steps": [
@@ -6569,7 +6561,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف أضواء تذكير حزام الأمان للسائق",
         "description": "تعيين Gurtzustandsanzeige_Fahrer_GFW_GZA_FA إلى nicht_aktiv.",
         "steps": [
@@ -6578,7 +6570,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "تعطيل 3 رنات ترحيب (Disable Welcome 3 Gongs)",
         "description": "تعيين Initialwarnung_GWF_IW إلى nicht_aktiv.",
         "steps": [
@@ -6587,7 +6579,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للسائق (SBR_PreWarning_Fahrer)",
         "description": "تعيين SBR_PreWarning_Fahrer إلى nicht_aktiv.",
         "steps": [
@@ -6596,7 +6588,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للراكب (SBR_PreWarning_Beifahrer)",
         "description": "تعيين SBR_PreWarning_Beifahrer إلى nicht_aktiv.",
         "steps": [
@@ -6605,7 +6597,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للسائق (SeatBeltReminder_SBR_Fahrer)",
         "description": "تعيين SeatBeltReminder_SBR_Fahrer إلى nicht_aktiv.",
         "steps": [
@@ -6614,7 +6606,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ACSM",
+        "ecu": "ASCM",
         "title": "إيقاف تذكيرات/صوت حزام الأمان للراكب (SeatBeltReminder_SBR_Beifahrer)",
         "description": "تعيين SeatBeltReminder_SBR_Beifahrer إلى nicht_aktiv.",
         "steps": [
@@ -7609,7 +7601,7 @@
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "FEMBODY",
+        "ecu": "FEM_BODY",
         "title": "LEDs on while backing up",
         "description": "FDL code to enable LEDs while backing up.",
         "steps": [
@@ -7730,7 +7722,7 @@
         "source": "20220916_175608.jpg"
     },
     {
-        "ecu": "FEMBODY",
+        "ecu": "FEM_BODY",
         "title": "Enable Fog Lights with High Beams",
         "description": "FDL code to enable fog lights with high beams.",
         "steps": [
