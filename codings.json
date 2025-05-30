@@ -7764,7 +7764,15 @@
             "3000 SBR_FA_GWF_SBR_FA [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
+    },
+    {
+        "ecu": "ASCM",
+        "title": "Seat Belt Reminder: SBR_FA_GWF_SBR_BEIFAHRER_2",
+        "description": "FDL code for seat belt reminder.",
+        "steps": [
+            "3000 SBR_FA_GWF_SBR_BEIFAHRER_2 [werte=NOT ACTIVE = 00] nicht_aktiv"
+        ],
+        "source": "20220916_175608.jpg"
     },
     {
         "ecu": "ASCM",
@@ -7783,7 +7791,6 @@
             "3000 SBR_FA_GWF_SBR_HINTEN [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
     },
     {
         "ecu": "ASCM",
@@ -8071,7 +8078,7 @@
     "steps": [
       "1. HU_NBT -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
     ]
-  }
+  },
   {
         "ecu": "HU_NBT",
         "title": "Enable Hold-Mode for Range Extender",
