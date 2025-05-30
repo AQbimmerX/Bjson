@@ -8076,10 +8076,9 @@
         "ecu": "HU_NBT",
         "title": "Enable Hold-Mode for Range Extender",
         "description": "FDL code to enable Hold-Mode for Range Extender.",
-        "steps": [
-            "HU_NBT -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
-        ],
-        "source": "20220916_175608.jpg"
-    } 
+          "steps": [
+              "HU_NBT -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
+          ],
+          "source": "20220916_175608.jpg"
+      }
   ]
-
