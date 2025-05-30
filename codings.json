@@ -4288,15 +4288,7 @@
     "steps": [
       "1. BDC_BODY3 -> 3023 -> TCM_MSA_DEFAULT_OFF -> - set to aktiv"
     ]
-  },
-  {
-    "series": "",
-    "ecu": "ASD",
-    "description": " F85 – Disable Active Sound Design",
-    "steps": [
-      "1. ASD ->  -> Model Range -> - set to F021",
-      "2. ASD ->  -> Engine Type -> - set to N20B20"
-    ]
+ 
   },
   {
     "series": "",
