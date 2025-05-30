@@ -7809,7 +7809,6 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_3 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
     },
     {
         "ecu": "ASCM",
@@ -7819,7 +7818,6 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_4 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
     },
     {
         "ecu": "ASCM",
@@ -7829,7 +7827,6 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_5 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
     },
     {
         "ecu": "ASCM",
@@ -7839,7 +7836,6 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_6 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
     },
     {
         "ecu": "ASCM",
@@ -7849,7 +7845,6 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_7 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
     },
     {
         "ecu": "ASCM",
@@ -7859,7 +7854,7 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_8 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
+
     },
     {
         "ecu": "ASCM",
@@ -7869,7 +7864,7 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_9 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    }
+ 
     },
     {
         "ecu": "ASCM",
@@ -7879,7 +7874,7 @@
             "3000 SBR_FA_GWF_SBR_HINTEN_10 [werte=NOT ACTIVE = 00] nicht_aktiv"
         ],
         "source": "20220916_175608.jpg"
-    } 
+    }, 
 
   {
     "series": "F15/F16",
