@@ -1,8 +1,8 @@
 [
   {
-    "series": "",
+    "series": "F10/F11",
     "ecu": "SZL",
-    "description": " F10/F11 – Enable Paddle Shifters (for Retrofits)",
+    "description": "  – Enable Paddle Shifters (for Retrofits)",
     "steps": [
       "1. SZL -> 3000 -> Lenkrad_Schaltpaddles -> - set to aktiv"
     ]
@@ -44,7 +44,7 @@
   },
   {
     "series": "",
-    "ecu": "IHKA",
+    "ecu": "IHKA2/4",
     "description": " F10/F11 – Always Remember Air ReCirculating",
     "steps": [
       "1. IHKA -> 3000 -> MEMORY_UMLUFT -> - set to aktiv"
@@ -52,7 +52,7 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_NBT/CIC",
     "description": " F10/F11 – Enable Developer Menu",
     "steps": [
       "1. HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
@@ -113,7 +113,7 @@
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_NBT/CIC",
     "description": " F01/F10/F11 – Add Weather Band Radio (CIC Only)",
     "steps": [
       "1. HU_CIC -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
@@ -421,7 +421,7 @@
   },
   {
     "series": "",
-    "ecu": "ICM",
+    "ecu": "ICM/ICAM",
     "description": " F10 – Lane Departure",
     "steps": [
       "1. Active blind spot minimum speed activation setting - ICM -> 3000 Daten -> Hc2_i_CPar_Aktiv_v_low -> 50 km/h set to 25 kmh (Does not work below 25 kmh - gives a system error)",
@@ -3431,7 +3431,7 @@
   },
   {
     "series": "",
-    "ecu": "IHKA2",
+    "ecu": "IHKA2/4",
     "description": " F15 – Remember Air Re-Circulation Setting from previous shutdown",
     "steps": [
       "1. IHKA2 -> 3000 -> MEMORY_UMLUFT -> nicht_aktiv set to aktiv"
@@ -3951,7 +3951,7 @@
   },
   {
     "series": "",
-    "ecu": "ICAM",
+    "ecu": "ICM/ICAM",
     "description": " F85 – Enable Surround-View Cameras at all Speeds",
     "steps": [
       "1. ICAM -> 3006 -> SV Activation Speed Limit -> - set to werte = FF",
@@ -4819,7 +4819,7 @@
   },
   {
     "series": "",
-    "ecu": "IHKA4",
+    "ecu": "IHKA2/4",
     "description": " Enable Colder Air Conditioning",
     "steps": [
       "1. IHKA4 -> 3000 -> LAENDERVARIANTE -> US set to RoW[2]",
@@ -6269,7 +6269,7 @@
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_NBT/CIC",
         "title": "G30 Remote Engine Start Coding: HVAC_REMOTE_ENGINE_START",
         "description": "I've found and changed the following parameters:",
         "steps": [
