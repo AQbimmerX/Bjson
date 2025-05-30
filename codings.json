@@ -8080,5 +8080,23 @@
               "HU_NBT -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
           ],
           "source": "20220916_175608.jpg"
-      }
+      },
+  {
+    "ecu": "ASCM",
+    "title": "Seat Belt Reminder: SBR_BEIFAHRER",
+    "description": "FDL code for seat belt reminder.",
+    "steps": [
+      "3000 SEATBELTREMINDER_SBR_BEIFAHRER [aktiv=01] nicht_aktiv"
+    ],
+    "source": "20220916_175608.jpg"
+  },
+  {
+    "ecu": "ASCM",
+    "title": "Seat Belt Reminder: SBR_FA_GWF_SBR_FA",
+    "description": "FDL code for seat belt reminder.",
+    "steps": [
+      "3000 SBR_FA_GWF_SBR_FA [werte=NOT ACTIVE = 00] nicht_aktiv"
+    ],
+    "source": "20220916_175608.jpg"
+  }
   ]
