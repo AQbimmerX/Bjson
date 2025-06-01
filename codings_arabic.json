@@ -1,1 +1,1732 @@
 
+[
+  {
+    "series": "F10/F11",
+    "ecu": "SZL",
+    "description": "  – تمكين مبدلات السرعة (للتعديلات)",
+    "steps": [
+      "1. SZL -> 3000 -> Lenkrad_Schaltpaddles -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين مبدلات السرعة (Paddle Shifters)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KOMBI",
+    "description": " F10/F11 – عرض السرعة الرقمية بالميل في الساعة في لوحة العدادات",
+    "steps": [
+      "1. KOMBI -> 3000 -> BC_DIGITAL_V -> - تعيين إلى aktiv-werte=01"
+    ],
+    "title": "عرض السرعة الرقمية في لوحة العدادات"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "JBBF",
+    "description": " F10/F11 – زيادة حساسية الإضاءة التلقائية",
+    "steps": [
+      "1. JBBF -> 3530 -> RLS_DEF_FLC_SCHWELLWERT_SATZ -> - تعيين إلى انظر الملاحظات",
+      "2. JBBF -> 3530 -> RLS_FLC_SCHWELLWERT_SATZ -> - تعيين إلى انظر الملاحظات"
+    ],
+    "title": "زيادة حساسية الإضاءة التلقائية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "JBBF",
+    "description": " F10/F11 – زيادة حساسية المساحات التلقائية",
+    "steps": [
+      "1. JBBF -> 3530 -> RLS_FLC_SCHWELLWERT_SATZ_1 -> - تعيين إلى werte=05",
+      "2. JBBF -> 3530 -> RLS_FLC_SCHWELLWERT_SATZ_2 -> - تعيين إلى werte=09",
+      "3. JBBF -> 3530 -> RLS_FLC_SCHWELLWERT_SATZ_3 -> - تعيين إلى werte=0D"
+    ],
+    "title": "زيادة حساسية المساحات التلقائية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "JBBF",
+    "description": " F10/F11 – تعطيل غسالات المصابيح الأمامية",
+    "steps": [
+      "1. JBBF -> 3000  -> SCHEINWERFERREINIGUNG -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل غسالات المصابيح الأمامية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "IHKA2/4",
+    "description": " F10/F11 – دائماً تذكر إعادة تدوير الهواء",
+    "steps": [
+      "1. IHKA -> 3000 -> MEMORY_UMLUFT -> - تعيين إلى aktiv"
+    ],
+    "title": "تذكر دائماً إعادة تدوير الهواء"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تمكين قائمة المطور",
+    "steps": [
+      "1. HU_CIC/NBT -> 3000 -> ENTWICKLER_MENUE -> - تعيين إلى aktiv 01"
+    ],
+    "title": "تمكين قائمة المطور"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تمكين نقطة اتصال WiFi",
+    "steps": [
+      "1. HU_CIC/NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - تعيين إلى aktiv",
+      "2. HU_CIC/NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - تعيين إلى aktiv",
+      "3. HU_CIC/NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - تعيين إلى aktiv",
+      "4. HU_CIC/NBT -> 3003 -> WLAN_STATUS -> - تعيين إلى aktiv",
+      "5. HU_CIC/NBT -> 3003 -> WLAN_MODUS -> - تعيين إلى ap",
+      "6. HU_CIC/NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - تعيين إلى outdoor"
+    ],
+    "title": "تمكين نقطة اتصال WiFi"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تمكين خادم الويب IPCE على 172.16.222.1",
+    "steps": [
+      "1. HU_CIC/NBT -> 3000 -> IPCE_WEBSERVER -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين خادم الويب IPCE"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تغيير رسوم بدء تشغيل i-Drive إلى شعار ///M",
+    "steps": [
+      "1. HU_CIC/NBT -> 3001 -> STARTUP_EMBLEM -> - تعيين إلى variant_01"
+    ],
+    "title": "تغيير رسوم بدء تشغيل i-Drive إلى شعار ///M"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تمكين عرض الطابع الزمني لسجل المكالمات",
+    "steps": [
+      "1. HU_CIC/NBT -> 3003 -> TIMESTAMP_DISPLAY -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين عرض الطابع الزمني لسجل المكالمات"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة",
+    "steps": [
+      "1. HU_CIC/NBT -> 3003 -> SPEECH_2_TEXT -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – تعطيل صوت الصفير/الرنين عند قفل السيارة",
+    "steps": [
+      "1. HU_CIC/NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل صوت الصفير/الرنين عند قفل السيارة"
+  },
+  {
+    "series": "F01/F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F01/F10/F11 – إضافة راديو Weather Band (CIC فقط)",
+    "steps": [
+      "1. HU_CIC/NBT -> 3002 -> RADIO_WEATHERBAND -> - تعيين إلى aktiv"
+    ],
+    "title": "إضافة راديو Weather Band (CIC فقط)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – استيراد رحلة الملاحة",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 -> NAVI_TRIP_IMPORT -> - تعيين إلى aktiv"
+    ],
+    "title": "استيراد رحلة الملاحة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – تمكين شاشات العرض الرياضية",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 -> EFF_DYN_SPORT_CID -> - تعيين إلى aktiv",
+      "2. HU_CIC/NBT/NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - تعيين إلى aktiv",
+      "3. *لتغيير الوحدات المعروضة إلى ft lb و hp - KOMBI -> 3008 -> DREHMOMENT -> - تعيين إلى lb_ft (يعرض ft lb)",
+      "4. *لتغيير الوحدات المعروضة إلى ft lb و hp - KOMBI -> 3008 -> LEISTUNG -> - تعيين إلى ps (يعرض hp)"
+    ],
+    "title": "تمكين شاشات العرض الرياضية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – تمكين قائمة إعدادات Active Sound Design",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 -> ASD_CONFIGURATION -> - تعيين إلى aktiv",
+      "2. HU_CIC/NBT/NBT -> 3000 -> ASD_SOUND_4 -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين قائمة إعدادات Active Sound Design"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – تعطيل Active Sound Design (///M5 فقط)",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 -> ASD_SOUND_OFF -> - تعيين إلى aktiv"
+    ],
+    "title": "تعطيل Active Sound Design (///M5 فقط)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – تمكين ///M LapTimer",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 -> M_LAPTIMER -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين ///M LapTimer"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – تمكين التحكم الصوتي Siri",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين التحكم الصوتي Siri"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – ترميز لمبة إشارة الانعطاف LED استبدال الهالوجين (على حزمة إضاءة زينون لـ LCI)",
+    "steps": [
+      "1. FRM -> ????? -> FRA_V_L_KALTUEBERWACHUNG -> - تعيين إلى nicht_aktiv",
+      "2. FRM -> ????? -> FRA_V_L_WARMUEBERWACHUNG -> - تعيين إلى nicht_aktiv",
+      "3. FRM -> ????? -> FRA_V_L_IS_LED -> - تعيين إلى aktiv",
+      "4. FRM -> ????? -> FRA_V_R_KALTUEBERWACHUNG -> - تعيين إلى nicht_aktiv",
+      "5. FRM -> ????? -> FRA_V_R_WARMUEBERWACHUNG -> - تعيين إلى nicht_aktiv",
+      "6. FRM -> ????? -> FRA_V_R_IS_LED -> - تعيين إلى aktiv"
+    ],
+    "title": "لمبات إشارة الانعطاف LED"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – إعدادات سطوع الإضاءة المحيطة",
+    "steps": [
+      "1. الحد الأعلى لسطوع الإضاءة المحيطة - FRM ->  -> CS_AMB_BRIGHTNESS -> 64 (نظرًا لأن الإعداد أدناه هو قيمة HEX، أفترض أن هذا الإعداد أيضًا في HEX، مما يجعله 100) تعيين إلى ?????",
+      "2. الحد الأدنى لسطوع الإضاءة المحيطة - FRM ->  -> CS_AMB_MIN_BRIGHTNESS -> 0A (عشريًا هذا 10) تعيين إلى ?????",
+      "3. إزاحة الحد الأقصى لسطوع الإضاءة المحيطة قيمة فيزيائية لـ PWM 20% ... 80% - FRM ->  -> CS_AMB_MAX_OFFSET -> 30 تعيين إلى ?????"
+    ],
+    "title": "إعدادات سطوع الإضاءة المحيطة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – التحكم في الإضاءة المحيطة بشكل مستقل عن مفتاح التعتيم",
+    "steps": [
+      "1. FRM ->  -> AMBIENTE_NACHFUEHRUNG -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "التحكم المستقل في الإضاءة المحيطة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – إضاءة Angel-Eyes بكامل السطوع (مع تشغيل المصابيح الأمامية)",
+    "steps": [
+      "1. FRM -> 3060 -> U_EFF_POL -> - تعيين إلى wert_05__13,0V"
+    ],
+    "title": "إضاءة Angel-Eyes بكامل السطوع"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – ترميز إضافي مطلوب لترميز المصابيح الأمامية LED التكيفية الأوروبية",
+    "steps": [
+      "1. FRM -> 3080 -> LAMP_MAP_PARA_SATZ_01 -> - تعيين إلى BV_F010_PL_L_ueber_POL_L",
+      "2. FRM -> 3080 -> LAMP_MAP_PARA_SATZ_02 -> - تعيين إلى BV_F010_PL_R_ueber_POL_R"
+    ],
+    "title": "ترميز المصابيح الأمامية LED التكيفية الأوروبية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "EGS",
+    "description": " F10/F11 – تمكين Launch Control",
+    "steps": [
+      "1. EGS -> 3000 -> LC -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين Launch Control"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – تشغيل السيارة بضغط الزر (لا حاجة للضغط على الفرامل)",
+    "steps": [
+      "1. CAS -> 3000 -> TC_STARTLOCK_BRAKE -> - تعيين إلى nicht_aktiv",
+      "2. CAS -> 3000 -> TC_STARTLOCK_DRIVINGREADINESS -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تشغيل السيارة بضغط الزر (لا حاجة للضغط على الفرامل)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – فتح جميع الأبواب عند إيقاف المحرك (مقابض سحب فردي)",
+    "steps": [
+      "1. CAS -> 3002 -> ER-KEYOUT_AUTOVR -> - تعيين إلى aktiv – werte=01"
+    ],
+    "title": "فتح جميع الأبواب عند إيقاف المحرك"
+  },
+  {
+    "series": "F10",
+    "ecu": "ASD",
+    "description": " F10 – تعطيل Active Sound Design (///M5 فقط)",
+    "steps": [
+      "1. ASD -> 3000 -> Model Range -> - تعيين إلى F021"
+    ],
+    "title": "تعطيل Active Sound Design (///M5 فقط)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "ASCM",
+    "description": " F10/F11 – تعطيل 3 رنات ترحيب",
+    "steps": [
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل 3 رنات ترحيب"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "",
+    "description": " F10/F11 – إعادة ترميز لناقل الحركة الرياضي الأوتوماتيكي",
+    "steps": [],
+    "title": "إعادة ترميز لناقل الحركة الرياضي الأوتوماتيكي"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "",
+    "description": " F10/F11 – إعادة ترميز لبلوتوث محسن",
+    "steps": [],
+    "title": "إعادة ترميز لبلوتوث محسن"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "",
+    "description": " F10/F11 – إعادة ترميز للمصابيح الأمامية المذهلة (LED Adaptive Headlights مثل مواصفات الاتحاد الأوروبي)",
+    "steps": [],
+    "title": "إعادة ترميز للمصابيح الأمامية المذهلة"
+  },
+  {
+    "series": "F10",
+    "ecu": "ICM_QL",
+    "description": " F10 – مثبت السرعة و LIM",
+    "steps": [
+      "1. السرعة القصوى والدنيا لمثبت السرعة التكيفي (ACC) - ICM_QL -> 3000 -> LDM_Wunschgeschw_ACC_max_kmh -> ????? تعيين إلى ????? (قيم سداسية عشرية. حول HEX إلى عشري ثم اضربه في 5، الافتراضي 180 كم/ساعة / 100 ميل في الساعة)",
+      "2. السرعة القصوى والدنيا لمثبت السرعة التكيفي (ACC) - ICM_QL -> 3000 -> LDM_Wunschgeschw_ACC_max_mph -> ????? تعيين إلى ????? (قيم سداسية عشرية. حول HEX إلى عشري ثم اضربه في 5، الافتراضي 180 كم/ساعة / 100 ميل في الساعة)",
+      "3. ICM_QL -> 3000 -> LDM_Wunschgeschw_min_kmh -> ????? تعيين إلى ????? (قيم سداسية عشرية. حول واستخدم مباشرة، الافتراضي 30 كم/ساعة، 20 ميل في الساعة)",
+      "4. ICM_QL -> 3000 -> LDM_Wunschgeschw_min_mph -> ????? تعيين إلى ????? (قيم سداسية عشرية. حول واستخدم مباشرة، الافتراضي 30 كم/ساعة، 20 ميل في الساعة)"
+    ],
+    "title": "مثبت السرعة و LIM"
+  },
+  {
+    "series": "F10",
+    "ecu": "ICM_QL",
+    "description": " F10 – تمكين وظيفة “LIM” بزر مثبت السرعة",
+    "steps": [
+      "1. ICM_QL -> 3000 -> LDM_SLD_Funktion -> aus تعيين إلى ein (كما هو مهيأ حاليًا، لديك ثلاث طرق زائدة عن الحاجة لتعيين سرعة مثبت السرعة (زر SET، زر RES والمفتاح الهزاز). مع التغيير في الترميز،\nسيكون لديك الآن وظيفة جديدة يتم تفعيلها بواسطة زر SET (وظيفة LIM) وسيكون المفتاح الهزاز/RES طريقتك لتعيين سرعة مثبت السرعة)",
+      "2. ICM_QL -> 3000 -> LDM_Umschaltung_ACC_DCC -> unterdruecken تعيين إلى zulassen (F10 =ICM-> 3000 Daten,F8-> C_Umschaltung_ACC_DCC)",
+      "3. KOMBI -> 3003 -> SLD_ENABLE -> nicht_aktiv تعيين إلى aktiv (F10 = ICM-> 3000 Daten,F8-> C_SLD_FUNKTION?)",
+      "4. ICM_QL -> 3000 -> LDM_SET_Taste -> SET_und_aktivieren__IO تعيين إلى nur_SET__O (زر LIM/SET يعمل فقط مع LIM (استخدم المفتاح الهزاز لتعيين مثبت السرعة)، لا يعمل في F10 2011؟)"
+    ],
+    "title": "تمكين وظيفة “LIM”"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "TRSVC",
+    "description": " F10/F11 – تفعيل الكاميرات الجانبية بأي سرعة",
+    "steps": [
+      "1. TRSVC -> 3000 -> SV_Activate_Speed_Limit -> - تعيين إلى initwert / Werte=0F",
+      "2. TRSVC -> 3000 -> SV_Deactivate_Speed -> - تعيين إلى initwert / Werte=0F"
+    ],
+    "title": "تفعيل الكاميرات الجانبية بأي سرعة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "SM (6d)",
+    "description": " F10/F11 – ضبط درجة حرارة تبريد مقعد السائق والراكب الافتراضية لكل من الإعدادات الثلاثة",
+    "steps": [
+      "1. تبريد مقعد السائق الموضع 1 وسادة Werte=1A(26deg) - SM (6d) -> 3002 -> KL_T_SOLL_L1 -> 23 تعيين إلى 1A",
+      "2. تبريد مقعد السائق الموضع 1 وسادة Werte=17(23deg) - SM (6d) -> 3002 -> KL_T_SOLL_L2 -> 21 تعيين إلى 17",
+      "3. تبريد مقعد السائق الموضع 1 وسادة Werte=13(19deg) - SM (6d) -> 3002 -> KL_T_SOLL_L3 -> 1E تعيين إلى 13",
+      "4. تبريد مقعد السائق الموضع 1 ظهر Werte=1A(26deg) - SM (6d) -> 3002 -> KL_T_SOLL_K1 -> 23 تعيين إلى 1A",
+      "5. تبريد مقعد السائق الموضع 1 ظهر Werte=17(23deg) - SM (6d) -> 3002 -> KL_T_SOLL_K2 -> 21 تعيين إلى 17",
+      "6. تبريد مقعد السائق الموضع 1 ظهر Werte=13(19deg) - SM (6d) -> 3002 -> KL_T_SOLL_K3 -> 1E تعيين إلى 13",
+      "7. تأخير لخفض درجة حرارة تبريد المقعد تلقائيًا من الإعداد 3 إلى 2 - SM (6d) -> 3002 -> STUFE3_hold_30s -> 20 (15 دقيقة) تعيين إلى 06 (3 دقائق)",
+      "8. تبريد مقعد الراكب الموضع 1 وسادة Werte=1A(26deg) - SM (6e) -> 3002 -> KL_T_SOLL_L1 -> 23 تعيين إلى 1A",
+      "9. تبريد مقعد الراكب الموضع 1 وسادة Werte=1A(26deg) - SM (6e) -> 3002 -> KL_T_SOLL_L2 -> 21 تعيين إلى 17",
+      "10. تبريد مقعد الراكب الموضع 1 وسادة Werte=13(19deg) - SM (6e) -> 3002 -> KL_T_SOLL_L3 -> 1E تعيين إلى 13",
+      "11. تبريد مقعد الراكب الموضع 1 ظهر Werte=1A(26deg) - SM (6e) -> 3002 -> KL_T_SOLL_K1 -> 23 تعيين إلى 1A",
+      "12. تبريد مقعد الراكب الموضع 1 ظهر Werte=17(23deg) - SM (6e) -> 3002 -> KL_T_SOLL_K2 -> 21 تعيين إلى 17",
+      "13. تبريد مقعد الراكب الموضع 1 ظهر Werte=13(19deg) - SM (6e) -> 3002 -> KL_T_SOLL_K3 -> 1E تعيين إلى 13"
+    ],
+    "title": "ضبط درجة حرارة تبريد المقعد"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "PDC",
+    "description": " F10/F11 – تمكين كاميرا الرؤية الخلفية في جميع السرعات",
+    "steps": [
+      "1. PDC -> 3009 -> D_SCHWELLE_1 -> ????? تعيين إلى Werte = FF",
+      "2. PDC -> 3009 -> D_SCHWELLE_2 -> ????? تعيين إلى Werte = FF",
+      "3. PDC -> 3009 -> V_SCHWELLE_1 -> ????? تعيين إلى Werte = FF",
+      "4. PDC -> 3009 -> V_SCHWELLE_2 -> ????? تعيين إلى Werte = FF"
+    ],
+    "title": "تمكين كاميرا الرؤية الخلفية في جميع السرعات"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KOMBI",
+    "description": " F10/F11 – تمكين الرؤية الليلية مع كشف المشاة في الخلفية",
+    "steps": [
+      "1. KOMBI -> 3003 -> FGS_NIVI_KI_ENABLE -> nicht_aktiv تعيين إلى aktiv (مشكلة واحدة (في F10) مع النظام هي أن الكاميرا يجب أن تكون قيد التشغيل وتظهر الصورة بشكل نشط قبل إصدار تحذيرات المشاة. قليلون\nمنا من يشغل كاميرا الأشعة تحت الحمراء باستمرار وتحتل معظم شاشة المعلومات المركزية. مع التغييرات أدناه، سيكون نظامك يعمل بشكل أساسي طوال\nالوقت (في الليل بالطبع)، ويراقب المشاة في الخلفية ويزودك بتحذيرات عبر لوحة العدادات و/أو شاشة العرض الرأسية (HUD))",
+      "2. NIVI2 -> 3253 -> PED_DET_IN_BACKGROUND -> OFF تعيين إلى ON",
+      "3. NIVI2 -> 3000 -> CC_Messages -> ACTIVE_NV2 تعيين إلى ACTIVE_NV2P_BD (غير مفيد بدون PED_DET_IN_BACKGROUND & FGS_NIVI_KI_ENABLE)",
+      "4. NIVI2 -> 3000 -> Light_Sensor -> ON_WITH_RLS_INFO تعيين إلى ON_WITH_PWR_ON (غير مفيد بدون PED_DET_IN_BACKGROUND & FGS_NIVI_KI_ENABLE)",
+      "5. NIVI2 -> 3250 -> USE_ACUTE_WARNING -> AW_OFF تعيين إلى AW_ON (غير مفيد بدون PED_DET_IN_BACKGROUND & FGS_NIVI_KI_ENABLE)",
+      "6. NIVI2 -> 3250 -> USE_ACUTE_SOUND -> AW_OFF تعيين إلى AW_ON (غير مفيد بدون PED_DET_IN_BACKGROUND & FGS_NIVI_KI_ENABLE)",
+      "7. NIVI2 -> 3252 -> R1_ACTIVE -> AW_OFF تعيين إلى AW_ON (غير مفيد بدون PED_DET_IN_BACKGROUND & FGS_NIVI_KI_ENABLE)",
+      "8. NIVI2 -> 3253 -> PED_DET_IN_BACKGROUND -> OFF تعيين إلى ON (هذا مفتاح للرؤية الليلية في الخلفية)",
+      "9. NIVI2 -> 3253 -> BD_MINIMUM_SPEED -> Werte=08 تعيين إلى Werte=00 (هذا سيسمح بكشف المشاة بأي سرعة. عادة ما يكون هذا نشطًا فقط عند سرعات 8 ميل في الساعة أو أعلى)",
+      "10. NIVI2 -> 3240 -> DTC_ENABLE_13 -> CL15on-DTCon - BD disabled تعيين إلى CL15on-DTCon - BD enabled (لا يوجد BD-Enabled أو BD Disabled؟ ما هي قيمة Werte؟)"
+    ],
+    "title": "تمكين الرؤية الليلية مع كشف المشاة في الخلفية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KOMBI",
+    "description": " F10/F11 – تمكين رنين الترس الخلفي لليابان",
+    "steps": [
+      "1. KOMBI -> 3000 Anzeige_Konfiguration -> R_GANG_AKUSTIK_ENABLE -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "تمكين رنين الترس الخلفي لليابان"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KOMBI",
+    "description": " F10/F11 – شاشة عرض HUD",
+    "steps": [
+      "1. تغيير وقت شاشة بدء تشغيل HUD - KOMBI -> 3000 Anzeige_Konfiguration -> HUD_START_UP_SCREEN_ANZ_ZEIT -> - تعيين إلى قيمة المستخدم (القيمة بالثواني. 0 ثانية = لا يوجد عرض)",
+      "2. تمكين قائمة الراديو في HUD - KOMBI -> 3000 Anzeige_Konfiguration -> HUD_ENTERTAINMENT_ENABLE -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "3. تمكين عرض قائمة المكالمات الأخيرة - KOMBI -> 3000 Anzeige_Konfiguration -> HUD_TELEFONANRUF_ENABLE -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "4. لا يبدو أنه يفعل أي شيء، يجب أن يعرض قائمة جهات الاتصال الكاملة - KOMBI -> 3000 Anzeige_Konfiguration -> HUD_TELEFONBUCH_ENABLE -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "5. عرض الأوامر الصوتية على HUD - KOMBI -> 3000 Anzeige_Konfiguration -> HUD_SPRACHEINGABE_ENABLE -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "6. عرض تغيير المسار على HUD - KOMBI -> 3000 Anzeige_Konfiguration -> HUD_TLC_ENABLE -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "شاشة عرض HUD"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KOMBI",
+    "description": " F10/F11 – يضبط الساعة عبر إشارة GPS",
+    "steps": [
+      "1. KOMBI -> 3000 Anzeige_Konfiguration -> GPS_UHR -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "ضبط الساعة عبر إشارة GPS"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KAFAS",
+    "description": " F10/F11 – زيادة الاهتزاز لتحذير مغادرة المسار",
+    "steps": [
+      "1. KAFAS -> 3006 TLC_ACTUATOR -> VIBRATION_VALUE -> Werte=06,07,08,08,09,… تعيين إلى Werte = 16, 17, 18, 18, 19, 19, 1A, 1B"
+    ],
+    "title": "زيادة اهتزاز تحذير مغادرة المسار"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "KAFAS",
+    "description": " F10/F11 – مغادرة المسار",
+    "steps": [
+      "1. KAFAS -> 3000 TLC_CODING -> ANZEIGEVARIANTE -> anz_var_04 تعيين إلى anz_var_02 (نظام تحذير مغادرة المسار، العرض في لوحة العدادات (و HUD): لا تظهر خطوط افتراضيًا. تظهر فقط (مع المثلثين) عند\nالكشف عن علامة مسار واحدة على الأقل (أو حافة رصيف))",
+      "2. KAFAS -> 3000 TLC_CODING -> ROAD_EDGE_WARNING_ENABLED -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=grass_curb (كما هو محدد حاليًا، فإنه يكشف فقط عن علامات الطريق (أي علامات المسار المطلية). مع تغيير الكود التالي، يمكنه أيضًا الكشف عن العشب وحواف الطريق)"
+    ],
+    "title": "مغادرة المسار"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "IHKA",
+    "description": " F10/F11 – نظام تكييف الهواء يتذكر الإعداد الأخير",
+    "steps": [
+      "1. IHKA -> 3000 IHKA_Codierdaten -> OFF_MEMORY -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "نظام تكييف الهواء يتذكر الإعداد الأخير"
+  },
+  {
+    "series": "F10",
+    "ecu": "ICM/ICAM",
+    "description": " F10 – مغادرة المسار",
+    "steps": [
+      "1. إعداد تفعيل السرعة الدنيا للنقطة العمياء النشطة - ICM -> 3000 Daten -> Hc2_i_CPar_Aktiv_v_low -> 50 كم/ساعة تعيين إلى 25 كم/ساعة (لا يعمل تحت 25 كم/ساعة - يعطي خطأ في النظام)",
+      "2. --- أو --- - ICM -> 3000 -> HcSwcCPar_i_Hc2_Aktiv_v_low -> - تعيين إلى 25 كم/ساعة (لا يعمل تحت 25 كم/ساعة - يعطي خطأ في النظام)"
+    ],
+    "title": "مغادرة المسار (ICM/ICAM)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – إضافة الموقع الحالي لنظام تحديد المواقع (GPS) إلى قائمة الملاحة",
+    "steps": [
+      "1. HU_CIC/NBT -> 3000 HMI -> NAVI_POSITION_MENU -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "إضافة الموقع الحالي لنظام تحديد المواقع إلى قائمة الملاحة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – إضافة قراءات الضغط ودرجة الحرارة إلى شاشة TPMS",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3001 -> RDC_SAFETY -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "إضافة قراءات الضغط ودرجة الحرارة إلى شاشة TPMS"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – إزالة إخلاءات المسؤولية القانونية (الملاحة، PDC، والرؤية الجانبية)",
+    "steps": [
+      "1. تعطيل إخلاء المسؤولية القانونية لـ iDrive عند بدء تشغيل iDrive - HU_CIC/NBT/NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> ld_mit_timeout تعيين إلى kein_ld",
+      "2. تعطيل إخلاء المسؤولية القانونية للكاميرا المعروضة على PDC والرؤية الجانبية - HU_CIC/NBT/NBT -> 3001 -> MACRO_NIVICAM_LDISCLAIMER -> ld_mit_timeout تعيين إلى kein_ld",
+      "3. تعطيل إخلاء المسؤولية القانونية للكاميرا المعروضة على الرؤية الليلية - HU_CIC/NBT -> 3001 -> VIDEO_NUR_MIT_HANDBREMSE -> ld_mit_timeout تعيين إلى kein_ld",
+      "4. تعطيل إخلاء المسؤولية القانونية للكاميرا المعروضة على الرؤية الليلية - HU_CIC/NBT -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - تعيين إلى kein_ld"
+    ],
+    "title": "إزالة إخلاءات المسؤولية القانونية (الملاحة، PDC، والرؤية الجانبية)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT/NBT",
+    "description": " F10/F11 – DVD أثناء الحركة",
+    "steps": [
+      "1. HU_CIC/NBT/NBT -> 3000 HMI -> SPEEDLOCK_X_KMH_MAX -> 3_kmh = 3 أو 8_kmh = 8 تعيين إلى value = FF",
+      "2. HU_CIC/NBT/NBT -> 3000 HMI -> SPEEDLOCK_X_KMH_MIN -> 3_kmh = 3 أو 8_kmh = 8 تعيين إلى value = FF",
+      "3. HU_CIC/NBT -> 3000 HMI -> VIDEO_NUR_MIT_HANDBREMSE -> - تعيين إلى nicht_aktiv / Werte=00",
+      "4. HU_CIC/NBT -> 3000 -> VIDEO_HANDBRAKE -> - تعيين إلى nicht_aktiv",
+      "5. HU_CIC/NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - تعيين إلى nicht_aktiv",
+      "6. HU_CIC/NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - تعيين إلى none=00"
+    ],
+    "title": "DVD أثناء الحركة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – اقتراح محطات الوقود في نظام الملاحة على طول الطريق",
+    "steps": [
+      "1. HU_CIC/NBT -> 3000 HMI -> NAVI_FUELSTOP_PROPOSAL -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "اقتراح محطات الوقود في نظام الملاحة على طول الطريق"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HU_CIC/NBT",
+    "description": " F10/F11 – إشارات الانعطاف في HUD",
+    "steps": [
+      "1. تمكين إشارات الانعطاف في HUD - HU_CIC/NBT -> 3001 -> HUD_TURNSIGNAL -> - تعيين إلى aktiv",
+      "2. إضافة إشارات الانعطاف إلى HUD - KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> - تعيين إلى aktiv",
+      "3. عرض إشارات الانعطاف في HUD - KOMBI -> 3008 -> HUD_PIA_BLINKER -> - تعيين إلى aktiv",
+      "4. عرض إشارات الانعطاف في HUD - KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> - تعيين إلى aktiv"
+    ],
+    "title": "إشارات الانعطاف في HUD"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "HKFM",
+    "description": " F10/F11 – إغلاق/فتح الصندوق الخلفي من المفتاح ولوحة الركل",
+    "steps": [
+      "1. الزر في جانب السائق سيتم تمكينه لإغلاق الصندوق - HKFM -> 3010 -> SCH_TOEHKI -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01 (لا يعمل فورًا؛ اترك بعض الوقت قبل أن يبدأ العمل)",
+      "2. الزر في مفتاح السيارة سيتم تمكينه لإغلاق الصندوق - HKFM -> 3010 -> SCH_FBD -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01 (لا يعمل فورًا؛ اترك بعض الوقت قبل أن يبدأ العمل)",
+      "3. استخدم مع أعلاه SCH_TOEHKI & SCH_FBD - HKFM -> 3010 -> TASTER_FBD -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "إغلاق/فتح الصندوق الخلفي من المفتاح ولوحة الركل"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – اختيار الأضواء لأضواء الترحيب",
+    "steps": [
+      "1. الضوء المنخفض - FRM -> 3050 -> WL_FUNKTION_AL -> nicht_aktiv / Werte=00 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (0 = إيقاف؛ 1 = ناعم (لوغاريتمي)؛ 2 = صلب (تشغيل فوري)؛ 3 = ناعم (أسي))",
+      "2. الضوء العالي - FRM -> 3050 -> WL_FUNKTION_FL -> nicht_aktiv / Werte=00 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (0 = إيقاف؛ 1 = ناعم (لوغاريتمي)؛ 2 = صلب (تشغيل فوري)؛ 3 = ناعم (أسي))",
+      "3. أضواء لوحة الترخيص - FRM -> 3050 -> WL_FUNKTION_KZL -> hard_on / Werte=02 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (0 = إيقاف؛ 1 = ناعم (لوغاريتمي)؛ 2 = صلب (تشغيل فوري)؛ 3 = ناعم (أسي))",
+      "4. أضواء الضباب - FRM -> 3050 -> WL_FUNKTION_NSW -> nicht_aktiv / Werte=00 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (0 = إيقاف؛ 1 = ناعم (لوغاريتمي)؛ 2 = صلب (تشغيل فوري)؛ 3 = ناعم (أسي))",
+      "5. أضواء الموضع (Angel Eyes وأضواء LED الأمامية الجانبية) - FRM -> 3050 -> WL_FUNKTION_POL -> hard_on / Werte=02 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (0 = إيقاف؛ 1 = ناعم (لوغاريتمي)؛ 2 = صلب (تشغيل فوري)؛ 3 = ناعم (أسي))",
+      "6. الأضواء الخلفية - FRM -> 3050 -> WL_FUNKTION_SSL -> hard_on / Werte=02 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (0 = إيقاف؛ 1 = ناعم (لوغاريتمي)؛ 2 = صلب (تشغيل فوري)؛ 3 = ناعم (أسي))",
+      "7. ضوء الترحيب: وقت التفعيل - FRM -> 3050 -> WL_TIMEOUT -> wert_01 / Werte=14 تعيين إلى nicht_aktiv / soft_on / hard_on / soft_on_LED (لم يتم اختباره)"
+    ],
+    "title": "اختيار الأضواء لأضواء الترحيب"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – بقاء أضواء الضباب مضاءة مع الأضواء العالية",
+    "steps": [
+      "1. FRM -> 3050 -> NSW_AUS_BEI_FL -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00"
+    ],
+    "title": "أضواء الضباب تبقى مضاءة مع الأضواء العالية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – تمكين مساعد الضوء العالي التنشيط التلقائي",
+    "steps": [
+      "1. مساعد الضوء العالي مثبت [1/4] - FRM -> 3050 -> FLA_VERBAUT -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "2. تعيين مساعد الضوء العالي افتراضيًا على التلقائي [2/4] - FRM -> 3050 -> FLA_AUTO_AKTIV -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "3. تمكين مساعد الضوء العالي [3/4] - HU_CIC/NBT -> 3000 HMI -> HIGH_BEAM_ASSISTANT -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "4. تمكين مساعد الضوء العالي [4/4] - KAFAS -> 3015 -> FLA_ON_OFF -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "تمكين مساعد الضوء العالي التنشيط التلقائي"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – تمكين/تعطيل أضواء القيادة النهارية (DRL)",
+    "steps": [
+      "1. FRM -> 3050 -> DRL_MODUS -> drl_s / Werte=03 تعيين إلى nicht_aktiv / drl_h / drl_l / drl_s / tfl_s / tfl_ece / tfl_s / drl_s_ohne_sl / tfl_s_ohne_s (0: DRL معطل؛\n1: DRL_H عبر الشعاع، هالوجين أمريكي (بدون أضواء)؛\n2: DRL_L عبر الضوء المنخفض؛ \n3: DRL_S عبر TFLeuchte منفصلة؛ زينون أمريكي (حلقات + سفلي)؛ \n4: TFL_S عبر TFLeuchte منفصلة؛ زينون أوروبي (حلقات + سفلي)؛\n5: TFL_ECE (راحة البلد الشمالي)؛\n6: DRL_S_ohne_SL عبر TFLeuchte منفصلة بدون ضوء خلفي / أضواء خلفية، أمريكي؛\n7: TFL_S_ohne_SL عبر TFLeuchte منفصلة بدون ضوء خلفي / ضوء خلفي، أوروبي.)",
+      "2. سطوع أضواء القيادة النهارية (DRL) بالنسبة المئوية - FRM -> 3050 -> HELLIGKEIT_DRL -> wert_01 100% / Werte=64 تعيين إلى wert_01 100% / wert_02 50% / wert_03 54% / wert_04 80% / wert_05 51% (لم يتم اختباره)",
+      "3. إعدادات ضوء القيادة النهارية (DRL) (نهاري) - تمكين ضوء القيادة النهارية كخيار في قائمة خيارات الإضاءة في iDrive. يسمح لك بوضع علامة/إلغاء علامة على هذا الخيار. مفيد للبلدان التي لا تكون فيها أضواء القيادة النهارية إلزامية - HU_CIC/NBT -> 3000 HMI -> DAYDRIVING_LIGHT -> standard / Werte=02 تعيين إلى perm_off / Werte=00 أو standard / Werte=02 أو perm_on / Werte=01"
+    ],
+    "title": "تمكين/تعطيل أضواء القيادة النهارية (DRL)"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – يمكن رفع النوافذ مع فتح الباب",
+    "steps": [
+      "1. FRM -> 3030 -> FH_TUER_AUF_STOP_MAUT -> Werte=3B تعيين إلى aktiv / Werte=01 (فتح الأبواب (الأمامية) لن يقاطع عملية رفع النافذة تلقائيًا. عادة، إذا فتحت بابًا بينما النافذة ترتفع تلقائيًا، ستتوقف\nالعملية. هذه الميزة تعطلها. قد تحتاج إلى الانتظار حتى يعيد iDrive ضبط نفسه للتفعيل)",
+      "2. JBBF -> 3070 -> FH_TUER_AUF_STOP_MAUT -> aktiv تعيين إلى nicht_aktiv (فتح الأبواب (الخلفية) لن يقاطع عملية رفع النافذة تلقائيًا. عادة، إذا فتحت بابًا بينما النافذة ترتفع تلقائيًا، ستتوقف العملية.\nهذه الميزة تعطلها. قد تحتاج إلى الانتظار حتى يعيد iDrive ضبط نفسه للتفعيل)"
+    ],
+    "title": "النوافذ يمكن رفعها مع فتح الباب"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "FRM",
+    "description": " F10/F11 – إمالة مرآة الراكب للأسفل أكثر عند الرجوع للخلف",
+    "steps": [
+      "1. FRM -> 3020 -> ASP_BORDSTEINAUTOMATIK_DELTA -> Werte=3B تعيين إلى Werte=5A"
+    ],
+    "title": "إمالة مرآة الراكب للأسفل أكثر عند الرجوع للخلف"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CMB_MEDIA",
+    "description": " F10/F11 – تشغيل نغمة رنين مختلفة مدمجة في السيارة",
+    "steps": [
+      "1. CMB_MEDIA -> 3001 TELEPHONE_PARAMETER -> RINGTONE -> ring_tone2 / Werte=01  تعيين إلى انظر الملاحظات"
+    ],
+    "title": "تشغيل نغمة رنين مختلفة مدمجة في السيارة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CMB_MEDIA",
+    "description": " F10/F11 – تشغيل نغمة رنين الهاتف عبر سماعات السيارة",
+    "steps": [
+      "1. CMB_MEDIA -> 3001 TELEPHONE_PARAMETER -> INBAND_RINGING -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "تشغيل نغمة رنين الهاتف عبر سماعات السيارة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – الوصول المريح",
+    "steps": [
+      "1. التأخير بين النوافذ الأمامية والخلفية - CAS -> 3003 FH_Master -> KMFRT_OEFF_HINTEN -> wert_01 / Werte=05 تعيين إلى ????? (لم يتم اختباره)",
+      "2. التأخير بين النوافذ الخلفية و SHD (فتحة السقف) - CAS -> 3003 FH_Master -> KMFRT_OEFF_SHD -> wert_01 / Werte=23 تعيين إلى ????? (لم يتم اختباره)",
+      "3. التأخير بين النوافذ الأمامية والخلفية - CAS -> 3003 FH_Master -> KMFRT_SCHL_VORNE -> wert_01 / Werte=05 تعيين إلى ????? (لم يتم اختباره - تأخير مفترض عند الإغلاق)",
+      "4. التأخير بين النوافذ الأمامية و SHD (فتحة السقف) - CAS -> 3003 FH_Master -> KOMFORT_SCHL_SHD -> wert_01 / Werte=23 تعيين إلى ????? (لم يتم اختباره - تأخير مفترض عند الإغلاق)"
+    ],
+    "title": "الوصول المريح"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – تقليل تأخير إغلاق المرايا الجانبية",
+    "steps": [
+      "1. تأخير زر الإغلاق لطي المرايا الجانبية - CAS -> 3003 FH MASTER -> KMFRT_SCHLIESSEN -> wert_01 / Werte=0F تعيين إلى wert_01 / Werte=00"
+    ],
+    "title": "تقليل تأخير إغلاق المرايا الجانبية"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – إغلاق المرايا + النوافذ + السقف عبر الوصول المريح",
+    "steps": [
+      "1. CAS -> 3003 FH MASTER -> KOMFORTSCHLIESSUNG_PA -> nicht_aktiv / Werte=00  تعيين إلى aktiv / Werte=01  (يتطلب ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN تعيين إلى aktiv)",
+      "2. FRM -> 3020 -> ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01 (مطلوب)"
+    ],
+    "title": "إغلاق المرايا + النوافذ + السقف عبر الوصول المريح"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – إغلاق المرايا + النوافذ + السقف عبر مفتاح السيارة",
+    "steps": [
+      "1. CAS -> 3003 FH MASTER -> KOMFORTSCHLIESSUNG_FB -> nicht_aktiv / Werte=00  تعيين إلى aktiv / Werte=01  (يتطلب ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN تعيين إلى aktiv)",
+      "2. FRM -> 3020 -> ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01 (مطلوب)"
+    ],
+    "title": "إغلاق المرايا + النوافذ + السقف عبر مفتاح السيارة"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – الوصول بالمفتاح",
+    "steps": [
+      "1. المفتاح البعيد يفتح مع زر رابع الباب الخلفي أو النافذة الخلفية (نشط) - CAS -> 3002 CLM -> OPEN_RSCR_WITH_REMOTE_KEY_SPFN -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "2. المفتاح البعيد يفتح مع زر ثالث الباب الخلفي أو النافذة الخلفية (نشط) - CAS -> 3002 CLM -> OPEN_RSCR_WITH_REMOTE_KEY_SPFN -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "3. تفعيل المفتاح البعيد بالزر الرابع (وظيفة خاصة) - تمكين إضاءة Follow-Me-Home (إضاءة المسار) بضغط قصير على زر المفتاح 4 (زر الذعر) - CAS -> 3002 CLM -> REMOTE_KEY_SPECIAL_FCT -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "4. يمكن أن يكون المفتاح 4 لـ FBD (OP_KEY_BUT_SPFN) يستخدم لفتح HK - CAS -> 3010 HKL_BEDIENUNG -> USE_FBD4 -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "الوصول بالمفتاح"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – فتح الأبواب عند إيقاف المحرك",
+    "steps": [
+      "1. CAS -> 3002 CLM -> ER_KEYOUT_AUTOVR -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "فتح الأبواب عند إيقاف المحرك"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – إيقاف تشغيل الراديو والملاحة عند فتح الباب",
+    "steps": [
+      "1. CAS -> 3000 TC -> TC_LOGIC_KLR_OFF_DOOR -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "إيقاف تشغيل الراديو والملاحة عند فتح الباب"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "CAS",
+    "description": " F10/F11 – بدء التشغيل التلقائي إيقاف/تشغيل افتراضي؛ الإعداد الأخير تشغيل أو إيقاف",
+    "steps": [
+      "1. إيقاف تشغيل/تشغيل تلقائي افتراضيًا - CAS -> 3000 TC -> TC_MSA_DEFAULT_OFF -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01",
+      "2. تعيين وظيفة بدء التشغيل/الإيقاف التلقائي للسيارة لتبدأ بالإعداد الأخير المستخدم (مثل إيقاف التشغيل) عند بدء تشغيل المحرك - CAS -> 3000 TC -> TC_MSA_MEMORY -> nicht_aktiv / Werte=00 تعيين إلى aktiv / Werte=01"
+    ],
+    "title": "بدء التشغيل التلقائي إيقاف/تشغيل افتراضي"
+  },
+  {
+    "series": "F10/F11",
+    "ecu": "ASCM",
+    "description": " F10/F11 – تذكيرات وحزام الأمان والتحذيرات",
+    "steps": [
+      "1. مدة تحذيرات تذكير حزام الأمان - ASCM -> 3001 -> GWF_SBR_WARNDAUER -> wert_01 / Werte=5A تعيين إلى Werte = 01 (لمدة 1 ثانية) ((عادة 90 ثانية) - 5A HEX = 90 عشري)",
+      "2. تعطيل عرض حالة حزام الأمان - الراكب - ASCM -> 3000 Ausstattungsflags -> Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00",
+      "3. تعطيل عرض حالة حزام الأمان - السائق - ASCM -> 3000 Ausstattungsflags -> Gurtzustandsanzeige_Fahrer_GWF_GZA_FA -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00",
+      "4. تعطيل تذكير حزام الأمان - الراكب - ASCM -> 3000 Ausstattungsflags -> SBR_BF_GWF_SBR_BF -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00 (يعتمد على تاريخ الإنتاج)",
+      "5. تعطيل تذكير حزام الأمان - السائق - ASCM -> 3000 Ausstattungsflags -> SBR_FA_GWF_SBR_FA -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00 (يعتمد على تاريخ الإنتاج)",
+      "6. تعطيل الصوت عند فصل حزام الأمان - الراكب - ASCM -> 3000 Ausstattungsflags -> SPW_BF -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00 (يعتمد على تاريخ الإنتاج)",
+      "7. تعطيل الصوت عند فصل حزام الأمان - السائق - ASCM -> 3000 Ausstattungsflags -> SPW_FA -> aktiv / Werte=01 تعيين إلى nicht_aktiv / Werte=00 (يعتمد على تاريخ الإنتاج)",
+      "8. تعطيل تذكير حزام الأمان - الراكب - ASCM -> 3000 -> SBR_PreWarning_Beifahrer -> - تعيين إلى nicht_aktiv (يعتمد على تاريخ الإنتاج)",
+      "9. تعطيل تذكير حزام الأمان - السائق - ASCM -> 3000 -> SBR_PreWarning_Fahrer -> - تعيين إلى nicht_aktiv (يعتمد على تاريخ الإنتاج)",
+      "10. تعطيل الصوت عند فصل حزام الأمان - الراكب - ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - تعيين إلى nicht_aktiv (يعتمد على تاريخ الإنتاج)",
+      "11. تعطيل الصوت عند فصل حزام الأمان - السائق - ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - تعيين إلى nicht_aktiv (يعتمد على تاريخ الإنتاج)"
+    ],
+    "title": "تذكيرات وحزام الأمان والتحذيرات"
+  },
+  {
+    "series": "F22",
+    "ecu": "TRSVC",
+    "description": " F22 – تفعيل الكاميرات الجانبية بأي سرعة",
+    "steps": [
+      "1. TRSVC -> 3000 -> SV_Activate_Speed_Limit -> - تعيين إلى Werte to: FF",
+      "2. TRSVC -> 3000 -> SV_Deactivate_Speed_Limit -> - تعيين إلى Werte to: FF"
+    ],
+    "title": "تفعيل الكاميرات الجانبية بأي سرعة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "REM",
+    "description": " F22 – تمكين كاميرا الرؤية الخلفية في جميع السرعات",
+    "steps": [
+      "1. REM -> 3009 -> D_SCHWELLE_2 -> - تعيين إلى Werte to: FF",
+      "2. REM -> 3009 -> V_SCHWELLE_2 -> - تعيين إلى Werte to: FF"
+    ],
+    "title": "تمكين كاميرا الرؤية الخلفية في جميع السرعات (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "REM",
+    "description": " F22 – تفعيل ميزة أضواء الضباب الخلفية لمفتاح الإضاءة",
+    "steps": [
+      "1. REM -> 3063 -> Mapping_Nebelschlussl_L_output -> - تعيين إلى nsl_l",
+      "2. REM -> 3063 -> Mapping_Nebelschlussl_L_Function -> - تعيين إلى nebelschlusslicht",
+      "3. REM -> 3063 -> Mapping_Nebelschlussl_R_output -> - تعيين إلى nsl_l",
+      "4. REM -> 3063 -> Mapping_Nebelschlussl_R_Function -> - تعيين إلى nebelschlusslicht"
+    ],
+    "title": "تفعيل ميزة أضواء الضباب الخلفية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "REM",
+    "description": " F22 – تشغيل الأضواء الخلفية مع أضواء القيادة النهارية (DRLs)",
+    "steps": [
+      "1. REM -> 3062 -> MAPPING_TAGFAHRL_H_L_OUTPUT -> - تعيين إلى sl_l",
+      "2. REM -> 3062 -> MAPPING_TAGFAHRL_H_R_OUTPUT -> - تعيين إلى sl_r",
+      "3. REM -> 3062 -> MAPPING_TAGAHRL_H2_L_OUTPUT -> - تعيين إلى sl_2_l",
+      "4. REM -> 3062 -> MAPPING_TAGAHRL_H2_R_OUTPUT -> - تعيين إلى sl_2_r"
+    ],
+    "title": "تشغيل الأضواء الخلفية مع أضواء القيادة النهارية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "KOMBI",
+    "description": " F22 – تعطيل رسوم بدء تشغيل HUD",
+    "steps": [
+      "1. KOMBI -> 3008 -> HUD_STARTUP_TIME -> - تعيين إلى Werte to: 00"
+    ],
+    "title": "تعطيل رسوم بدء تشغيل HUD (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "KOMBI",
+    "description": " F22 – تمكين مزامنة GPS للساعة",
+    "steps": [
+      "1. KOMBI -> 3000 -> GPS_UHR -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين مزامنة GPS للساعة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "KOMBI",
+    "description": " F22 – تغيير بدء تشغيل KOMBI إلى M/// Performance",
+    "steps": [
+      "1. KOMBI -> 3000 -> BMW_LOGO -> - تعيين إلى mpm"
+    ],
+    "title": "تغيير بدء تشغيل KOMBI إلى M/// Performance (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "KOMBI",
+    "description": " F22 – عرض السرعة الرقمية بالميل في الساعة في لوحة العدادات",
+    "steps": [
+      "1. KOMBI -> 3000 -> BC_DIGITAL_V -> - تعيين إلى aktiv"
+    ],
+    "title": "عرض السرعة الرقمية في لوحة العدادات (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "IHKA",
+    "description": " F22 – دائماً تذكر إعادة تدوير الهواء",
+    "steps": [
+      "1. IHKA -> 3003 -> MEMORY_UMLUFT -> - تعيين إلى aktiv"
+    ],
+    "title": "دائماً تذكر إعادة تدوير الهواء (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "IHKA",
+    "description": " F22 – نظام تكييف الهواء يتذكر الإعداد الأخير",
+    "steps": [
+      "1. IHKA -> 3003 -> MEMORY_OFF -> - تعيين إلى aktiv"
+    ],
+    "title": "نظام تكييف الهواء يتذكر الإعداد الأخير (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين قائمة المطور",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENTWICKLER_MENUE -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين قائمة المطور (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين خادم الويب IPCE تمكين نقطة اتصال WiFi",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - تعيين إلى aktiv",
+      "2. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - تعيين إلى aktiv",
+      "3. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - تعيين إلى aktiv",
+      "4. HU_ENTRY/HU_CIC/NBT -> 3003 -> WLAN_STATUS -> - تعيين إلى aktiv",
+      "5. HU_ENTRY/HU_CIC/NBT -> 3003 -> WLAN_MODUS -> - تعيين إلى ap",
+      "6. HU_ENTRY/HU_CIC/NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - تعيين إلى outdoor",
+      "7. HU_ENTRY/HU_CIC/NBT -> 3003 -> WLAN_CHANNEL -> - تعيين إلى channel_1 -14"
+    ],
+    "title": "تمكين خادم الويب IPCE تمكين نقطة اتصال WiFi (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين خادم الويب IPCE على 172.16.222.1",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> IPCE_WEBSERVER -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين خادم الويب IPCE (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – إضافة الموقع الحالي لنظام تحديد المواقع إلى عناصر قائمة الملاحة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> NAVI_POSITION_MENU -> - تعيين إلى aktiv"
+    ],
+    "title": "إضافة الموقع الحالي لنظام تحديد المواقع إلى عناصر قائمة الملاحة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين إدخال الصوت تمكين عرض الطابع الزمني لسجل المكالمات",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3003 -> TIMESTAMP_DISPLAY -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين إدخال الصوت تمكين عرض الطابع الزمني لسجل المكالمات (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3003 -> SPEECH_2_TEXT -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تعطيل صوت الصفير/الرنين عند قفل السيارة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل صوت الصفير/الرنين عند قفل السيارة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين خطوط النص الكاملة في Office أثناء القيادة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - تعيين إلى whole text_07"
+    ],
+    "title": "تمكين خطوط النص الكاملة في Office أثناء القيادة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تعطيل قفل سرعة وظيفة Office",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل قفل سرعة وظيفة Office (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين وظيفة حفظ ملفات الفيديو على محرك الأقراص الثابتة NBT للتشغيل لاحقًا",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين حفظ ملفات الفيديو على NBT (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – إضافة راديو Weather Band إلى المصادر",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3002 -> RADIO_WEATHERBAND -> - تعيين إلى aktiv 01"
+    ],
+    "title": "إضافة راديو Weather Band (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – عرض ضغط الإطارات ودرجة الحرارة في معلومات السيارة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3001 -> RDC_SAFETY -> - تعيين إلى aktiv 01"
+    ],
+    "title": "عرض ضغط الإطارات ودرجة الحرارة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – إزالة إخلاءات المسؤولية القانونية",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> - تعيين إلى kein_ld",
+      "2. HU_ENTRY/HU_CIC/NBT -> 3000 -> MACRO_CAM_LEGALDISCLAIMER -> - تعيين إلى kein_ld"
+    ],
+    "title": "إزالة إخلاءات المسؤولية القانونية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تفعيل DVD-in-Motion",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - تعيين إلى werte = FF",
+      "2. HU_ENTRY/HU_CIC/NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - تعيين إلى werte = FF",
+      "3. HU_ENTRY/HU_CIC/NBT -> 3000 -> VIDEO_HANDBRAKE -> - تعيين إلى nicht_aktiv",
+      "4. HU_ENTRY/HU_CIC/NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - تعيين إلى nicht_aktiv",
+      "5. HU_ENTRY/HU_CIC/NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - تعيين إلى none=00"
+    ],
+    "title": "تفعيل DVD-in-Motion (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين ملفات الفيديو من USB",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_CODEC_XVID -> - تعيين إلى aktiv",
+      "2. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_CODEC_XVCD -> - تعيين إلى aktiv",
+      "3. HU_ENTRY/HU_CIC/NBT -> 3000 -> ENT_CODEC_OGG -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين ملفات الفيديو من USB (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – استيراد رحلة الملاحة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> NAVI_TRIP_IMPORT -> - تعيين إلى aktiv"
+    ],
+    "title": "استيراد رحلة الملاحة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تغيير صوت الملاحة إلى الإنجليزية البريطانية",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> - تعيين إلى master",
+      "2. HU_ENTRY/HU_CIC/NBT -> 3000 -> LANGUAGE_ENGLISH_US -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تغيير صوت الملاحة إلى الإنجليزية البريطانية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – إشارات الانعطاف في HUD",
+    "steps": [
+      "1. تمكين إشارات الانعطاف في HUD - HU_ENTRY/HU_CIC/NBT -> 3001 -> HUD_TURNSIGNAL -> - تعيين إلى aktiv",
+      "2. عرض إشارات الانعطاف في HUD [1/2] - KOMBI -> 3008 -> HUD_PIA_BLINKER -> - تعيين إلى aktiv",
+      "3. عرض إشارات الانعطاف في HUD [2/2] - KOMBI -> 3000 -> HUD_BLINKER_ENABLE -> - تعيين إلى aktiv"
+    ],
+    "title": "إشارات الانعطاف في HUD (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين قائمة إعدادات Active Sound Design",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ASD_CONFIGURATION -> - تعيين إلى aktiv",
+      "2. HU_ENTRY/HU_CIC/NBT -> 3000 -> ASD_SOUND_4 -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين قائمة إعدادات Active Sound Design (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تعطيل Active Sound Design",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> ASD_SOUND_OFF -> - تعيين إلى aktiv"
+    ],
+    "title": "تعطيل Active Sound Design (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تمكين ///M LapTimer",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> M_LAPTIMER -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين ///M LapTimer (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "HU_ENTRY/HU_CIC/NBT",
+    "description": " F22 – تعيين رنين الهاتف الخلوي كـ أساسي",
+    "steps": [
+      "1. HU_ENTRY/HU_CIC/NBT -> 3003 -> INBAND_RINGING -> - تعيين إلى aktiv"
+    ],
+    "title": "تعيين رنين الهاتف الخلوي كـ أساسي (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – زيادة حساسية الإضاءة التلقائية",
+    "steps": [
+      "1. FEM_BODY -> 3130 -> RLS_DEF_FLC_SCHWELLWERT_SATZ -> - تعيين إلى انظر الملاحظات",
+      "2. FEM_BODY -> 3130 -> RLS_FLC_SCHWELLWERT_SATZ -> - تعيين إلى انظر الملاحظات"
+    ],
+    "title": "زيادة حساسية الإضاءة التلقائية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تعطيل غسالات المصابيح الأمامية",
+    "steps": [
+      "1. FEM_BODY -> 3080 -> WW_SCHEINWERFERREININUNG -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل غسالات المصابيح الأمامية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تمكين إضاءة LED لمقبض الباب الخارجي عند الرجوع للخلف",
+    "steps": [
+      "1. FEM_BODY -> 3070 -> OVT_BEI_REUCKFAHRLICHT -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين إضاءة LED لمقبض الباب الخارجي عند الرجوع للخلف (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – إمالة مرآة الراكب للأسفل أكثر عند الرجوع للخلف",
+    "steps": [
+      "1. FEM_BODY -> 3110 -> ASP_BORDSTEINAUTOMATIK_DELTA -> - تعيين إلى werte=4B"
+    ],
+    "title": "إمالة مرآة الراكب للأسفل أكثر عند الرجوع للخلف (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – التحكم في الإضاءة المحيطة بشكل مستقل عن مفتاح التعتيم",
+    "steps": [
+      "1. FEM_BODY -> 3070 -> AMBIENTE_NACHFUEHRUNG -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "التحكم المستقل في الإضاءة المحيطة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – إيقاف تشغيل علامات الجانب الكهرمانية بجانب المصباح الأمامي",
+    "steps": [
+      "1. FEM_BODY -> 3063 -> MAPPING_SIDEMARKER_L_OUTPUT -> - تعيين إلى OFF",
+      "2. FEM_BODY -> 3063 -> MAPPING_SIDEMARKER_R_OUTPUT -> - تعيين إلى OFF"
+    ],
+    "title": "إيقاف تشغيل علامات الجانب الكهرمانية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تشغيل أضواء الضباب مع أضواء الترحيب",
+    "steps": [
+      "1. FEM_BODY -> 3063 -> MAPPING_NEBELSCHW_L_PART_OF_WL -> - تعيين إلى hard on",
+      "2. FEM_BODY -> 3063 -> MAPPING_NEBELSCHW_R_PART_OF_WL -> - تعيين إلى hard on"
+    ],
+    "title": "تشغيل أضواء الضباب مع أضواء الترحيب (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تشغيل وميض قوة الفرامل عند الفرملة الشديدة",
+    "steps": [
+      "1. FEM_BODY -> 3060 -> ESS_AKTIVIERBARER_AUSGANG -> - تعيين إلى bremsclicht blinkend"
+    ],
+    "title": "تشغيل وميض قوة الفرامل عند الفرملة الشديدة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تغيير عدد الومضات الثلاثية إلى قيمة أخرى",
+    "steps": [
+      "1. FEM_BODY -> 3060 -> BLINKZYKLEN_ANZAHL_TIPP -> - تعيين إلى werte=X-1 (4 ومضات = werte=3)"
+    ],
+    "title": "تغيير عدد الومضات الثلاثية (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – إيقاف تشغيل انقطاع رفع النافذة عند فتح الباب",
+    "steps": [
+      "1. FEM_BODY -> 3050 -> FH_TUERAUF_STOP_MAUT -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "إيقاف تشغيل انقطاع رفع النافذة عند فتح الباب (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – فتح الباب عند إيقاف المحرك (سحب واحد)",
+    "steps": [
+      "1. FEM_BODY -> 3040 -> CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK -> - تعيين إلى aktiv"
+    ],
+    "title": "فتح الباب عند إيقاف المحرك (سحب واحد) (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – بدء التشغيل/الإيقاف التلقائي يتذكر الإعداد الأخير",
+    "steps": [
+      "1. FEM_BODY -> 3023 -> TCM_MSA_MEMORY -> - تعيين إلى aktiv"
+    ],
+    "title": "بدء التشغيل/الإيقاف التلقائي يتذكر الإعداد الأخير (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – بدء التشغيل/الإيقاف التلقائي افتراضيًا على إيقاف التشغيل",
+    "steps": [
+      "1. FEM_BODY -> 3023 -> TCM_MSA_DEFAULT_OFF -> - تعيين إلى aktiv – werte=01"
+    ],
+    "title": "بدء التشغيل/الإيقاف التلقائي افتراضيًا على إيقاف التشغيل (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – إيقاف تشغيل MMI عند فتح الباب",
+    "steps": [
+      "1. FEM_BODY -> 3020 -> TCM_LOGIC_R_OFF_DOOR -> - تعيين إلى aktiv"
+    ],
+    "title": "إيقاف تشغيل MMI عند فتح الباب (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تغيير فتح المرايا تلقائيًا عند سرعة XX (قيمة ثنائية في Werte)",
+    "steps": [
+      "1. FEM_BODY -> 3110 -> ASP_GESCHWINDIGKEIT_AUTO_AUSKLAPPEN -> - تعيين إلى werte=14 (12 ميل في الساعة)"
+    ],
+    "title": "تغيير فتح المرايا تلقائيًا عند سرعة XX (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – إغلاق النوافذ، فتحة السقف، والمرايا من مفتاح السيارة",
+    "steps": [
+      "1. FEM_BODY -> 3053 -> KOMFORTSCHLIESSUNG_FB -> - تعيين إلى aktiv",
+      "2. FEM_BODY -> 3053 -> KOMFORT_SCHLIESSEN (طي فوري عند القفل) -> - تعيين إلى Werte to: 00",
+      "3. FEM_BODY -> 3110 -> ASP_BEIKLAPPEN -> - تعيين إلى aktiv",
+      "4. FEM_BODY -> 3110 -> ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN -> - تعيين إلى aktiv",
+      "5. FEM_BODY -> 3110 -> ASP_AUSKLAPPEN_NACH_KOMFORTSCHLIESSEN -> - تعيين إلى aktiv"
+    ],
+    "title": "إغلاق النوافذ، فتحة السقف، والمرايا من مفتاح السيارة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – زيادة سطوع Angel Eyes إلى 100%",
+    "steps": [
+      "1. FEM_BODY -> 3062 -> MAPPING_STANDL_V_L_PWM_LEVEL_1 -> - تعيين إلى 100%",
+      "2. FEM_BODY -> 3062 -> MAPPING_STANDL_V_R_PWM_LEVEL_1 -> - تعيين إلى 100%",
+      "3. FEM_BODY -> 3062 -> MAPPING_PARKL_V_L_PWM_1_LEFT -> - تعيين إلى 100%",
+      "4. FEM_BODY -> 3062 -> MAPPING_PARKL_V_L_PWM_2_RIGHT -> - تعيين إلى 100%"
+    ],
+    "title": "زيادة سطوع Angel Eyes إلى 100% (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "FEM_BODY",
+    "description": " F22 – تشغيل السيارة بضغط الزر (لا حاجة للضغط على الفرامل)",
+    "steps": [
+      "1. FEM_BODY -> 3020 -> TCM_STARTLOCK_BRAKE -> - تعيين إلى nicht_aktiv",
+      "2. FEM_BODY -> 3020 -> TCM_STARTLOCK_CLUTCH -> - تعيين إلى nicht_aktiv",
+      "3. FEM_BODY -> 3020 -> TCM_STARTLOCK_DRIVINGREADINESS -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تشغيل السيارة بضغط الزر (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "CMB_MEDIA",
+    "description": " F22 – نقل نغمة رنين الهاتف إلى السيارة (للمركبات بدون ملاحة فقط)",
+    "steps": [
+      "1. CMB_MEDIA -> 3001 -> INBAND_RINGING -> - تعيين إلى aktiv"
+    ],
+    "title": "نقل نغمة رنين الهاتف إلى السيارة (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "ASD",
+    "description": " F22 – تعطيل Active Sound Design",
+    "steps": [
+      "1. ASD -> 3000 -> Model Range -> - تعيين إلى F021"
+    ],
+    "title": "تعطيل Active Sound Design (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "",
+    "description": " F22 – إعادة ترميز لبلوتوث محسن",
+    "steps": [],
+    "title": "إعادة ترميز لبلوتوث محسن (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "ASCM",
+    "description": " F22 – إيقاف رنات تذكير حزام الأمان",
+    "steps": [
+      "1. السائق - ASCM -> 3000 -> SeatBeltReminder_SBR_Fahrer -> - تعيين إلى nicht_aktiv",
+      "2. الراكب - ASCM -> 3000 -> SeatBeltReminder_SBR_Beifahrer -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "إيقاف رنات تذكير حزام الأمان (F22)"
+  },
+  {
+    "series": "F22",
+    "ecu": "ASCM",
+    "description": " F22 – تعطيل 3 رنات ترحيب",
+    "steps": [
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل 3 رنات ترحيب (F22)"
+  },
+  {
+    "series": "F36",
+    "ecu": "SM2",
+    "description": " F36 – تفعيل 'الدخول السهل' (سيتوقف عن التحرك للأمام إذا تم تعشيق الترس)",
+    "steps": [
+      "1. SM2 -> 3000 -> EINAUSSTIEGSHILFE -> - تعيين إلى Modus_FA_SLV"
+    ],
+    "title": "تفعيل 'الدخول السهل' (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "KOMBI",
+    "description": " F36 – يضيف السرعة الحالية للمركبة إلى قائمة دورة BC (يعرض على شاشة KOMBI)",
+    "steps": [
+      "1. KOMBI -> 3000 -> BC_DIGITAL_V -> - تعيين إلى aktiv"
+    ],
+    "title": "إضافة السرعة الحالية للمركبة إلى قائمة BC (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – تغيير صوت الملاحة من الإنجليزية إلى الإنجليزية البريطانية",
+    "steps": [
+      "1. [1/2] - HU_CIC/NBT_EVO -> 3007 LANGUAGE, 32 -> LANGUAGE_ENGLISH_UK -> - تعيين إلى master",
+      "2. [2/2] - HU_CIC/NBT_EVO -> 3007 LANGUAGE, 32 -> LANGUAGE_ENGLISH_US -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تغيير صوت الملاحة إلى الإنجليزية البريطانية (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – تمكين استيراد رحلة إلى نظام الملاحة عبر USB Drive",
+    "steps": [
+      "1. HU_CIC/NBT_EVO -> 3006 NAVIGATION, 64 -> NAVI_TRIP_IMPORT -> - تعيين إلى aktiv"
+    ],
+    "title": "تمكين استيراد رحلة إلى نظام الملاحة عبر USB (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – تعطيل رقم المنزل أولاً في شاشة إدخال الوجهة",
+    "steps": [
+      "1. HU_CIC/NBT_EVO -> 3006 NAVI -> NAVI_DESTINATION_INPUT_US -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تعطيل رقم المنزل أولاً في شاشة إدخال الوجهة (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – إضافة قائمة المطور إلى الإعدادات. (يعرض البناء/التاريخ/الإصدارات/إلخ)",
+    "steps": [
+      "1. HU_CIC/NBT_EVO -> 3006 NAVIGATION, 64 -> ENTWICKLER_MENUE -> - تعيين إلى aktiv"
+    ],
+    "title": "إضافة قائمة المطور إلى الإعدادات (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – تمكين تشغيل الفيديو عبر USB (.avi, .mp4, .mkv, .m4v, إلخ)",
+    "steps": [
+      "1. HU_CIC/NBT_EVO -> 3003 TELEPHON_TELEMATIK_ONLINE, 95 -> API_USB_VIDEO -> - تعيين إلى both"
+    ],
+    "title": "تمكين تشغيل الفيديو عبر USB (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – تعيين مستوى الصوت ليتم الاحتفاظ به عند 40% بدلاً من البدء عند 25%",
+    "steps": [
+      "1. HU_CIC/NBT_EVO -> 3002 AUDIO_TUNER_TRAFFIC, 96 -> VOL_MAX_ON -> - تعيين إلى werte=28"
+    ],
+    "title": "تعيين مستوى الصوت ليتم الاحتفاظ به عند 40% (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – تعطيل إخلاءات المسؤولية القانونية",
+    "steps": [
+      "1. إزالة إخلاء المسؤولية الأولية لـ iDrive - HU_CIC/NBT_EVO -> 3001 EXBOX, 96 -> LEGAL_DISCLAIMER_TIME -> - تعيين إلى kein_ld",
+      "2. إزالة إخلاء المسؤولية لجميع الكاميرات و PDC - HU_CIC/NBT_EVO -> 3001 EXBOX, 96 -> MACRO_CAM_LEGALDISCLAIMER -> - تعيين إلى kein_ld"
+    ],
+    "title": "تعطيل إخلاءات المسؤولية القانونية (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HU_CIC/NBT_EVO",
+    "description": " F36 – إزالة شرط السرعة لمشاهدة مقاطع الفيديو",
+    "steps": [
+      "1. HU_CIC/NBT_EVO -> 3000 HMI, 96 -> VIDEO_SPEEDLOCK_CONDITION -> - تعيين إلى none",
+      "2. HU_CIC/NBT_EVO -> 3000 HMI, 96 -> VIDEO_HANDBRAKE -> - تعيين إلى nicht_aktiv",
+      "3. HU_CIC/NBT_EVO -> 3000 HMI, 96 -> VIDEO_FRONT_LOCKED -> - تعيين إلى nicht_aktiv",
+      "4. HU_CIC/NBT_EVO -> 3000 HMI, 96 -> SPEEDLOCK_X_KMH_MIN -> - تعيين إلى Werte=FF",
+      "5. HU_CIC/NBT_EVO -> 3000 HMI, 96 -> SPEEDLOCK_X_KMH_MAX -> - تعيين إلى Werte=FF"
+    ],
+    "title": "إزالة شرط السرعة لمشاهدة مقاطع الفيديو (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "HKFM",
+    "description": " F36 – إغلاق/فتح الصندوق الخلفي من المفتاح ولوحة الركل",
+    "steps": [
+      "1. HKFM -> 3010 -> TASTER_FBD -> - تعيين إلى aktiv",
+      "2. HKFM -> 3010 -> SCH_TOEHKI -> - تعيين إلى aktiv",
+      "3. HKFM -> 3010 -> SCH_FBD -> - تعيين إلى aktiv"
+    ],
+    "title": "إغلاق/فتح الصندوق الخلفي من المفتاح ولوحة الركل (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – تغيير السرعة التي عندها تنفتح المرايا الجانبية تلقائيًا",
+    "steps": [
+      "1. FEM_BODY -> 3110 -> ASP_GESCHWINDIGKEIT_AUTO_AUSKLAPPEN -> - تعيين إلى 14 (20 كم/ساعة) (القيمة في HEX)"
+    ],
+    "title": "تغيير السرعة التي عندها تنفتح المرايا تلقائيًا (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – فتح المرايا عند فتح قفل السيارة عبر مفتاح السيارة أو الوصول المريح",
+    "steps": [
+      "1. FEM_BODY -> 3110 -> ASP_AUSKLAPPEN_NACH_KOMFORTSCHLIESSEN -> - تعيين إلى aktiv"
+    ],
+    "title": "فتح المرايا عند فتح قفل السيارة (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – طي المرايا عند الضغط على زر القفل في مفتاح السيارة أو الوصول المريح",
+    "steps": [
+      "1. FEM_BODY -> 3110 -> ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN -> - تعيين إلى aktiv"
+    ],
+    "title": "طي المرايا عند الضغط على زر القفل (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – تفعيل توزيع الضوء المتغير (VLD)",
+    "steps": [
+      "1. FEM_BODY -> 3073 -> LUT_FLC_FORWARDLIGHTING_Y -> - تعيين إلى werte = 9C,9C,9C (F20_mit_AFS)",
+      "2. FEM_BODY -> 3073 -> C_AFS_ENA -> - تعيين إلى werte = 01 (تمكين)"
+    ],
+    "title": "تفعيل توزيع الضوء المتغير (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – إضاءة LED لمقبض الباب تضيء عند تعشيق الرجوع للخلف",
+    "steps": [
+      "1. FEM_BODY -> 3070 -> OVT_BEI_RUECKFAHRLICHT -> - تعيين إلى aktiv"
+    ],
+    "title": "إضاءة LED لمقبض الباب عند الرجوع للخلف (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – الإضاءة المحيطة يتم التحكم بها بشكل مستقل عن مفتاح التعتيم",
+    "steps": [
+      "1. FEM_BODY -> 3070 -> AMBIENTE_NACHFUEHRUNG -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "التحكم المستقل في الإضاءة المحيطة (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – تفعيل مفتاح ضوء الضباب الخلفي",
+    "steps": [
+      "1. [1/3] - FEM_BODY -> 3060 -> NSL_VERBAUT -> - تعيين إلى NSL_VERBAUT",
+      "2. [2/3] - REM -> 3063 -> Mapping_Nebelschlussl_L_output -> - تعيين إلى nsl_l",
+      "3. [3/3] - REM -> 3063 ->  Mapping_Nebelschlussl_R_output -> - تعيين إلى nsl_r"
+    ],
+    "title": "تفعيل مفتاح ضوء الضباب الخلفي (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – إغلاق النوافذ/طي المرايا عند الضغط باستمرار على زر القفل في مفتاح السيارة",
+    "steps": [
+      "1. FEM_BODY -> 3060 -> BLINKZYKLEN_ANZAHL_TIPP -> - تعيين إلى werte=X-1 (4 ومضات = werte=3)"
+    ],
+    "title": "إغلاق النوافذ/طي المرايا (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – إغلاق النوافذ/طي المرايا عند الضغط باستمرار على زر القفل في مفتاح السيارة",
+    "steps": [
+      "1. FEM_BODY -> 3053 -> KOMFORTSCHLIESSUNG_FB -> - تعيين إلى aktiv"
+    ],
+    "title": "إغلاق النوافذ/طي المرايا (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – تغيير تأخير فتح الصندوق المريح",
+    "steps": [
+      "1. FEM_BODY -> 3040 -> CLM_TIMEOUT_HK_SMO -> wert_02 تعيين إلى werte = 03 (قيمة HEX بـ 0.1 ثانية)"
+    ],
+    "title": "تغيير تأخير فتح الصندوق المريح (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "FEM_BODY",
+    "description": " F36 – إذا تم تمكين القفل التلقائي، فسيتم فتح جميع الأبواب عند إيقاف تشغيل الإشعال",
+    "steps": [
+      "1. FEM_BODY -> 3040 -> CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK -> - تعيين إلى aktiv"
+    ],
+    "title": "فتح جميع الأبواب عند إيقاف الإشعال (F36)"
+  },
+  {
+    "series": "F36",
+    "ecu": "ASCM",
+    "description": " F36 – تعطيل تحذير حزام الأمان الأولي ذو الـ 3 رنات",
+    "steps": [
+      "1. ASCM -> 3000 -> Initialwarnung_GWF_IW -> - تعيين إلى nicht_aktiv / Werte=00"
+    ],
+    "title": "تعطيل تحذير حزام الأمان الأولي ذو الـ 3 رنات (F36)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "FEM_BODY",
+    "description": " F30/F32 – إيقاف وميض أضواء الضباب LED المخصصة",
+    "steps": [
+      "1. FEM_BODY -> 3061 -> NSW_L_KALTUEBERWACHUNG -> aktiv تعيين إلى nicht_aktiv",
+      "2. FEM_BODY -> 3061 -> NSW_L_WARMUEBERWACHUNG -> aktiv تعيين إلى nicht_aktiv",
+      "3. FEM_BODY -> 3061 -> NSW_L_KURZSCHLUSS -> aktiv تعيين إلى nicht_aktiv",
+      "4. FEM_BODY -> 3061 -> NSW_L_IS_LED -> nicht_aktiv تعيين إلى aktiv",
+      "5. FEM_BODY -> 3061 -> NSW_R_KALTUEBERWACHUNG -> aktiv تعيين إلى nicht_aktiv",
+      "6. FEM_BODY -> 3061 -> NSW_R_WARMUEBERWACHUNG -> aktiv تعيين إلى nicht_aktiv",
+      "7. FEM_BODY -> 3061 -> NSW_R_KURZSCHLUSS -> aktiv تعيين إلى nicht_aktiv",
+      "8. FEM_BODY -> 3061 -> NSW_R_IS_LED -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "إيقاف وميض أضواء الضباب LED المخصصة (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "FEM_BODY",
+    "description": " F30/F32 – تفعيل أضواء الضباب الخلفية",
+    "steps": [
+      "1. تفعيل أضواء الضباب الخلفية - FEM_BODY -> 3060 -> NSL_Verbaut -> - تعيين إلى Verbaut",
+      "2. تفعيل ميزة أضواء الضباب الخلفية لمفتاح الإضاءة [1/4] - REM -> 3063 -> Mapping_Nebelschlussl_L_output -> - تعيين إلى nsl_l",
+      "3. تفعيل ميزة أضواء الضباب الخلفية لمفتاح الإضاءة [2/4] - REM -> 3063 -> Mapping_Nebelschlussl_L_Function -> - تعيين إلى nebelschlusslicht",
+      "4. تفعيل ميزة أضواء الضباب الخلفية لمفتاح الإضاءة [3/4] - REM -> 3063 -> Mapping_Nebelschlussl_R_output -> - تعيين إلى nsl_l",
+      "5. تفعيل ميزة أضواء الضباب الخلفية لمفتاح الإضاءة [4/4] - REM -> 3063 -> Mapping_Nebelschlussl_R_Function -> - تعيين إلى nebelschlusslicht"
+    ],
+    "title": "تفعيل أضواء الضباب الخلفية (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "FEM_BODY",
+    "description": " F30/F32 – تشغيل السيارة بضغط الزر (لا حاجة للضغط على الفرامل)",
+    "steps": [
+      "1. FEM_BODY -> 3020 -> TCM_STARTLOCK_BRAKE -> - تعيين إلى nicht_aktiv",
+      "2. FEM_BODY -> 3020 -> TCM_STARTLOCK_CLUTCH -> - تعيين إلى nicht_aktiv",
+      "3. FEM_BODY -> 3020 -> TCM_STARTLOCK_DRIVINGREADINESS -> - تعيين إلى nicht_aktiv"
+    ],
+    "title": "تشغيل السيارة بضغط الزر (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "FEM_BODY",
+    "description": " F30/F32 – إعدادات غسالات المصابيح الأمامية",
+    "steps": [
+      "1. تعطيل غسالات المصابيح الأمامية تمامًا - FEM_BODY -> 3080 -> WW_SCHEINWERFERREINIGUNG -> aktiv تعيين إلى nicht_aktiv",
+      "2. دورات مسح الزجاج الأمامي بعد الغسيل - FEM_BODY -> 3081 -> WW_ANZAHL_NACHWISCHZ_FRONT -> 3_mal_Nachwischen تعيين إلى",
+      "3. عدد نبضات رش المصابيح الأمامية - FEM_BODY -> 3080 -> WW_ANZAHL_SPRITZIMPULSE_SRA -> 2_Impulse تعيين إلى 3_Impulse",
+      "4. عدد الغسلات قبل إعادة تفعيل غسل المصابيح الأمامية - FEM_BODY -> 3080 -> WW_ANZAHL_WASCHBET_ZUR_SRA -> 10_Betaetigungen تعيين إلى User Value",
+      "5. يغير مدة الغسيل لكل نبضة (القيمة بـ 100 مللي ثانية) - FEM_BODY -> 3080 -> WW_DAUER_SPRITZIMPULSE_SRA -> werte=0A (1000 مللي ثانية) تعيين إلى User Value",
+      "6. السرعة القصوى لتفعيل غسالات المصابيح الأمامية - FEM_BODY -> 3080 -> WW_SRA_GESCHWINDIGKEITS_DEAKTIVIERUNG -> werte=82 (130 كم/ساعة) تعيين إلى User Value",
+      "7. يغير مدة التوقف المؤقت بين نبضات الغسيل (القيمة بـ 100 مللي ثانية) - FEM_BODY -> 3080 -> WW_PAUSE_SPRITZIMPULSE_SRA -> werte=0A (1000 مللي ثانية) تعيين إلى User Value",
+      "8. يغير وقت الانتظار قبل إعادة التفعيل (القيمة بـ 1 دقيقة) - FEM_BODY -> 3080 -> WW_SRA_SPERRZEIT -> werte=0A (10 دقائق) تعيين إلى User Value"
+    ],
+    "title": "إعدادات غسالات المصابيح الأمامية (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "FEM_BODY",
+    "description": " F30/F32 – مستويات درجة حرارة تدفئة المقاعد/مقاعد الذاكرة",
+    "steps": [
+      "1. درجة حرارة تدفئة المقاعد - المقاعد الأمامية - الجزء العلوي من الجسم - قيمة الإعداد 1 (الافتراضي: 95° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_LEHNE_STUFE_1_FRONT -> werte = 96 تعيين إلى User Value",
+      "2. درجة حرارة تدفئة المقاعد - المقاعد الأمامية - الجزء العلوي من الجسم - قيمة الإعداد 2 (الافتراضي: 106° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_LEHNE_STUFE_2_FRONT -> werte = A2 تعيين إلى User Value",
+      "3. درجة حرارة تدفئة المقاعد - المقاعد الأمامية - الجزء العلوي من الجسم - قيمة الإعداد 3 (الافتراضي: 116° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_LEHNE_STUFE_3_FRONT -> werte = AE تعيين إلى User Value",
+      "4. درجة حرارة تدفئة المقاعد - المقاعد الأمامية - الجزء السفلي من الجسم - قيمة الإعداد 1 (الافتراضي: 94° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_SITZ_STUFE_1_FRONT -> werte = 94 تعيين إلى User Value",
+      "5. درجة حرارة تدفئة المقاعد - المقاعد الأمامية - الجزء السفلي من الجسم - قيمة الإعداد 2 (الافتراضي: 104° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_SITZ_STUFE_2_FRONT -> werte = A0 تعيين إلى User Value",
+      "6. درجة حرارة تدفئة المقاعد - المقاعد الأمامية - الجزء السفلي من الجسم - قيمة الإعداد 3 (الافتراضي: 114° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_SITZ_STUFE_3_FRONT -> werte = AC تعيين إلى User Value",
+      "7. درجة حرارة تدفئة المقاعد - المقاعد الخلفية - الجزء العلوي من الجسم - قيمة الإعداد 1 (الافتراضي: 95° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_LEHNE_STUFE_1_FOND -> werte = 96 تعيين إلى User Value",
+      "8. درجة حرارة تدفئة المقاعد - المقاعد الخلفية - الجزء العلوي من الجسم - قيمة الإعداد 2 (الافتراضي: 106° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_LEHNE_STUFE_2_FOND -> werte = A2 تعيين إلى User Value",
+      "9. درجة حرارة تدفئة المقاعد - المقاعد الخلفية - الجزء العلوي من الجسم - قيمة الإعداد 3 (الافتراضي: 116° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_LEHNE_STUFE_3_FOND -> werte = AE تعيين إلى User Value",
+      "10. درجة حرارة تدفئة المقاعد - المقاعد الخلفية - الجزء السفلي من الجسم - قيمة الإعداد 1 (الافتراضي: 94° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_SITZ_STUFE_1_FOND -> werte = 94 تعيين إلى User Value",
+      "11. درجة حرارة تدفئة المقاعد - المقاعد الخلفية - الجزء السفلي من الجسم - قيمة الإعداد 2 (الافتراضي: 104° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_SITZ_STUFE_2_FOND -> werte = A0 تعيين إلى User Value",
+      "12. درجة حرارة تدفئة المقاعد - المقاعد الخلفية - الجزء السفلي من الجسم - قيمة الإعداد 3 (الافتراضي: 114° فهرنهايت) - FEM_BODY -> 3090 -> TEMP_SITZ_STUFE_3_FOND -> werte = AC تعيين إلى User Value",
+      "13. تفعيل 'الدخول السهل' (سيتوقف عن التحرك للأمام إذا تم تعشيق الترس) - SM2 -> 3000 -> EINAUSSTIEGSHILFE -> nicht_aktiv تعيين إلى Modus_FA_SLV",
+      "14. ستصدر المركبة رنينًا عند تخزين ذاكرة المقعد بنجاح - SM2 -> 3000 -> MEMORY_GONG -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "مستويات درجة حرارة تدفئة المقاعد/مقاعد الذاكرة (F30/F32)"
+  },
+  {
+    "series": "F34",
+    "ecu": "HKFM",
+    "description": " F34 – الجناح النشط (F34 3-Series GT فقط)",
+    "steps": [
+      "1. سرعة تفعيل الجناح النشط. (الافتراضي: 110 كم/ساعة) - HKFM -> ????? -> V_ASP_OUT -> 00, 6E تعيين إلى 00, (قيمة المستخدم)",
+      "2. السرعة المعكوسة لتفعيل الجناح النشط - HKFM -> ????? -> INV_V_ASP_OUT -> FF, 91 تعيين إلى FF, (قيمة المستخدم)"
+    ],
+    "title": "الجناح النشط (F34)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "HU_CIC/NBT",
+    "description": " F30/F32 – تمكين BMW Live",
+    "steps": [
+      "1. تمكين BMW Live - الجزء 1 - HU_CIC/NBT -> 3000 -> CONNECTED_DRIVE -> nicht_aktiv تعيين إلى aktiv",
+      "2. تمكين BMW Live - الجزء 2 - HU_CIC/NBT -> 3000 -> ONLINE_BROWSER_LIVE -> nicht_aktiv تعيين إلى aktiv",
+      "3. تمكين BMW Live - الجزء 3 - HU_CIC/NBT -> 3003 -> ONLINE_BROWSER -> - تعيين إلى nur_bmw_internet_aktiv",
+      "4. تمكين BMW Live - الجزء 4 - HU_CIC/NBT -> 3003 -> ONLINE_SERVICES -> aktiv تعيين إلى nicht_aktiv",
+      "5. تمكين BMW Live - الجزء 5 - HU_CIC/NBT -> 3003 -> ONLINE_SERVICES_GLS -> aktiv تعيين إلى nicht_aktiv",
+      "6. تمكين BMW Live - الجزء 6 - HU_CIC/NBT -> 3003 -> DUN_PROFILE -> nicht_aktiv تعيين إلى aktiv",
+      "7. تمكين BMW Live - الجزء 7 - HU_CIC/NBT -> 3003 -> PAN_PROFILE -> nicht_aktiv تعيين إلى aktiv",
+      "8. تمكين BMW Live - الجزء 8 - HU_CIC/NBT -> 3003 -> BT_DATA_SERVICE -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "تمكين BMW Live (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "HU_CIC/NBT",
+    "description": " F30/F32 – شاشة عرض رأسية (Heads-Up Display)",
+    "steps": [
+      "1. عرض صور تقاطع الطريق السريع على HUD **يعمل إذا تم التحديث. أخطاء بصرية بسيطة.** - HU_CIC/NBT -> 3000 -> JUNCTION_VIEW_HUD -> nicht_aktiv تعيين إلى aktiv",
+      "2. يضيف مربع اختيار لإعدادات شاشة العرض الرأسية 'الترفيه/الهاتف' - HU_CIC/NBT -> 3000 -> HUD_ENTERTAINMENTLIST -> nicht_aktiv تعيين إلى aktiv",
+      "3. يعرض مسافة iBrake لمثبت السرعة التكيفي في HUD (الجزء 1) - HU_CIC/NBT -> 3000 -> HUD_DISTANCE_INFO -> nicht_aktiv تعيين إلى aktiv",
+      "4. يعرض مسافة iBrake لمثبت السرعة التكيفي في HUD (الجزء 2) - KOMBI -> 3008 -> HUD_PIA_IBRAKE -> nicht_aktiv تعيين إلى aktiv",
+      "5. يعرض مسافة iBrake لمثبت السرعة التكيفي في HUD (الجزء 3) - KOMBI -> 3000 -> IBRAKE_ABSTAND_ENABLE -> nicht_aktiv تعيين إلى aktiv",
+      "6. تمكين قائمة الترفيه في HUD - KOMBI -> 3000 -> HUD_ENTERTAINMENT_ENABLE -> nicht_aktiv تعيين إلى aktiv",
+      "7. تمكين قائمة المكالمات الأخيرة للهاتف في HUD - KOMBI -> 3000 -> HUD_TELEFONANRUF_ENABLE -> nicht_aktiv تعيين إلى aktiv",
+      "8. يعرض الأوامر الصوتية في HUD - KOMBI -> 3000 -> HUD_SPRACHEINGABE_ENABLE -> nicht_aktiv تعيين إلى aktiv",
+      "9. تغيير وقت شاشة بدء تشغيل HUD ليكون أسرع أو أبطأ. (القيمة بالثواني) - KOMBI -> 3000 -> HUD_START_UP_SCREEN_ANZ_ZEIT -> 3 تعيين إلى User Value"
+    ],
+    "title": "شاشة عرض رأسية (HUD) (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "HU_CIC/NBT",
+    "description": " F30/F32 – تفعيل معلومات المرور المتقدمة في الوقت الفعلي",
+    "steps": [
+      "1. معلومات المرور في الوقت الفعلي - الجزء 1 - HU_CIC/NBT -> 3000 -> NAVI_TRAFFIC_INFO_MAP -> nicht_aktiv تعيين إلى aktiv",
+      "2. معلومات المرور في الوقت الفعلي - الجزء 2 - HU_CIC/NBT -> 3002 -> TI_CA_TMC -> nicht_aktiv تعيين إلى aktiv",
+      "3. معلومات المرور في الوقت الفعلي - الجزء 3 - HU_CIC/NBT -> 3002 -> TI_VINFO -> nicht_aktiv تعيين إلى aktiv",
+      "4. معلومات المرور في الوقت الفعلي - الجزء 4 - HU_CIC/NBT -> 3002 -> TI_TMC_REGIONAL -> nicht_aktiv تعيين إلى aktiv",
+      "5. معلومات المرور في الوقت الفعلي - الجزء 5 - HU_CIC/NBT -> 3002 -> TI_FALLBACK_DISABLED -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "تفعيل معلومات المرور المتقدمة في الوقت الفعلي (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "HU_CIC/NBT",
+    "description": " F30/F32 – ميزات الفيديو أثناء الحركة والتشغيل، دليل المالك أثناء الحركة والكاميرا أثناء الحركة",
+    "steps": [
+      "1. تعطيل قفل سرعة الفيديو USB/DVD - الجزء 1 (HU_CIC/NBT و HU_CIC/NBT) - HU_CIC/NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> werte = 03 تعيين إلى werte = FF",
+      "2. تعطيل قفل سرعة الفيديو USB/DVD - الجزء 2 (HU_CIC/NBT و HU_CIC/NBT) - HU_CIC/NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> werte = 03 تعيين إلى werte = FF",
+      "3. إزالة شرط 'البارك' وفرامل اليد لمشاهدة مقاطع الفيديو - الجزء 3 (HU_CIC/NBT فقط) - HU_CIC/NBT -> 3000 -> VIDEO_NUR_MIT_HANDBREMSE -> aktiv تعيين إلى nicht_aktiv",
+      "4. إزالة القفل الأمامي (مطلوب مع VIDEO_HANDBRAKE) - الجزء 4 (HU_CIC/NBT فقط) - HU_CIC/NBT -> 3000 -> VIDEO_FRONT_LOCKED -> aktiv تعيين إلى nicht_aktiv",
+      "5. إزالة شرط فرامل اليد لمشاهدة مقاطع الفيديو - الجزء 5 (HU_CIC/NBT فقط) - HU_CIC/NBT -> 3000 -> VIDEO_HANDBRAKE -> aktiv تعيين إلى nicht_aktiv",
+      "6. إزالة شرط السرعة لمشاهدة مقاطع الفيديو - الجزء 6 (HU_CIC/NBT فقط) - HU_CIC/NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - تعيين إلى none",
+      "7. إزالة شرط السرعة لقراءة رسائل الخدمة - الجزء 7 (HU_CIC/NBT فقط) - HU_CIC/NBT -> 3000 -> SERVICES_MESSAGES_SPEEDLOCK_CONDITION -> - تعيين إلى none",
+      "8. إزالة شرط السرعة لقراءة رسائل المكتب - الجزء 8 (HU_CIC/NBT فقط) - HU_CIC/NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - تعيين إلى none",
+      "9. تمكين تشغيل الفيديو عبر USB (.avi, .mp4, .mkv, .m4v, إلخ) - HU_CIC/NBT -> 3003 -> API_USB_VIDEO -> none تعيين إلى both",
+      "10. تمكين تشغيل فيديو MC (حفظ مقاطع الفيديو على القرص الصلب الداخلي لا يعمل) - HU_CIC/NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> nicht_aktiv تعيين إلى aktiv",
+      "11. تمكين ترميز XVID لمقاطع فيديو USB - HU_CIC/NBT -> 3000 -> ENT_CODEC_XVID -> nicht_aktiv تعيين إلى aktiv",
+      "12. تمكين ترميز XVCD لمقاطع فيديو USB - HU_CIC/NBT -> 3000 -> ENT_CODEC_XVCD -> nicht_aktiv تعيين إلى aktiv",
+      "13. تمكين ترميز OGG أثناء تشغيل الفيديو - HU_CIC/NBT -> 3000 -> ENT_CODEC_OGG -> nicht_aktiv تعيين إلى aktiv",
+      "14. تمكين زر 'قائمة DVD' عند مشاهدة DVD - HU_CIC/NBT -> 3000 -> ENT_VIDEO_HMI -> nicht_aktiv تعيين إلى aktiv",
+      "15. دليل المالك أثناء الحركة - الجزء 1 (تم اختباره فقط مع HU_CIC/NBT، غير متأكد من HU_CIC/NBT) - HU_CIC/NBT -> 3000 -> SL06_IBA_1 -> aktiv تعيين إلى nicht_aktiv",
+      "16. دليل المالك أثناء الحركة - الجزء 2 (تم اختباره فقط مع HU_CIC/NBT، غير متأكد من HU_CIC/NBT) - HU_CIC/NBT -> 3000 -> SL07_IBA_2 -> aktiv تعيين إلى nicht_aktiv",
+      "17. دليل المالك أثناء الحركة - الجزء 3 (تم اختباره فقط مع HU_CIC/NBT، غير متأكد من HU_CIC/NBT) - HU_CIC/NBT -> 3000 -> SL21_IBA_3 -> aktiv تعيين إلى nicht_aktiv",
+      "18. السرعة التي يتم عندها تعطيل عرض الكاميرا العلوية تلقائيًا (FF = 255 كم/ساعة) - REM/PMA -> ????? -> V_SCHWELLE_1 -> werte = 24 تعيين إلى werte = FF",
+      "19. السرعة التي يتم عندها تعطيل عرض الكاميرا الخلفية تلقائيًا (FF = 255 كم/ساعة) - REM/PMA -> ????? -> V_SCHWELLE_2 -> werte = 0F تعيين إلى werte = FF",
+      "20. المسافة التي يتم عندها تعطيل عرض الكاميرا العلوية تلقائيًا (FF = 255 متر) - ASCM -> ????? -> D_SCHWELLE_1 -> werte = 32 تعيين إلى werte = FF",
+      "21. المسافة التي يتم عندها تعطيل عرض الكاميرا الخلفية تلقائيًا (FF = 255 متر) - REM/PMA -> ????? -> D_SCHWELLE_2 -> werte = 0A تعيين إلى werte = FF",
+      "22. تفعيل كاميرا الرؤية الجانبية بأي سرعة - الجزء 1 - TRSVC -> 3000 -> SV_Activate_Speed_Limit -> werte = 0F تعيين إلى werte = FF",
+      "23. تفعيل كاميرا الرؤية الجانبية بأي سرعة - الجزء 2 - TRSVC -> 3000 -> SV_Deactivate_Speed_Limit -> werte = 0F تعيين إلى werte = FF"
+    ],
+    "title": "ميزات الفيديو أثناء الحركة والتشغيل، دليل المالك أثناء الحركة والكاميرا أثناء الحركة (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "CMB_MEDIA",
+    "description": " F30/F32 – ميزات iDrive",
+    "steps": [
+      "1. تشغيل نغمة رنين من الهاتف الخلوي (يعمل على iPhone، لا يعمل على Android) - CMB_MEDIA -> 3001 -> INBAND_RINGING (في HU_CIC/NBT) -> nicht_aktiv تعيين إلى aktiv",
+      "2. الحد الأقصى لعدد الرسائل/العناوين المخزنة في السيارة، بحد أقصى 50 (HU_CIC/NBT فقط) - CMB_MEDIA -> 3008 -> MY_INFO_SUPPORTED_POIS -> wert_25 تعيين إلى User Value",
+      "3. تمكين التعرف الأساسي على الصوت - CMB_MEDIA -> 3000 -> SYS_EIN_AUS -> nicht_aktiv تعيين إلى aktiv",
+      "4. تعيين نغمة الرنين (إذا لم يتم تعيين Inband Ringing) - CMB_MEDIA -> 3001 -> RINGTONE -> ring_tone2 تعيين إلى User Choice",
+      "5. يضيف إعداد iDrive لتشغيل/إيقاف تأكيد الصوت عند تفعيل الإنذار - HU_CIC/NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> nicht_aktiv تعيين إلى aktiv",
+      "6. يزيل شعار L7 من قائمة Tone (الصوت) - HU_CIC/NBT -> 3000 -> LOGIC7_SYMBOL -> aktiv تعيين إلى nicht_aktiv",
+      "7. يضيف ضغط الإطارات ودرجة حرارة الإطارات الفردية إلى شاشة TPMS - HU_CIC/NBT -> 3001 -> RDC_SAFETY -> nicht_aktiv تعيين إلى aktiv",
+      "8. يضيف راديو Weatherband (NOAA في الولايات المتحدة) إلى مصادر الراديو - HU_CIC/NBT -> 3002 -> RADIO_WEATHERBAND -> nicht_aktiv تعيين إلى aktiv",
+      "9. يضيف قائمة المطور إلى الإعدادات. (يعرض البناء/التاريخ/الإصدارات/إلخ) - HU_CIC/NBT -> 3000 -> ENTWICKLER_MENUE -> nicht_aktiv تعيين إلى aktiv",
+      "10. يغير رمز منطقة DVD (تحذير: سيتم قفله بعد حوالي 7 تغييرات.) - HU_CIC/NBT -> 3001 -> AREA_CODE_DVD -> Country Value تعيين إلى User Choice",
+      "11. يقترح محطة وقود مقترحة في طريق عندما يعتقد أن الوقود سينفد - HU_CIC/NBT -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> nicht_activ تعيين إلى activ",
+      "12. بديل لإظهار Office (غير معروف على HU_CIC/NBT) - HU_CIC/NBT -> 3000 -> PIM_Macro -> nicht_activ تعيين إلى activ",
+      "13. يسمح بالاحتفاظ بمستوى الصوت حتى 100% بدلاً من البدء عند 25% - HU_CIC/NBT -> 3002 -> VOL_MAX_ON -> 19 تعيين إلى 32",
+      "14. يعرض رسالة نصية كاملة (SMS) على iDrive بدلاً من ثلاثة أسطر - HU_CIC/NBT -> 3003 -> PIM_Driving_Text -> up_to_three_lines تعيين إلى Whole_text",
+      "15. جهات اتصال iDrive مفصولة عن جهات اتصال الهاتف (Office يعرض جهات اتصال iDrive فقط) - HU_CIC/NBT -> 3003 -> CONTACTS_NAVI_SEPARATED -> nicht_aktiv تعيين إلى aktiv",
+      "16. عرض مستوى الصوت على الشاشة عند التعديل - HU_CIC/NBT -> 3000 -> VOLUME_POPUP_DISPLAY -> nicht_aktiv تعيين إلى aktiv",
+      "17. يغير رنين الإشعارات (gong) من BMW إلى BMW i, Mini, و Rolls Royce - HU_CIC/NBT -> 3002 -> SOUND_SIGNAL_SET -> 00_BMW تعيين إلى 03_BMW_i",
+      "18. يغير شاشة بدء تشغيل HU_CIC/NBT بين الرسوم المتحركة، شاشة البداية، أو فارغة - HU_CIC/NBT -> 3001 -> STARTUP_TYPE -> animation تعيين إلى black/splash",
+      "19. تغيير رسوم بدء تشغيل iDrive. (الاختيارات أسفل الجدول) - HU_CIC/NBT -> 3001 -> STARTUP_EMBLEM -> variant_0 تعيين إلى variant_01",
+      "20. يغير العدادات في شاشة العرض الرياضية من BMW Amber إلى Red & Silver - HU_CIC/NBT -> 3000 -> M_VEHICLE -> nicht_aktiv تعيين إلى aktiv",
+      "21. يجعل محاكي المسار متاحًا ضمن قائمة جديدة 'معاينة المسار' - الجزء 1 - HU_CIC/NBT -> 3000 -> ROUTE_FLIGHT -> nicht_aktiv تعيين إلى aktiv",
+      "22. يجعل محاكي المسار متاحًا ضمن قائمة جديدة 'معاينة المسار' - الجزء 2 - HU_CIC/NBT -> 3000 -> NAVI_SCROLLING_ALONG_ROUTE -> nicht_aktiv تعيين إلى aktiv",
+      "23. تمكين 'معلومات المسار' (قائمة منعطف بمنعطف للمسار) - HU_CIC/NBT -> 3000 -> NAVI_ROAD_PREVIEW -> nicht_aktiv تعيين إلى aktiv",
+      "24. تمكين استيراد رحلة إلى نظام الملاحة عبر USB Drive - HU_CIC/NBT -> 3001 -> NAVI_TRIP_IMPORT -> nicht_aktiv تعيين إلى aktiv",
+      "25. تفعيل زر Siri Eyes-Free (اضغط باستمرار على زر التعرف على الصوت) - HU_CIC/NBT -> 3003 -> CE_DEVICE_SPEECH_RECONGNITION -> nicht_aktiv تعيين إلى aktiv",
+      "26. خيار للسماح بمشاهدة المسار التالي على Basic Kombi مع HU_CIC/NBT معدل - HU_CIC/NBT -> 3000 -> BASIS_KOMBI_MMI_LIST -> nicht_aktiv تعيين إلى aktiv",
+      "27. تغيير صوت الملاحة من الإنجليزية إلى الإنجليزية البريطانية - الجزء 1 - HU_CIC/NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> nicht_aktiv تعيين إلى master",
+      "28. تغيير صوت الملاحة من الإنجليزية إلى الإنجليزية البريطانية - الجزء 2 - HU_CIC/NBT -> 3000 -> LANGUAGE_ENGLISH_US -> master تعيين إلى nicht_aktiv"
+    ],
+    "title": "ميزات iDrive (F30/F32)"
+  },
+  {
+    "series": "F30/F32",
+    "ecu": "FEM_BODY",
+    "description": " F30/F32 – ميزات القفل/النوافذ العامة وميزات الراحة",
+    "steps": [
+      "1. إذا تم تمكين القفل التلقائي، فسيتم فتح جميع الأبواب عند إيقاف تشغيل الإشعال - FEM_BODY -> 3040 -> CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK -> nicht_aktiv تعيين إلى aktiv",
+      "2. يسمح برفع النوافذ الأمامية أثناء فتح الباب - FEM_BODY -> 3050 -> FH_TUERAUF_STOP_MAUT -> aktiv تعيين إلى nicht_aktiv",
+      "3. يسمح برفع النوافذ الخلفية أثناء فتح الباب - REM -> 3050 -> FH_TUERAUF_STOP_MAUT -> aktiv تعيين إلى nicht_aktiv",
+      "4. وقت التأخير لتفعيل الفتح المريح عبر مفتاح السيارة أو CA. (HEX) - FEM_BODY -> 3053 -> KOMFORT_OEFFNEN -> werte = 0F تعيين إلى werte = 0A",
+      "5. الفتح المريح: التأخير بين النوافذ الأمامية والخلفية - FEM_BODY -> 3053 -> KOMFORT_OEFF_HINTEN -> werte = 05 تعيين إلى User Value",
+      "6. الفتح المريح: التأخير بين النوافذ الخلفية وفتحة السقف - FEM_BODY -> 3053 -> KOMFORT_OEFF_SHD -> werte = 23 تعيين إلى User Value",
+      "7. وقت التأخير لتفعيل الإغلاق المريح عبر مفتاح السيارة أو CA. (HEX) - FEM_BODY -> 3053 -> KOMFORT_SCHLIESSEN -> werte = 0F تعيين إلى werte = 0A",
+      "8. الإغلاق المريح: التأخير بين النوافذ الأمامية والخلفية - FEM_BODY -> 3053 -> KOMFORT_SCHL_VORNE -> werte = 05 تعيين إلى User Value",
+      "9. الإغلاق المريح: التأخير بين النوافذ الأمامية وفتحة السقف - FEM_BODY -> 3053 -> KOMFORT_SCHL_SHD -> werte = 23 تعيين إلى User Value",
+      "10. فتح النوافذ/طي المرايا عند الضغط باستمرار على زر الفتح في مفتاح السيارة - FEM_BODY -> 3053 -> KOMFORTOEFFNUNG_FB -> nicht aktiv تعيين إلى aktiv",
+      "11. إغلاق النوافذ/طي المرايا عند الضغط باستمرار على زر القفل في مفتاح السيارة - FEM_BODY -> 3053 -> KOMFORTSCHLIESSUNG_FB -> nicht aktiv تعيين إلى aktiv",
+      "12. فتح المرايا عند فتح قفل السيارة عبر مفتاح السيارة أو الوصول المريح - FEM_BODY -> 3110 -> ASP_AUSKLAPPEN_NACH_KOMFORTSCHLIESSEN -> nicht_aktiv تعيين إلى aktiv",
+      "13. طي المرايا عند الضغط باستمرار على زر القفل في مفتاح السيارة أو الوصول المريح - FEM_BODY -> 3110 -> ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN -> nicht_aktiv تعيين إلى aktiv",
+      "14. تغيير السرعة التي عندها تنفتح المرايا الجانبية تلقائيًا. (القيمة في HEX) - FEM_BODY -> 3110 -> ASP_GESCHWINDIGKEIT_AUTO_AUSKLAPPEN -> 28 (40 كم/ساعة) تعيين إلى 14 (20 كم/ساعة)",
+      "15. السرعة القصوى التي ستطوي عندها المرايا. (القيمة في HEX) - FEM_BODY -> 3110 -> ASP_MAX_GESCHWINDIGKEIT_BEIKLAPPEN -> 14 (20 كم/ساعة) تعيين إلى FF (255 كم/ساعة)",
+      "16. الوقت قبل أن تقفل السيارة تلقائيًا عندما لا تكون الأبواب مفتوحة. (وحدات 10 ثوانٍ) - FEM_BODY -> 3040 -> CLM_TIME_PIA_LOCK_AT_TIMEOUT -> User Value تعيين إلى 0C (120 ثانية)",
+      "17. عدد ومضات إشارة الانعطاف عند فتح القفل - FEM_BODY -> 3060 -> QUITTBLK_ENTSCHAERFEN_ANZAHL -> werte=02 تعيين إلى werte=X-1 (القيمة هي عدد الومضات - 1)",
+      "18. عدد ومضات إشارة الانعطاف عند القفل - FEM_BODY -> 3060 -> QUITTBLK_SICHERN_ANZAHL -> werte=01 تعيين إلى werte=X-1 (القيمة هي عدد الومضات - 1)",
+      "19. إيقاف تشغيل الراديو ونظام الملاحة عند فتح باب السائق - FEM_BODY -> 3020 -> TCM_LOGIC_R_OFF_DOOR -> nicht_aktiv تعيين إلى aktiv",
+      "20. تغيير تأخير فتح الصندوق المريح - FEM_BODY -> 3040 -> CLM_TIMEOUT_HK_SMO -> wert_04 تعيين إلى wert_01 (قيمة HEX بـ 0.1 ثانية)",
+      "21. إيقاف تشغيل وميض الأضواء الخلفية عند فتح الصندوق عبر الوصول المريح - FEM_BODY -> 3040 -> CLM_SMO_INDICATOR -> aktiv تعيين إلى nicht_aktiv",
+      "22. الزر في مفتاح السيارة سيتم تمكينه لإغلاق الصندوق - HKFM -> 3010 -> SCH_FBD -> nicht_aktiv تعيين إلى aktiv",
+      "23. الزر في جانب السائق سيتم تمكينه لإغلاق الصندوق - HKFM -> 3010 -> SCH_FBD -> nicht_aktiv تعيين إلى aktiv",
+      "24. مطلوب لكي تعمل SCH_FBD و SCH_TOEHKI - HKFM -> 3010 -> TASTER_FBD -> nicht_aktiv تعيين إلى aktiv",
+      "25. تكييف الهواء سيتذكر ما إذا كان 'متوقفًا' أو 'قيد التشغيل' من الإيقاف السابق - IHKA -> 3002 -> MEMORY_OFF -> nicht_aktiv تعيين إلى aktiv",
+      "26. تذكر إعداد إعادة تدوير الهواء من الإيقاف السابق - IHKA -> 3003 -> MEMORY_UMLUFT -> nicht_aktiv تعيين إلى aktiv"
+    ],
+    "title": "ميزات القفل/النوافذ العامة وميزات الراحة (F30/F32)"
+      }
+  ]
