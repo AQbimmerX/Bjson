@@ -2650,7 +2650,6 @@
       "1. [1/3] - BDC_BODY3 -> 3075 LceMaster / 3420 -> SPURWECHSEL_ASSISTENT -> nicht_activ set to activ",
       "2. [2/3] - HU_MGU ->  300A SARAH / 300A -> SPURWECHSELASSISTENT -> nicht_activ set to gen_1",
       "3. [3/3] - SAS2 -> 3000 -> C_SWA_VORHANDEN -> Nr000_nicht_vorhanden set to NR001_VORHANDEN"
-    ],
 },
   {
     "series": "",
