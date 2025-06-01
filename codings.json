@@ -5078,231 +5078,231 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "إيقاف أضواء تذكير حزام الأمان للراكب",
-        "description": "تعيين Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF إلى nicht_aktiv.",
-        "steps": [
-            "3000 Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Seatbelt Reminder Light - Passenger",
+      "description": "Set Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF to nicht_aktiv.",
+      "steps": [
+        "3000 Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "إيقاف أضواء تذكير حزام الأمان للسائق",
-        "description": "تعيين Gurtzustandsanzeige_Fahrer_GFW_GZA_FA إلى nicht_aktiv.",
-        "steps": [
-            "3000 Gurtzustandsanzeige_Fahrer_GFW_GZA_FA: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Seatbelt Reminder Light - Driver",
+      "description": "Set Gurtzustandsanzeige_Fahrer_GFW_GZA_FA to nicht_aktiv.",
+      "steps": [
+        "3000 Gurtzustandsanzeige_Fahrer_GFW_GZA_FA: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "تعطيل 3 رنات ترحيب (Disable Welcome 3 Gongs)",
-        "description": "تعيين Initialwarnung_GWF_IW إلى nicht_aktiv.",
-        "steps": [
-            "3000 Initialwarnung_GWF_IW = nicht_aktiv"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Welcome 3 Gongs",
+      "description": "Set Initialwarnung_GWF_IW to nicht_aktiv.",
+      "steps": [
+        "3000 Initialwarnung_GWF_IW = nicht_aktiv"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "إيقاف تذكيرات/صوت حزام الأمان للسائق (SBR_PreWarning_Fahrer)",
-        "description": "تعيين SBR_PreWarning_Fahrer إلى nicht_aktiv.",
-        "steps": [
-            "3000 SBR_PreWarning_Fahrer: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Seatbelt Pre-warning Sound - Driver (SBR_PreWarning_Fahrer)",
+      "description": "Set SBR_PreWarning_Fahrer to nicht_aktiv.",
+      "steps": [
+        "3000 SBR_PreWarning_Fahrer: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "إيقاف تذكيرات/صوت حزام الأمان للراكب (SBR_PreWarning_Beifahrer)",
-        "description": "تعيين SBR_PreWarning_Beifahrer إلى nicht_aktiv.",
-        "steps": [
-            "3000 SBR_PreWarning_Beifahrer: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Seatbelt Pre-warning Sound - Passenger (SBR_PreWarning_Beifahrer)",
+      "description": "Set SBR_PreWarning_Beifahrer to nicht_aktiv.",
+      "steps": [
+        "3000 SBR_PreWarning_Beifahrer: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "إيقاف تذكيرات/صوت حزام الأمان للسائق (SeatBeltReminder_SBR_Fahrer)",
-        "description": "تعيين SeatBeltReminder_SBR_Fahrer إلى nicht_aktiv.",
-        "steps": [
-            "3000 SeatBeltReminder_SBR_Fahrer: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Seatbelt Reminder Sound - Driver (SeatBeltReminder_SBR_Fahrer)",
+      "description": "Set SeatBeltReminder_SBR_Fahrer to nicht_aktiv.",
+      "steps": [
+        "3000 SeatBeltReminder_SBR_Fahrer: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "ASCM",
-        "title": "إيقاف تذكيرات/صوت حزام الأمان للراكب (SeatBeltReminder_SBR_Beifahrer)",
-        "description": "تعيين SeatBeltReminder_SBR_Beifahrer إلى nicht_aktiv.",
-        "steps": [
-            "3000 SeatBeltReminder_SBR_Beifahrer: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "ASCM",
+      "title": "Disable Seatbelt Reminder Sound - Passenger (SeatBeltReminder_SBR_Beifahrer)",
+      "description": "Set SeatBeltReminder_SBR_Beifahrer to nicht_aktiv.",
+      "steps": [
+        "3000 SeatBeltReminder_SBR_Beifahrer: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "إيقاف تشغيل/تشغيل السيارة تلقائيًا افتراضيًا",
-        "description": "تعيين TC_MSA_DEFAULT_OFF إلى aktiv.",
-        "steps": [
-            "3000 TC_MSA_DEFAULT_OFF: set to: aktiv - werte = 01"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Auto Start/Stop Default OFF",
+      "description": "Set TC_MSA_DEFAULT_OFF to aktiv.",
+      "steps": [
+        "3000 TC_MSA_DEFAULT_OFF: set to: aktiv - werte = 01"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "تشغيل/إيقاف السيارة تلقائيًا - تذكر الإعداد الأخير",
-        "description": "تعيين TC_MSA_MEMORY إلى aktiv.",
-        "steps": [
-            "3000 TC_MSA_MEMORY: set to: aktiv - werte = 01"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Auto Start/Stop - Remember Last Setting",
+      "description": "Set TC_MSA_MEMORY to aktiv.",
+      "steps": [
+        "3000 TC_MSA_MEMORY: set to: aktiv - werte = 01"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "فتح جميع الأبواب عند إيقاف المحرك (مقابض سحب فردي)",
-        "description": "تعيين ER-KEYOUT_AUTOVR إلى aktiv.",
-        "steps": [
-            "3002 ER-KEYOUT_AUTOVR: set to: aktiv - werte = 01"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Unlock All Doors When Engine Off (Single-Pull Handles)",
+      "description": "Set ER-KEYOUT_AUTOVR to aktiv.",
+      "steps": [
+        "3002 ER-KEYOUT_AUTOVR: set to: aktiv - werte = 01"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "إيقاف تشغيل الإلكترونيات عند فتح الباب",
-        "description": "تعيين TC_LOGIC_KLR_OFF_DOOR إلى aktiv.",
-        "steps": [
-            "3000 TC_LOGIC_KLR_OFF_DOOR: set to: aktiv"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Electronics Off When Door Opened",
+      "description": "Set TC_LOGIC_KLR_OFF_DOOR to aktiv.",
+      "steps": [
+        "3000 TC_LOGIC_KLR_OFF_DOOR: set to: aktiv"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "إغلاق المرايا/النوافذ/فتحة السقف من المفتاح (FOB) أو الوصول المريح (CA)",
-        "description": "يتطلب أيضًا تغيير قيمة واحدة في وحدة FRM لتفعيل هذه الميزة. تعيين KOMFORTSCHLIESSUNG_FB و KOMFORTSCHLIESSUNG_PA إلى aktiv.",
-        "steps": [
-            "3003 KOMFORTSCHLIESSUNG_FB: set to aktiv - werte = 00",
-            "3003 KOMFORTSCHLIESSUNG_PA: set to aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Close Mirrors/Windows/Sunroof from FOB or Comfort Access",
+      "description": "Also requires changing a value in FRM module. Set KOMFORTSCHLIESSUNG_FB and KOMFORTSCHLIESSUNG_PA to aktiv.",
+      "steps": [
+        "3003 KOMFORTSCHLIESSUNG_FB: set to aktiv - werte = 00",
+        "3003 KOMFORTSCHLIESSUNG_PA: set to aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "تعيين وقت تأخير طي المرآة",
-        "description": "تعيين KMFRT_SCHLIESSEN إلى werte = 00.",
-        "steps": [
-            "3003 KMFRT_SCHLIESSEN: set to werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Set Mirror Fold Delay Time",
+      "description": "Set KMFRT_SCHLIESSEN to werte = 00.",
+      "steps": [
+        "3003 KMFRT_SCHLIESSEN: set to werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "CAS",
-        "title": "تشغيل السيارة بضغط الزر (لا حاجة للضغط على الفرامل)",
-        "description": "تعيين TC_STARTLOCK_BRAKE و TC_STARTLOCK_DRIVINGREADINESS إلى nicht_aktiv.",
-        "steps": [
-            "3000 TC_STARTLOCK_BRAKE: set to: nicht_aktiv",
-            "3000 TC_STARTLOCK_DRIVINGREADINESS: set to: nicht_aktiv"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "CAS",
+      "title": "Start Car by Button (No Brake Needed)",
+      "description": "Set TC_STARTLOCK_BRAKE and TC_STARTLOCK_DRIVINGREADINESS to nicht_aktiv.",
+      "steps": [
+        "3000 TC_STARTLOCK_BRAKE: set to: nicht_aktiv",
+        "3000 TC_STARTLOCK_DRIVINGREADINESS: set to: nicht_aktiv"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "إضاءة Angel-Eyes بكامل السطوع (مع تشغيل المصابيح الأمامية)",
-        "description": "تعيين U_EFF_POL إلى wert_05_13,0V.",
-        "steps": [
-            "3060 U_EFF_POL: set to: wert_05_13,0V"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Angel-Eyes Full Brightness (with Headlights On)",
+      "description": "Set U_EFF_POL to wert_05_13,0V.",
+      "steps": [
+        "3060 U_EFF_POL: set to: wert_05_13,0V"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "إغلاق المرايا/النوافذ/فتحة السقف من المفتاح (FOB) أو الوصول المريح (CA)",
-        "description": "تعيين ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN إلى aktiv.",
-        "steps": [
-            "3020 ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN: set to aktiv - werte = 01"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Close Mirrors/Windows/Sunroof from FOB or Comfort Access",
+      "description": "Set ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN to aktiv.",
+      "steps": [
+        "3020 ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN: set to aktiv - werte = 01"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "إمالة مرآة الراكب للأسفل أكثر عند الرجوع للخلف",
-        "description": "تعيين ASP_BORDSTEINAUTOMATIK_DELTA إلى werte = 4B.",
-        "steps": [
-            "3020 ASP_BORDSTEINAUTOMATIK_DELTA: set to: werte = 4B"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Tilt Passenger Mirror Farther Down When in Reverse",
+      "description": "Set ASP_BORDSTEINAUTOMATIK_DELTA to werte = 4B.",
+      "steps": [
+        "3020 ASP_BORDSTEINAUTOMATIK_DELTA: set to: werte = 4B"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "فتح الأبواب الأمامية لن يقاطع النوافذ",
-        "description": "تعيين FH_TUER_AUF_STOP_MAUT إلى nickt_aktiv.",
-        "steps": [
-            "3030 FH_TUER_AUF_STOP_MAUT: set to nickt_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Opening Front Doors Won’t Interrupt Windows",
+      "description": "Set FH_TUER_AUF_STOP_MAUT to nicht_aktiv.",
+      "steps": [
+        "3030 FH_TUER_AUF_STOP_MAUT: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "تشغيل الأضواء الخلفية و Angel-Eyes كأضواء نهارية (DRL)",
-        "description": "تعيين DRL_MODUS إلى drl_s.",
-        "steps": [
-            "3050 DRL_MODUS: set to drl_s - werte = 03"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Rear Tails & Angel Eyes On as DRL",
+      "description": "Set DRL_MODUS to drl_s.",
+      "steps": [
+        "3050 DRL_MODUS: set to drl_s - werte = 03"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "بقاي ضوء الضباب مضاءً مع الأضواء العالية",
-        "description": "تعيين NSW_AUS_BEI_FL إلى nicht_aktiv.",
-        "steps": [
-            "3050 NSW_AUS_BEI_FL: set to nicht_aktiv - werte = 00"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Fog Lights Stay On with High Beams",
+      "description": "Set NSW_AUS_BEI_FL to nicht_aktiv.",
+      "steps": [
+        "3050 NSW_AUS_BEI_FL: set to nicht_aktiv - werte = 00"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "إعدادات سطوع الإضاءة المحيطة: CS_AMB_BRIGHTNESS",
-        "description": "الحد الأعلى لسطوع الإضاءة المحيطة. القيمة الافتراضية = 64 (HEX).",
-        "steps": [
-            "CS_AMB_BRIGHTNESS (Comment = Ambient brightness Upper limit for the ambient brightness)"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Ambient Light Brightness Upper Limit: CS_AMB_BRIGHTNESS",
+      "description": "Upper limit for ambient brightness. Default value = 64 (HEX).",
+      "steps": [
+        "CS_AMB_BRIGHTNESS (Comment = Ambient brightness Upper limit for the ambient brightness)"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "إعدادات سطوع الإضاءة المحيطة: CS_AMB_MIN_BRIGHTNESS",
-        "description": "الحد الأدنى لسطوع الإضاءة المحيطة. القيمة الافتراضية = 0A (HEX) أي 10 (عشري).",
-        "steps": [
-            "CS_AMB_MIN_BRIGHTNESS (Comment = Min Amb brightness Lower limit of the ambient brightness)"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Ambient Light Brightness Lower Limit: CS_AMB_MIN_BRIGHTNESS",
+      "description": "Lower limit for ambient brightness. Default value = 0A (HEX) or 10 (decimal).",
+      "steps": [
+        "CS_AMB_MIN_BRIGHTNESS (Comment = Min Amb brightness Lower limit of the ambient brightness)"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "إعدادات سطوع الإضاءة المحيطة: CS_AMB_MAX_OFFSET",
-        "description": "إزاحة الحد الأقصى لسطوع الإضاءة المحيطة. السطوع لإخراج PWM كنسبة مئوية. القيمة الافتراضية = 30.",
-        "steps": [
-            "CS_AMB_MAX_OFFSET (Comment = Max amb brightness offset Brightness for PWM output as a percentage physical value of 20% ... 80%)"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Ambient Light Max Offset: CS_AMB_MAX_OFFSET",
+      "description": "Max ambient brightness offset. Brightness for PWM output as a percentage. Default value = 30.",
+      "steps": [
+        "CS_AMB_MAX_OFFSET (Comment = Max amb brightness offset Brightness for PWM output as a percentage physical value of 20% ... 80%)"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "وميض قوة الفرامل عند الفرملة الشديدة: ESS_ERSCHEINUNGSBILD",
-        "description": "تعيين ESS_ERSCHEINUNGSBILD إلى bremslicht blinkend.",
-        "steps": [
-            "3050 ESS_ERSCHEINUNGSBILD: set to: bremslicht blinkend - werte = 02"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Brake Force Flashing on Hard Braking: ESS_ERSCHEINUNGSBILD",
+      "description": "Set ESS_ERSCHEINUNGSBILD to bremslicht blinkend.",
+      "steps": [
+        "3050 ESS_ERSCHEINUNGSBILD: set to: bremslicht blinkend - werte = 02"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "FRM",
-        "title": "وميض قوة الفرامل عند الفرملة الشديدة: ESS_ON_VERZ",
-        "description": "تعيين ESS_ON_VERZ إلى US.",
-        "steps": [
-            "3050 ESS_ON_VERZ: set to: US - werte = 0A"
-        ],
-        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+      "ecu": "FRM",
+      "title": "Brake Force Flashing on Hard Braking: ESS_ON_VERZ",
+      "description": "Set ESS_ON_VERZ to US.",
+      "steps": [
+        "3050 ESS_ON_VERZ: set to: US - werte = 0A"
+      ],
+      "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
         "ecu": "FRM",
