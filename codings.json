@@ -5404,7 +5404,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo,
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "مساعد الضوء العالي - تشغيل تلقائي (HIGH_BEAM_ASSISTANT)",
         "description": "تعيين HIGH_BEAM_ASSISTANT إلى aktiv.",
         "steps": [
