@@ -4320,18 +4320,6 @@
   },
   {
     "series": "",
-    "ecu": "",
-    "description": " F85 – Re-Code for Enhanced Bluetooth",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " F85 – Re-Code for Dazzle Headlights (LED Adaptive Headlights like EU-Spec)",
-    "steps": []
-  },
-  {
-    "series": "",
     "ecu": "HRFM",
     "description": " G20 – Closing the trunk without delay",
     "steps": [
@@ -4386,23 +4374,11 @@
   },
   {
     "series": "",
-    "ecu": "",
-    "description": " G20 – Choice of car color and configuration",
-    "steps": []
-  },
-  {
-    "series": "",
     "ecu": "HU_MGU",
     "description": " G20 – Enabling Bowers & Wilkins Sound Profiles",
     "steps": [
       "1. HU_MGU -> ????? -> Audio_SYSTEM -> - set to alev4_ram"
     ]
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Enable Tachometer in Sports Mode",
-    "steps": []
   },
   {
     "series": "",
@@ -4416,36 +4392,6 @@
   },
   {
     "series": "",
-    "ecu": "nicht_aktiv",
-    "description": " G20 – Seat Heating Distribution",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "SportDynamic",
-    "description": " G20 – Enable Sport Plus Mode",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "ComfortPlus",
-    "description": " G20 – Enable Comfort Plus Mode",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Enable Tailgate close with keyfob or switch (No holding)",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Disable OBD2 Alarm",
-    "steps": []
-  },
-  {
-    "series": "",
     "ecu": "BDC_BODY3",
     "description": " G20 – Enable Automatic Lane Change Assistant",
     "steps": [
@@ -4453,186 +4399,6 @@
       "2. [2/3] - HU_MGU ->  300A SARAH / 300A -> SPURWECHSELASSISTENT -> nicht_activ set to gen_1",
       "3. [3/3] - SAS2 -> 3000 -> C_SWA_VORHANDEN -> Nr000_nicht_vorhanden set to NR001_VORHANDEN"
     ]
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Change max volume retention to 50 percent",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Disable Volume Popup Display",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Enable tire temperature and pressure display",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Change Startup Emblem",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Enable 5 click blinker option in Exterior Lighting settings",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Enable Video In Motion",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Disable Legal Disclaimer Time",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – HUD Distance Info",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Disable Night Vision Legal Disclaimer",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Enable Assisted Driver View [req 2019/07.xx+]",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Change Dash Layout and Logo to Alpina [req i‐step 2019/07.xx+]",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Change Dash Layout BMW M with no logo",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Change Dash Layout and Logo to BMW M",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Disable Speedometer Correction",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Enable Sailing in Comfort Mode (optional)",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Disable Seatbelt Status in Dash",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Enable Comfort Plus Mode options in Eco Pro Individual",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Enable Comfort Plus Mode",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Enable Sport Plus Mode",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Change startup mode",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " G20 – Mirror Tilt Angle",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Disable horn honk when locking doors with engine running",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Emergency Brake Force Display ‐ Area Enlargement",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Emergency Brake Force Display ‐ Flashing [Europe Default]",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Emergency Brake Force Display ‐ Off [US Default]",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Fog lights flash on alarm ‐ Alternating [Europe Default]",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Fog lights flash on alarm ‐ Simultaneous [US Default]",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Disable front windows rollup stopping when door opened",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Allow closing of windows and sunroof with keyfob",
-    "steps": []
-  },
-  {
-    "series": "",
-    "ecu": "",
-    "description": " Enable Colder Air Conditioning",
-    "steps": []
   },
   {
     "series": "",
