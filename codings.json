@@ -5422,7 +5422,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين التحكم الصوتي Siri",
         "description": "تعيين CE_DEVICE_SPEECH_RECOGNITION إلى aktiv.",
         "steps": [
@@ -5431,7 +5431,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
         "description": "تعيين DOOR_LOCK_AFTER_DRIVING_AWAY إلى nicht_aktiv.",
         "steps": [
@@ -5440,7 +5440,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ///M LapTmer",
         "description": "تعيين M_LAPTIMER إلى aktiv.",
         "steps": [
@@ -5449,7 +5449,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_CID",
         "description": "تعيين EFF_DYN_SPORT_CID إلى aktiv.",
         "steps": [
@@ -5458,7 +5458,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_UNIT",
         "description": "تعيين EFF_DYN_SPORT_UNIT إلى aktiv.",
         "steps": [
@@ -5485,7 +5485,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين عرض مستوى الصوت على الشاشة",
         "description": "تعيين VOLUME_POPUP_DISPLAY إلى aktiv.",
         "steps": [
@@ -5494,7 +5494,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين إشارات الانعطاف في شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -5503,7 +5503,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MAX",
         "description": "تعيين SPEEDLOCK_X_KMH_MAX إلى werte = FF.",
         "steps": [
@@ -5512,7 +5512,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MIN",
         "description": "تعيين SPEEDLOCK_X_KMH_MIN إلى werte = FF.",
         "steps": [
@@ -5521,7 +5521,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: VIDEO_HANDBRAKE",
         "description": "تعيين VIDEO_HANDBRAKE إلى nicht_aktiv.",
         "steps": [
@@ -5530,7 +5530,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: VIDEO_FRONT_LOCKED",
         "description": "تعيين VIDEO_FRONT_LOCKED إلى nicht_aktiv.",
         "steps": [
@@ -5539,7 +5539,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: VIDEO_SPEEDLOCK_CONDITION",
         "description": "تعيين VIDEO_SPEEDLOCK_CONDITION إلى none.",
         "steps": [
@@ -5567,7 +5567,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "استيراد رحلة الملاحة",
         "description": "تعيين NAVI_TRIP_IMPORT إلى aktiv.",
         "steps": [
@@ -5576,7 +5576,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "اقتراح محطات الوقود في نظام الملاحة على طول الطريق",
         "description": "تعيين NAVI_FUELSTOP_PROPOSAL إلى aktiv.",
         "steps": [
@@ -5585,7 +5585,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVID",
         "description": "تعيين ENT_CODEC_XVID إلى aktiv.",
         "steps": [
@@ -5594,7 +5594,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVCD",
         "description": "تعيين ENT_CODEC_XVCD إلى aktiv.",
         "steps": [
@@ -5603,7 +5603,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ملفات الفيديو من USB: API_USB_VIDEO",
         "description": "تعيين API_USB_VIDEO إلى both.",
         "steps": [
@@ -5612,7 +5612,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة الموقع الحالي لنظام تحديد المواقع (GPS) إلى عناصر قائمة الملاحة",
         "description": "تعيين NAVI_POSITION_MENU إلى aktiv.",
         "steps": [
@@ -5621,7 +5621,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة إشارات الانعطاف إلى شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -5630,7 +5630,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة راديو Weather Band (CIC فقط)",
         "description": "تعيين RADIO_WEATHERBAND إلى aktiv.",
         "steps": [
@@ -5639,7 +5639,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين وظيفة حفظ ملفات الفيديو على محرك الأقراص الثابتة NBT للتشغيل لاحقًا",
         "description": "تعيين ENT_MC_VIDEO_SUPPORT إلى aktiv.",
         "steps": [
@@ -5648,7 +5648,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل قفل سرعة وظيفة Office",
         "description": "تعيين OFFICE_MESSAGES_SPEEDLOCK_CONDITION إلى nicht_aktiv.",
         "steps": [
@@ -5657,7 +5657,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين خطوط النص الكاملة في Office أثناء القيادة",
         "description": "تعيين PIM_DRIVING_TEXT_LENGTH إلى whole text_07.",
         "steps": [
@@ -5666,7 +5666,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل صوت الصفير/الرنين عند قفل السيارة",
         "description": "تعيين ACOUSTICAL_LOCK_CONFIRM إلى nicht_aktiv.",
         "steps": [
@@ -5675,7 +5675,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة",
         "description": "تعيين SPEECH_2_TEXT إلى aktiv.",
         "steps": [
@@ -5684,7 +5684,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين عرض الطابع الزمني لسجل المكالمات",
         "description": "تعيين TIMESTAMP_DISPLAY إلى aktiv.",
         "steps": [
@@ -5693,7 +5693,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة درجة الحرارة و PSI إلى شاشة مراقبة الإطارات",
         "description": "تعيين RDC_SAFETY إلى aktiv.",
         "steps": [
@@ -5702,7 +5702,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل إخلاء المسؤولية القانونية: LEGAL_DISCLAIMER_TIME",
         "description": "تعيين LEGAL_DISCLAIMER_TIME إلى kein_ld.",
         "steps": [
@@ -5711,7 +5711,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_CAM_LEGALDISCLAIMER",
         "description": "تعيين MACRO_CAM_LEGALDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -5720,7 +5720,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_NVICAM_LDISCLAIMER",
         "description": "تعيين MACRO_NVICAM_LDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -5729,7 +5729,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تغيير رسوم بدء تشغيل i-Drive إلى شعار ///M",
         "description": "تعيين STARTUP_EMBLEM إلى variant_01.",
         "steps": [
@@ -5738,7 +5738,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين خادم الويب IPCE على 172.16.222.1",
         "description": "تعيين IPCE_WEBSERVER إلى aktiv.",
         "steps": [
@@ -5747,7 +5747,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_COVERART",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_COVERART إلى aktiv.",
         "steps": [
@@ -5756,7 +5756,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_VIDEO",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_VIDEO إلى aktiv.",
         "steps": [
@@ -5765,7 +5765,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP إلى aktiv.",
         "steps": [
@@ -5774,7 +5774,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: WLAN_STATUS",
         "description": "تعيين WLAN_STATUS إلى aktiv.",
         "steps": [
@@ -5783,7 +5783,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: WLAN_MODUS",
         "description": "تعيين WLAN_MODUS إلى ap.",
         "steps": [
@@ -5792,7 +5792,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: WLAN_SIGNAL_STRENGTH",
         "description": "تعيين WLAN_SIGNAL_STRENGTH إلى outdoor.",
         "steps": [
@@ -5801,7 +5801,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين قائمة المطور (Developer Menu)",
         "description": "تعيين ENTWICKLER_MENUE إلى aktiv 01.",
         "steps": [
@@ -6644,7 +6644,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "مساعد الضوء العالي - تشغيل تلقائي (HIGH_BEAM_ASSISTANT)",
         "description": "تعيين HIGH_BEAM_ASSISTANT إلى aktiv.",
         "steps": [
@@ -6653,7 +6653,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعيين رنين الهاتف الخلوي كـ أساسي (INBAND_RINGING)",
         "description": "تعيين INBAND_RINGING إلى aktiv.",
         "steps": [
@@ -6662,7 +6662,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين التحكم الصوتي Siri",
         "description": "تعيين CE_DEVICE_SPEECH_RECOGNITION إلى aktiv.",
         "steps": [
@@ -6671,7 +6671,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
         "description": "تعيين DOOR_LOCK_AFTER_DRIVING_AWAY إلى nicht_aktiv.",
         "steps": [
@@ -6680,7 +6680,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ///M LapTmer",
         "description": "تعيين M_LAPTIMER إلى aktiv.",
         "steps": [
@@ -6689,7 +6689,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_CID",
         "description": "تعيين EFF_DYN_SPORT_CID إلى aktiv.",
         "steps": [
@@ -6698,7 +6698,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_UNIT",
         "description": "تعيين EFF_DYN_SPORT_UNIT إلى aktiv.",
         "steps": [
@@ -6725,7 +6725,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين عرض مستوى الصوت على الشاشة",
         "description": "تعيين VOLUME_POPUP_DISPLAY إلى aktiv.",
         "steps": [
@@ -6734,7 +6734,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين إشارات الانعطاف في شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -6743,7 +6743,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MAX",
         "description": "تعيين SPEEDLOCK_X_KMH_MAX إلى werte = FF.",
         "steps": [
@@ -6752,7 +6752,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MIN",
         "description": "تعيين SPEEDLOCK_X_KMH_MIN إلى werte = FF.",
         "steps": [
@@ -6761,7 +6761,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: VIDEO_HANDBRAKE",
         "description": "تعيين VIDEO_HANDBRAKE إلى nicht_aktiv.",
         "steps": [
@@ -6770,7 +6770,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: VIDEO_FRONT_LOCKED",
         "description": "تعيين VIDEO_FRONT_LOCKED إلى nicht_aktiv.",
         "steps": [
@@ -6779,7 +6779,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تفعيل DVD-in-Motion: VIDEO_SPEEDLOCK_CONDITION",
         "description": "تعيين VIDEO_SPEEDLOCK_CONDITION إلى none.",
         "steps": [
@@ -6807,7 +6807,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "استيراد رحلة الملاحة",
         "description": "تعيين NAVI_TRIP_IMPORT إلى aktiv.",
         "steps": [
@@ -6816,7 +6816,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "اقتراح محطات الوقود في نظام الملاحة على طول الطريق",
         "description": "تعيين NAVI_FUELSTOP_PROPOSAL إلى aktiv.",
         "steps": [
@@ -6825,7 +6825,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVID",
         "description": "تعيين ENT_CODEC_XVID إلى aktiv.",
         "steps": [
@@ -6834,7 +6834,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVCD",
         "description": "تعيين ENT_CODEC_XVCD إلى aktiv.",
         "steps": [
@@ -6843,7 +6843,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين ملفات الفيديو من USB: API_USB_VIDEO",
         "description": "تعيين API_USB_VIDEO إلى both.",
         "steps": [
@@ -6852,7 +6852,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة الموقع الحالي لنظام تحديد المواقع (GPS) إلى عناصر قائمة الملاحة",
         "description": "تعيين NAVI_POSITION_MENU إلى aktiv.",
         "steps": [
@@ -6861,7 +6861,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة إشارات الانعطاف إلى شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -6870,7 +6870,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة راديو Weather Band (CIC فقط)",
         "description": "تعيين RADIO_WEATHERBAND إلى aktiv.",
         "steps": [
@@ -6879,7 +6879,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين وظيفة حفظ ملفات الفيديو على محرك الأقراص الثابتة NBT للتشغيل لاحقًا",
         "description": "تعيين ENT_MC_VIDEO_SUPPORT إلى aktiv.",
         "steps": [
@@ -6888,7 +6888,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل قفل سرعة وظيفة Office",
         "description": "تعيين OFFICE_MESSAGES_SPEEDLOCK_CONDITION إلى nicht_aktiv.",
         "steps": [
@@ -6897,7 +6897,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين خطوط النص الكاملة في Office أثناء القيادة",
         "description": "تعيين PIM_DRIVING_TEXT_LENGTH إلى whole text_07.",
         "steps": [
@@ -6906,7 +6906,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل صوت الصفير/الرنين عند قفل السيارة",
         "description": "تعيين ACOUSTICAL_LOCK_CONFIRM إلى nicht_aktiv.",
         "steps": [
@@ -6915,7 +6915,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة",
         "description": "تعيين SPEECH_2_TEXT إلى aktiv.",
         "steps": [
@@ -6924,7 +6924,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين عرض الطابع الزمني لسجل المكالمات",
         "description": "تعيين TIMESTAMP_DISPLAY إلى aktiv.",
         "steps": [
@@ -6933,7 +6933,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إضافة درجة الحرارة و PSI إلى شاشة مراقبة الإطارات",
         "description": "تعيين RDC_SAFETY إلى aktiv.",
         "steps": [
@@ -6942,7 +6942,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل إخلاء المسؤولية القانونية: LEGAL_DISCLAIMER_TIME",
         "description": "تعيين LEGAL_DISCLAIMER_TIME إلى kein_ld.",
         "steps": [
@@ -6951,7 +6951,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_CAM_LEGALDISCLAIMER",
         "description": "تعيين MACRO_CAM_LEGALDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -6960,7 +6960,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_NVICAM_LDISCLAIMER",
         "description": "تعيين MACRO_NVICAM_LDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -6969,7 +6969,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تغيير رسوم بدء تشغيل i-Drive إلى شعار ///M",
         "description": "تعيين STARTUP_EMBLEM إلى variant_01.",
         "steps": [
@@ -6978,7 +6978,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين خادم الويب IPCE على 172.16.222.1",
         "description": "تعيين IPCE_WEBSERVER إلى aktiv.",
         "steps": [
@@ -6987,7 +6987,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_COVERART",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_COVERART إلى aktiv.",
         "steps": [
@@ -6996,7 +6996,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_VIDEO",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_VIDEO إلى aktiv.",
         "steps": [
@@ -7005,7 +7005,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP إلى aktiv.",
         "steps": [
@@ -7014,7 +7014,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: WLAN_STATUS",
         "description": "تعيين WLAN_STATUS إلى aktiv.",
         "steps": [
@@ -7023,7 +7023,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: WLAN_MODUS",
         "description": "تعيين WLAN_MODUS إلى ap.",
         "steps": [
@@ -7032,7 +7032,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين نقطة اتصال WiFi: WLAN_SIGNAL_STRENGTH",
         "description": "تعيين WLAN_SIGNAL_STRENGTH إلى outdoor.",
         "steps": [
@@ -7041,7 +7041,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC/NBT/NBTevo"
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تمكين قائمة المطور (Developer Menu)",
         "description": "تعيين ENTWICKLER_MENUE إلى aktiv 01.",
         "steps": [
