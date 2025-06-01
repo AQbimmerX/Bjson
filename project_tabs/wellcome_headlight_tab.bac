@@ -1,0 +1,786 @@
+import ttkbootstrap as tb
+import tkinter as tk
+import json
+import os
+import webbrowser
+import time # Required for visualizer
+from tkinter import ttk, messagebox, filedialog # Import filedialog
+# For GIF and video playback, you'd typically need Pillow (for GIF)
+# and potentially a library like imageio or OpenCV for video frames.
+# For simplicity in this example, I'll demonstrate a basic GIF support using Pillow.
+from PIL import Image, ImageTk, ImageSequence
+
+class WellcomeHeadlightTab(tb.Frame):
+    def __init__(self, master, *args, **kwargs):
+        super().__init__(master, *args, **kwargs)
+        self.master = master
+        self.current_version = 'initial'
+        self.current_side = 'links' # 'links' or 'rechts'
+        self.visualizer_animation_interval = None
+        self.visualizer_index_left = 0
+        self.visualizer_index_right = 0
+        self.visualizer_start_time_left = 0
+        self.visualizer_start_time_right = 0
+        self.is_visualizer_running = False
+
+        self.gif_frames = []
+        self.gif_frame_index = 0
+        self.gif_animation_job = None
+
+        # Load data from JSON file
+        try:
+            current_dir = os.path.dirname(__file__)
+            json_path = os.path.join(current_dir, 'welcome_light_data.json')
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            self.stored_data = data.get("stored_data", {})
+            self.duration_options = data.get("duration_options", [])
+            self.brightness_options = data.get("brightness_options", [])
+            self.presets = data.get("presets", {}) # Load presets as well
+        except FileNotFoundError:
+            messagebox.showerror("Error", "welcome_light_data.json not found. Please ensure it's in the same directory.")
+            self.stored_data = {}
+            self.duration_options = []
+            self.brightness_options = []
+            self.presets = {}
+        except json.JSONDecodeError:
+            messagebox.showerror("Error", "Error decoding welcome_light_data.json. Check JSON format.")
+            self.stored_data = {}
+            self.duration_options = []
+            self.brightness_options = []
+            self.presets = {}
+
+
+        # This will store the current sequence being built for each side
+        self.current_links_sequence = []
+        self.current_rechts_sequence = []
+
+        self.create_widgets()
+        self.load_version_data(self.current_version)
+        # Initialize with one empty entry for each side when the page loads for the first time
+        # These are now handled by load_version_data which calls update_sequence_editor_display
+        # self.add_sequence_entry_to_current_editor(initial_duration='00', initial_brightness='00')
+        # self.add_sequence_entry_to_current_editor(initial_duration='00', initial_brightness='00')
+        # self.update_sequence_editor_display() # This will re-render for the 'links' side.
+
+    def create_widgets(self):
+        # Language Switch (Placeholder - actual implementation would involve re-rendering UI elements)
+        self.lang_switch_btn = tb.Button(self, text="English", command=self.toggle_language)
+        self.lang_switch_btn.pack(anchor=tk.W, padx=10, pady=5)
+
+        tb.Label(self, text="BMW Welcome Light Editor", font=("Segoe UI", 18, "bold"), bootstyle="primary").pack(pady=10)
+        
+        # Alert Note
+        self.alert_frame = tb.Frame(self, bootstyle="warning")
+        self.alert_frame.pack(pady=10, padx=20, fill=tk.X)
+        tb.Label(self.alert_frame, text="Important Note: Using this software requires coding knowledge and may lead to unexpected results if not used correctly. Use at your own risk.", wraplength=800, bootstyle="warning").pack(padx=10, pady=5)
+
+        # Top utility buttons
+        top_utility_frame = tb.Frame(self)
+        top_utility_frame.pack(pady=(0, 10), padx=20, fill=tk.X)
+        
+        self.more_info_btn = tb.Button(top_utility_frame, text="More Info", command=self.show_more_info, bootstyle="info")
+        self.more_info_btn.pack(side=tk.LEFT, padx=5)
+
+        # Version Selector
+        tb.Label(self, text="Saved Data Versions:", font=("Segoe UI", 14)).pack(pady=10)
+        self.version_selector_frame = tb.Frame(self)
+        self.version_selector_frame.pack(pady=5)
+        
+        versions = list(self.stored_data.keys())
+        self.version_buttons = {}
+        for ver in versions:
+            btn = tb.Button(self.version_selector_frame, text=ver, command=lambda v=ver: self.set_version(v), bootstyle="secondary")
+            btn.pack(side=tk.LEFT, padx=5, pady=5)
+            self.version_buttons[ver] = btn
+        if self.current_version in self.version_buttons:
+            self.version_buttons[self.current_version].config(bootstyle="success")
+
+        # Data Input Section
+        self.data_section = tb.Frame(self)
+        self.data_section.pack(pady=10, fill=tk.X, padx=20)
+
+        # FLM2 Links Staging1
+        self.panel_links1 = tb.LabelFrame(self.data_section, text="FLM2 Links [43] - Staging1_Data")
+        self.panel_links1.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.staging1_links_data = tk.Text(self.panel_links1, height=8, width=50, wrap="word")
+        self.staging1_links_data.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+        tb.Button(self.panel_links1, text="Copy", command=lambda: self.copy_text_from_widget(self.staging1_links_data), bootstyle="secondary").pack(pady=5)
+
+        # FLM2 Rechts Staging1
+        self.panel_rechts1 = tb.LabelFrame(self.data_section, text="FLM2 Rechts [44] - Staging1_Data")
+        self.panel_rechts1.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.staging1_rechts_data = tk.Text(self.panel_rechts1, height=8, width=50, wrap="word")
+        self.staging1_rechts_data.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+        tb.Button(self.panel_rechts1, text="Copy", command=lambda: self.copy_text_from_widget(self.staging1_rechts_data), bootstyle="secondary").pack(pady=5)
+
+        self.data_section_2 = tb.Frame(self)
+        self.data_section_2.pack(pady=10, fill=tk.X, padx=20)
+
+        # FLM2 Links Staging2
+        self.panel_links2 = tb.LabelFrame(self.data_section_2, text="FLM2 Links [43] - Staging2_Data")
+        self.panel_links2.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.staging2_links_data = tk.Text(self.panel_links2, height=8, width=50, wrap="word")
+        self.staging2_links_data.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+        tb.Button(self.panel_links2, text="Copy", command=lambda: self.copy_text_from_widget(self.staging2_links_data), bootstyle="secondary").pack(pady=5)
+
+        # FLM2 Rechts Staging2
+        self.panel_rechts2 = tb.LabelFrame(self.data_section_2, text="FLM2 Rechts [44] - Staging2_Data")
+        self.panel_rechts2.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.staging2_rechts_data = tk.Text(self.panel_rechts2, height=8, width=50, wrap="word")
+        self.staging2_rechts_data.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+        tb.Button(self.panel_rechts2, text="Copy", command=lambda: self.copy_text_from_widget(self.staging2_rechts_data), bootstyle="secondary").pack(pady=5)
+
+
+        tb.Button(self, text="Parse and Display Data", command=self.parse_and_display_data, bootstyle="info").pack(pady=10)
+
+        # Custom Sequence Editor
+        tb.Label(self, text="Create Custom Light Sequence", font=("Segoe UI", 16)).pack(pady=20)
+        self.note_frame = tb.Frame(self, bootstyle="primary")
+        self.note_frame.pack(pady=10, padx=20, fill=tk.X)
+        tb.Label(self.note_frame, text="Note:\n1. Channel: Channel '01' is most commonly used.\n2. Length: Calculated automatically.\n3. Duration: Each unit = 10ms.\n4. Brightness: '00' = Off. '64' to 'C7' = 100%. 'C8' or higher = instant 100% brightness.", wraplength=800).pack(padx=10, pady=5)
+
+        self.side_selector_frame = tb.Frame(self)
+        self.side_selector_frame.pack(pady=10)
+        tb.Label(self.side_selector_frame, text="Side to Edit:").pack(side=tk.LEFT, padx=10)
+        self.select_links_btn = tb.Button(self.side_selector_frame, text="FLM2 Links (Left)", command=lambda: self.set_side('links'), bootstyle="success")
+        self.select_links_btn.pack(side=tk.LEFT, padx=5)
+        self.select_rechts_btn = tb.Button(self.side_selector_frame, text="FLM2 Rechts (Right)", command=lambda: self.set_side('rechts'), bootstyle="secondary")
+        self.select_rechts_btn.pack(side=tk.LEFT, padx=5)
+
+        self.light_sequence_editor_frame = tb.LabelFrame(self, text="Light Sequence Control")
+        self.light_sequence_editor_frame.pack(pady=10, padx=20, fill=tk.X)
+
+        self.predefined_actions_frame = tb.Frame(self.light_sequence_editor_frame)
+        self.predefined_actions_frame.pack(pady=10)
+        
+        # Create preset buttons dynamically from self.presets
+        for preset_name in self.presets.keys():
+            display_name = preset_name.replace('-', ' ').title() # Convert 'fade-in' to 'Fade In'
+            tb.Button(self.predefined_actions_frame, text=display_name, command=lambda p=preset_name: self.apply_preset(p), bootstyle="warning").pack(side=tk.LEFT, padx=3)
+        
+        tb.Button(self.predefined_actions_frame, text="Clear All", command=self.clear_all_entries, bootstyle="danger").pack(side=tk.LEFT, padx=3)
+
+        self.current_sequence_container = tb.Frame(self.light_sequence_editor_frame)
+        self.current_sequence_container.pack(pady=10, fill=tk.X)
+
+        self.add_entry_btn = tb.Button(self.light_sequence_editor_frame, text="Add Entry", command=lambda: self.add_sequence_entry_to_current_editor(), bootstyle="success")
+        self.add_entry_btn.pack(pady=5, fill=tk.X)
+
+        tb.Button(self, text="Generate Custom HEX", command=self.generate_custom_sequence, bootstyle="primary").pack(pady=10)
+        
+        # Visualizer Section
+        self.visualizer_section = tb.LabelFrame(self, text="Light Sequence Preview")
+        self.visualizer_section.pack(pady=20, padx=20, fill=tk.X)
+        tb.Label(self.visualizer_section, text="Click 'Run Preview' to see the custom headlight sequence.").pack(pady=10)
+
+        self.car_lights_container = tb.Frame(self.visualizer_section, bootstyle="dark")
+        self.car_lights_container.pack(pady=10, padx=20, fill=tk.X, expand=True)
+
+        # Use a fixed dark background color for the canvas
+        self.halo_left = tk.Canvas(self.car_lights_container, width=80, height=80, highlightthickness=0, bg="#222222")
+        self.halo_left.pack(side=tk.LEFT, padx=50, pady=20)
+        self.halo_left_circle = self.halo_left.create_oval(5, 5, 75, 75, fill="#555555", outline="#666666", width=2)
+
+        self.halo_right = tk.Canvas(self.car_lights_container, width=80, height=80, highlightthickness=0, bg="#222222")
+        self.halo_right.pack(side=tk.RIGHT, padx=50, pady=20)
+        self.halo_right_circle = self.halo_right.create_oval(5, 5, 75, 75, fill="#555555", outline="#666666", width=2)
+
+        self.visualizer_actions_frame = tb.Frame(self.visualizer_section)
+        self.visualizer_actions_frame.pack(pady=10)
+        tb.Button(self.visualizer_actions_frame, text="Run Preview", command=self.run_visualizer, bootstyle="info").pack(side=tk.LEFT, padx=5)
+        tb.Button(self.visualizer_actions_frame, text="Stop Preview", command=self.stop_visualizer, bootstyle="danger").pack(side=tk.LEFT, padx=5)
+
+        # GIF/Video Display
+        self.media_frame = tb.LabelFrame(self, text="Media Display (GIF/Video)")
+        self.media_frame.pack(pady=20, padx=20, fill=tk.X)
+
+        self.media_canvas = tk.Canvas(self.media_frame, width=320, height=240, bg="black")
+        self.media_canvas.pack(pady=10)
+
+        tb.Button(self.media_frame, text="Load GIF", command=self.load_gif, bootstyle="secondary").pack(side=tk.LEFT, padx=5)
+        tb.Button(self.media_frame, text="Stop GIF", command=self.stop_gif_animation, bootstyle="secondary").pack(side=tk.LEFT, padx=5)
+        # Note: Video playback in Tkinter is complex and often requires external libraries like OpenCV
+        # and would be a significant addition. For this example, only GIF playback is implemented.
+
+        # Output Section for parsed data (moved to bottom)
+        self.output_section = tb.LabelFrame(self, text="Parsed Data Output")
+        self.output_section.pack(pady=20, padx=20, fill=tk.X, side=tk.BOTTOM)
+        self.output_links_label = tb.Label(self.output_section, text="FLM2 Links [43] Staging1_Data:", font=("Segoe UI", 10, "bold"), foreground="#fff")
+        self.output_links_label.pack(pady=(10,0))
+        self.output_links = tb.Label(self.output_section, text="", wraplength=1000, justify=tk.LEFT, bootstyle="secondary", foreground="#fff")
+        self.output_links.pack(fill=tk.X, padx=10, pady=5)
+        tb.Button(self.output_section, text="Copy Parsed Links", command=lambda: self.copy_to_clipboard(self.output_links), bootstyle="secondary").pack(pady=(0,10), anchor=tk.W, padx=10)
+
+
+        self.output_rechts_label = tb.Label(self.output_section, text="FLM2 Rechts [44] Staging1_Data:", font=("Segoe UI", 10, "bold"), foreground="#fff")
+        self.output_rechts_label.pack(pady=(10,0))
+        self.output_rechts = tb.Label(self.output_section, text="", wraplength=1000, justify=tk.LEFT, bootstyle="secondary", foreground="#fff")
+        self.output_rechts.pack(fill=tk.X, padx=10, pady=5)
+        tb.Button(self.output_section, text="Copy Parsed Rechts", command=lambda: self.copy_to_clipboard(self.output_rechts), bootstyle="secondary").pack(pady=(0,10), anchor=tk.W, padx=10)
+
+
+    def toggle_language(self):
+        # This is a placeholder. For a full language switch, you'd reload text for all widgets.
+        # For simplicity, we'll just switch the button text.
+        if self.lang_switch_btn["text"] == "English":
+            self.lang_switch_btn.config(text="العربية")
+            # You would call a function here to update all labels, buttons, etc. to Arabic
+            messagebox.showinfo("Language", "Language switch not fully implemented. This is a placeholder.")
+        else:
+            self.lang_switch_btn.config(text="English")
+            # You would call a function here to update all labels, buttons, etc. to English
+            messagebox.showinfo("Language", "Language switch not fully implemented. This is a placeholder.")
+
+    def set_version(self, version):
+        for btn in self.version_buttons.values():
+            btn.config(bootstyle="secondary")
+        if version in self.version_buttons:
+            self.version_buttons[version].config(bootstyle="success")
+        self.current_version = version
+        self.load_version_data(self.current_version)
+
+    def set_side(self, side):
+        self.save_current_editor_state() # Save current state before switching
+        
+        self.select_links_btn.config(bootstyle="secondary")
+        self.select_rechts_btn.config(bootstyle="secondary")
+        if side == 'links':
+            self.select_links_btn.config(bootstyle="success")
+        else:
+            self.select_rechts_btn.config(bootstyle="success")
+        self.current_side = side
+        self.update_sequence_editor_display()
+
+    def load_version_data(self, version):
+        data = self.stored_data.get(version)
+        if data:
+            # Update Text widgets with raw data (formatted)
+            self.staging1_links_data.delete(1.0, tk.END)
+            self.staging1_links_data.insert(tk.END, self.format_hex_data(data.get("links1", "")))
+            self.staging2_links_data.delete(1.0, tk.END)
+            self.staging2_links_data.insert(tk.END, self.format_hex_data(data.get("links2", "")))
+            self.staging1_rechts_data.delete(1.0, tk.END)
+            self.staging1_rechts_data.insert(tk.END, self.format_hex_data(data.get("rechts1", "")))
+            self.staging2_rechts_data.delete(1.0, tk.END)
+            self.staging2_rechts_data.insert(tk.END, self.format_hex_data(data.get("rechts2", "")))
+
+            # Parse loaded hex data into the in-memory sequence for the editor
+            self.current_links_sequence = self.parse_hex_for_editor(data.get("links1", ""))
+            self.current_rechts_sequence = self.parse_hex_for_editor(data.get("rechts1", ""))
+            
+            # Update the UI editor display based on the loaded in-memory sequences
+            self.update_sequence_editor_display()
+
+        else:
+            messagebox.showerror("Error", f"No data found for version: {version}")
+            # Clear text widgets and in-memory sequences if data not found
+            self.staging1_links_data.delete(1.0, tk.END)
+            self.staging2_links_data.delete(1.0, tk.END)
+            self.staging1_rechts_data.delete(1.0, tk.END)
+            self.staging2_rechts_data.delete(1.0, tk.END)
+            self.current_links_sequence = []
+            self.current_rechts_sequence = []
+            self.update_sequence_editor_display() # Clear editor and add one default empty entry
+
+    def format_hex_data(self, hex_string):
+        if not hex_string:
+            return ""
+        # Ensure spaces are removed before splitting, then add back formatted
+        return ", ".join([byte.strip().upper() for byte in hex_string.replace(" ", "").split(',') if byte.strip()])
+
+    def hex_to_dec(self, hex_val):
+        try:
+            return int(hex_val, 16)
+        except ValueError:
+            return 0
+
+    def dec_to_hex(self, dec_val):
+        hex_str = hex(dec_val)[2:].upper()
+        return hex_str.zfill(2) # Pad with leading zero if needed
+
+    def parse_and_display_data(self):
+        links1_raw = self.staging1_links_data.get(1.0, tk.END).replace(" ", "").strip()
+        rechts1_raw = self.staging1_rechts_data.get(1.0, tk.END).replace(" ", "").strip()
+
+        links1_hex_array = [h for h in links1_raw.split(',') if h]
+        rechts1_hex_array = [h for h in rechts1_raw.split(',') if h]
+
+        self.output_links.config(text="")
+        self.parse_hex_data_to_readout(links1_hex_array, self.output_links)
+
+        self.output_rechts.config(text="")
+        self.parse_hex_data_to_readout(rechts1_hex_array, self.output_rechts)
+        # self.output_section.pack(pady=10, padx=20, fill=tk.X) # It's already packed due to side=tk.BOTTOM in init
+
+    def parse_hex_data_to_readout(self, hex_array, output_label):
+        if len(hex_array) < 3:
+            output_label.config(text="Invalid data format. Must contain at least channel, 00, and length.", foreground="red")
+            return
+
+        channel = hex_array[0]
+        try:
+            # Assuming length is the 3rd byte (index 2) after channel and "00"
+            length_hex_str = hex_array[2] 
+            sequence_length = self.hex_to_dec(length_hex_str) * 2 # Each step is 2 bytes (duration, brightness)
+        except IndexError:
+            output_label.config(text="Error parsing length byte (expected at index 2).", foreground="red")
+            return
+        except ValueError:
+            output_label.config(text="Error converting length hex to decimal.", foreground="red")
+            return
+
+        output_text = f"Channel: {channel}\n"
+        output_text += f"Declared Length: {length_hex_str} (represents {sequence_length} bytes)\n"
+        output_text += "Light Sequence:\n"
+
+        start_index_for_sequence = 3 
+        
+        if len(hex_array) - start_index_for_sequence < sequence_length:
+            output_text += f"Warning: Declared sequence length ({sequence_length} bytes) is greater than actual available data ({len(hex_array) - start_index_for_sequence} bytes). Missing data.\n"
+        elif len(hex_array) - start_index_for_sequence > sequence_length:
+            output_text += f"Warning: Actual available data ({len(hex_array) - start_index_for_sequence} bytes) is greater than declared sequence length ({sequence_length} bytes). Excess data may be ignored.\n"
+
+        actual_sequence_end = min(len(hex_array), start_index_for_sequence + sequence_length)
+
+        for i in range(start_index_for_sequence, actual_sequence_end, 2):
+            duration_hex = hex_array[i]
+            brightness_hex = hex_array[i + 1]
+
+            if not duration_hex or not brightness_hex:
+                output_text += f"Error: Incomplete entry at byte {i+1} / {i+2}.\n"
+                break
+
+            duration_ms = self.hex_to_dec(duration_hex) * 10
+            brightness_dec = self.hex_to_dec(brightness_hex)
+            brightness_desc = f"{brightness_dec}%" 
+
+            if brightness_dec == 0:
+                brightness_desc = "Instant Off (0%)"
+            elif 0x64 <= brightness_dec <= 0xC7:
+                brightness_desc = "100%" 
+            elif brightness_dec >= 0xC8: 
+                brightness_desc = f"Instant Max Brightness (HEX: {brightness_hex})"
+            else:
+                max_brightness_dec = 0xC7
+                if max_brightness_dec != 0:
+                    brightness_desc = f"{round((brightness_dec / max_brightness_dec) * 100)}% (Approximate)"
+                else:
+                    brightness_desc = "N/A"
+
+            effect = ""
+            if duration_ms < 100 and brightness_dec != 0:
+                effect = " (Near Instant On)"
+            elif duration_ms >= 100 and brightness_dec != 0:
+                effect = f" (Gradual Fade over {duration_ms}ms)"
+            elif duration_ms == 0 and brightness_dec == 0:
+                effect = " (Instant Off)"
+
+            output_text += f"Byte {i+1}/{i+2}: Duration: {duration_hex} ( {duration_ms}ms ), Brightness: {brightness_hex} ( {brightness_desc} ) {effect}\n"
+        output_label.config(text=output_text)
+
+    def parse_hex_for_editor(self, hex_string):
+        """
+        Parses a raw hex string (e.g., "01, 00, 0F, 19, 00, 28, ...")
+        into a list of dictionaries [{'duration': 'HH', 'brightness': 'HH'}]
+        suitable for populating the sequence editor.
+        """
+        hex_array = [h.strip() for h in hex_string.replace(" ", "").split(',') if h.strip()]
+        sequence = []
+        
+        # Expecting format: CHANNEL, 00, LENGTH, DURATION1, BRIGHTNESS1, DURATION2, BRIGHTNESS2, ...
+        # So actual sequence data starts from index 3.
+        start_index_for_sequence = 3 
+
+        if len(hex_array) < start_index_for_sequence:
+            return [] # Not enough data for header
+
+        for i in range(start_index_for_sequence, len(hex_array), 2):
+            if i + 1 < len(hex_array): # Ensure a full pair exists
+                duration_hex = hex_array[i]
+                brightness_hex = hex_array[i+1]
+                # Validate if they are indeed hex values and not empty
+                if all(c in '0123456789ABCDEFabcdef' for c in duration_hex) and \
+                   all(c in '0123456789ABCDEFabcdef' for c in brightness_hex) and \
+                   len(duration_hex) == 2 and len(brightness_hex) == 2: # Assuming 2-char hex bytes
+                    sequence.append({'duration': duration_hex.upper(), 'brightness': brightness_hex.upper()})
+                else:
+                    print(f"Warning: Invalid hex format found at index {i}, skipping. Duration: '{duration_hex}', Brightness: '{brightness_hex}'")
+            else:
+                # Handle incomplete pair at the end if any
+                if hex_array[i]: # If duration exists but brightness doesn't
+                    # Append it with a default brightness, or just break if strict
+                    print(f"Warning: Incomplete hex pair found at index {i}. Appending duration '{hex_array[i]}' with default brightness '00'.")
+                    sequence.append({'duration': hex_array[i].upper(), 'brightness': '00'})
+                break # Stop processing if odd number of bytes remain
+        return sequence
+
+    def save_current_editor_state(self):
+        temp_sequence = []
+        for widget in self.current_sequence_container.winfo_children():
+            # Check if it's a sequence entry frame and retrieve its values
+            if isinstance(widget, tb.Frame) and hasattr(widget, '_is_sequence_entry'):
+                duration_val = widget.duration_var.get()
+                brightness_val = widget.brightness_var.get()
+                temp_sequence.append({"duration": duration_val, "brightness": brightness_val})
+
+        if self.current_side == 'links':
+            self.current_links_sequence = temp_sequence
+        else:
+            self.current_rechts_sequence = temp_sequence
+
+    def update_sequence_editor_display(self):
+        # Clear existing entries in the UI
+        for widget in self.current_sequence_container.winfo_children():
+            widget.destroy()
+
+        # Determine which sequence data to load based on the current side
+        sequence_to_load = self.current_links_sequence if self.current_side == 'links' else self.current_rechts_sequence
+
+        # If the sequence is empty, add one default empty entry to the UI
+        if not sequence_to_load:
+            self.add_sequence_entry_to_current_editor()
+        else:
+            # Otherwise, populate the UI with existing entries from the sequence
+            for entry in sequence_to_load:
+                self.add_sequence_entry_to_current_editor(entry['duration'], entry['brightness'])
+
+    def add_sequence_entry_to_current_editor(self, initial_duration='00', initial_brightness='00'):
+        # Create a new frame for each sequence entry
+        new_entry_frame = tb.Frame(self.current_sequence_container)
+        new_entry_frame.pack(fill=tk.X, pady=2)
+        new_entry_frame._is_sequence_entry = True # Custom attribute to identify sequence entry frames
+
+        # Duration dropdown
+        tb.Label(new_entry_frame, text="Duration:").pack(side=tk.LEFT, padx=2)
+        duration_var = tk.StringVar(value=initial_duration)
+        duration_select = tb.OptionMenu(new_entry_frame, duration_var, initial_duration,
+                                         *[opt['value'] for opt in self.duration_options])
+        duration_select.config(width=10)
+        duration_select.pack(side=tk.LEFT, padx=2)
+        new_entry_frame.duration_var = duration_var # Attach StringVar to frame for later retrieval
+
+        # Brightness dropdown
+        tb.Label(new_entry_frame, text="Brightness:").pack(side=tk.LEFT, padx=2)
+        brightness_var = tk.StringVar(value=initial_brightness)
+        brightness_select = tb.OptionMenu(new_entry_frame, brightness_var, initial_brightness,
+                                          *[opt['value'] for opt in self.brightness_options])
+        brightness_select.config(width=10)
+        brightness_select.pack(side=tk.LEFT, padx=2)
+        new_entry_frame.brightness_var = brightness_var # Attach StringVar to frame
+
+        # Remove button for the entry
+        remove_button = tb.Button(new_entry_frame, text="Remove", command=lambda: self.remove_sequence_entry(new_entry_frame), bootstyle="danger")
+        remove_button.pack(side=tk.LEFT, padx=5)
+
+    def remove_sequence_entry(self, entry_frame):
+        # Ensure at least one entry remains in the editor
+        if len(self.current_sequence_container.winfo_children()) > 1:
+            entry_frame.destroy()
+            self.save_current_editor_state() # Save state after removal
+        else:
+            messagebox.showwarning("Warning", "Cannot remove all entries. At least one entry must remain.")
+
+    def clear_all_entries(self):
+        # Destroy all entry widgets in the UI
+        for widget in self.current_sequence_container.winfo_children():
+            widget.destroy()
+        
+        # Clear the corresponding sequence data in memory
+        if self.current_side == 'links':
+            self.current_links_sequence = []
+        else:
+            self.current_rechts_sequence = []
+        
+        # Add one fresh, empty entry to start building a new sequence
+        self.add_sequence_entry_to_current_editor()
+
+    def apply_preset(self, preset_type):
+        self.clear_all_entries() # Clear current entries first
+
+        target_sequence_list = self.current_links_sequence if self.current_side == 'links' else self.current_rechts_sequence
+
+        preset_steps = self.presets.get(preset_type)
+        if preset_steps:
+            # Add each step from the preset to the target sequence list
+            for step in preset_steps:
+                target_sequence_list.append(step)
+            self.update_sequence_editor_display() # Update UI to reflect the preset
+        else:
+            messagebox.showerror("Error", f"Preset '{preset_type}' not found.")
+
+    def generate_custom_sequence(self):
+        channel = "01" # Default channel
+
+        self.save_current_editor_state() # Ensure the latest changes from UI are saved to memory
+        
+        links_sequence_hex_pairs = []
+        for entry in self.current_links_sequence:
+            links_sequence_hex_pairs.extend([entry['duration'], entry['brightness']])
+
+        rechts_sequence_hex_pairs = []
+        for entry in self.current_rechts_sequence:
+            rechts_sequence_hex_pairs.extend([entry['duration'], entry['brightness']])
+
+        # Calculate length based on number of pairs (duration + brightness)
+        links_length_dec = len(links_sequence_hex_pairs) // 2
+        rechts_length_dec = len(rechts_sequence_hex_pairs) // 2
+        
+        # Check if length exceeds FF (255 decimal)
+        if links_length_dec > 255 or rechts_length_dec > 255:
+            messagebox.showwarning("Length Warning", "Sequence length exceeds 255 pairs. This may not be supported by the vehicle's module.")
+
+        links_length = self.dec_to_hex(links_length_dec)
+        rechts_length = self.dec_to_hex(rechts_length_dec)
+
+        # Format the final HEX string. The format is typically:
+        # CHANNEL, 00, LENGTH, DURATION1, BRIGHTNESS1, DURATION2, BRIGHTNESS2, ...
+        final_links_hex = f"{channel}, 00, {links_length}, {', '.join(links_sequence_hex_pairs)}"
+        final_rechts_hex = f"{channel}, 00, {rechts_length}, {', '.join(rechts_sequence_hex_pairs)}"
+
+        # Update the staging textareas with the newly generated HEX
+        self.staging1_links_data.delete(1.0, tk.END)
+        self.staging1_links_data.insert(tk.END, self.format_hex_data(final_links_hex))
+        self.staging1_rechts_data.delete(1.0, tk.END)
+        self.staging1_rechts_data.insert(tk.END, self.format_hex_data(final_rechts_hex))
+
+        messagebox.showinfo("HEX Generated", "Custom HEX sequences have been generated and populated in the input fields.")
+
+    def copy_text_from_widget(self, text_widget):
+        """Copies the content of a given text widget to the clipboard."""
+        try:
+            content = text_widget.get(1.0, tk.END).strip()
+            if content:
+                self.clipboard_clear()
+                self.clipboard_append(content)
+                messagebox.showinfo("Copied", "Content copied to clipboard!")
+            else:
+                messagebox.showinfo("Empty", "No content to copy.")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to copy content: {e}")
+
+    def hex_to_rgb(self, hex_val_str, current_brightness_dec, target_brightness_dec, progress):
+        """Converts a hex brightness value to an RGB color for visualization, with interpolation."""
+        try:
+            target_dec = int(hex_val_str, 16)
+        except ValueError:
+            target_dec = 0
+
+        max_normal_brightness_dec = 0xC7 # This is 199 in decimal, representing 100% in a scaled way.
+
+        # Interpolate brightness during the transition
+        interpolated_dec = current_brightness_dec + (target_brightness_dec - current_brightness_dec) * progress
+
+        final_intensity = 0.0
+        if interpolated_dec == 0x00: # Off
+            final_intensity = 0.0
+        elif interpolated_dec >= 0xC8: # Instant Max Brightness (C8-FF)
+            final_intensity = 1.0 # Full brightness instantly
+        else: # Scaled brightness (0x01 to 0xC7)
+            if max_normal_brightness_dec > 0:
+                final_intensity = (interpolated_dec / max_normal_brightness_dec)
+            else:
+                final_intensity = 0.0 # Should not happen with current data
+
+        # Clamp intensity between 0 and 1
+        final_intensity = max(0.0, min(1.0, final_intensity))
+
+        # Define a yellowish-white color for the light
+        r = int(255 * final_intensity)
+        g = int(255 * final_intensity)
+        b = int(200 * final_intensity) # Lower blue component for yellowish tint
+
+        return f"#{r:02x}{g:02x}{b:02x}"
+
+    def set_light_state_visual(self, canvas_item_id, brightness_hex, current_brightness_dec, target_brightness_dec, progress):
+        """Updates the visual state of a single headlight halo on the canvas."""
+        # Use the interpolated color
+        color = self.hex_to_rgb(brightness_hex, current_brightness_dec, target_brightness_dec, progress)
+        
+        # Determine which canvas to update based on item_id (halo_left_circle or halo_right_circle)
+        if canvas_item_id == self.halo_left_circle:
+            self.halo_left.itemconfig(canvas_item_id, fill=color)
+        elif canvas_item_id == self.halo_right_circle:
+            self.halo_right.itemconfig(canvas_item_id, fill=color)
+
+    def run_visualizer(self):
+        self.stop_visualizer() # Stop any ongoing animation
+
+        self.generate_custom_sequence() # Ensure the latest custom HEX is available
+
+        # Get the generated HEX strings from the Text widgets
+        links_hex_str = self.staging1_links_data.get(1.0, tk.END).replace(" ", "").strip()
+        rechts_hex_str = self.staging1_rechts_data.get(1.0, tk.END).replace(" ", "").strip()
+
+        # Convert HEX strings to arrays of bytes (strings)
+        links_hex_array = [h for h in links_hex_str.split(',') if h]
+        rechts_hex_array = [h for h in rechts_hex_str.split(',') if h]
+
+        # Basic validation of HEX array length
+        if len(links_hex_array) < 3 or len(rechts_hex_array) < 3:
+            messagebox.showwarning("Warning", "Please generate a valid HEX sequence first for both sides (minimum channel, 00, length).")
+            return
+
+        # Parse the HEX arrays into a sequence of {'duration': ms, 'brightness': hex_str} for visualization
+        links_sequence_vis = self.parse_hex_for_visualizer_data(links_hex_array)
+        rechts_sequence_vis = self.parse_hex_for_visualizer_data(rechts_hex_array)
+
+        if not links_sequence_vis and not rechts_sequence_vis:
+            messagebox.showinfo("Info", "No valid light sequences to visualize.")
+            return
+
+        # Initialize visualizer state variables
+        self.visualizer_index_left = 0
+        self.visualizer_index_right = 0
+        self.visualizer_start_time_left = time.time() * 1000 # Time in milliseconds
+        self.visualizer_start_time_right = time.time() * 1000
+        self.is_visualizer_running = True
+
+        self.current_brightness_left_dec = 0 # Stores current brightness as decimal (0-255)
+        self.current_brightness_right_dec = 0 # This helps in smooth transitions
+
+        # Define the animation function that will be called repeatedly
+        def animate():
+            if not self.is_visualizer_running:
+                return
+
+            current_time = time.time() * 1000 # Get current time in milliseconds
+
+            # --- Animate Left Light ---
+            if links_sequence_vis:
+                links_step = links_sequence_vis[self.visualizer_index_left]
+                elapsed_left = current_time - self.visualizer_start_time_left
+                duration_ms = links_step['duration']
+                target_brightness_dec_left = self.hex_to_dec(links_step['brightness'])
+
+                # Calculate progress for smooth transition (0.0 to 1.0)
+                progress = min(1.0, elapsed_left / duration_ms) if duration_ms > 0 else 1.0
+                
+                # Update the visual state of the left halo
+                self.set_light_state_visual(self.halo_left_circle, links_step['brightness'], self.current_brightness_left_dec, target_brightness_dec_left, progress)
+
+                # If the current step's duration is over, move to the next step
+                if elapsed_left >= duration_ms:
+                    self.current_brightness_left_dec = target_brightness_dec_left # Update current brightness for next step
+                    self.visualizer_index_left = (self.visualizer_index_left + 1) % len(links_sequence_vis) # Loop back if at end
+                    self.visualizer_start_time_left = current_time # Reset start time for the next step
+            else:
+                # If no sequence, ensure light is off
+                self.set_light_state_visual(self.halo_left_circle, '00', self.current_brightness_left_dec, 0, 1)
+                self.current_brightness_left_dec = 0
+
+            # --- Animate Right Light ---
+            if rechts_sequence_vis:
+                rechts_step = rechts_sequence_vis[self.visualizer_index_right]
+                elapsed_right = current_time - self.visualizer_start_time_right
+                duration_ms = rechts_step['duration']
+                target_brightness_dec_right = self.hex_to_dec(rechts_step['brightness'])
+
+                progress = min(1.0, elapsed_right / duration_ms) if duration_ms > 0 else 1.0
+
+                self.set_light_state_visual(self.halo_right_circle, rechts_step['brightness'], self.current_brightness_right_dec, target_brightness_dec_right, progress)
+
+                if elapsed_right >= duration_ms:
+                    self.current_brightness_right_dec = target_brightness_dec_right
+                    self.visualizer_index_right = (self.visualizer_index_right + 1) % len(rechts_sequence_vis)
+                    self.visualizer_start_time_right = current_time
+            else:
+                self.set_light_state_visual(self.halo_right_circle, '00', self.current_brightness_right_dec, 0, 1)
+                self.current_brightness_right_dec = 0
+
+            # Schedule the next call to animate after 50ms (approx 20 FPS)
+            self.visualizer_animation_interval = self.after(50, animate)
+
+        animate() # Start the animation loop
+
+    def parse_hex_for_visualizer_data(self, hex_array):
+        """Parses a raw HEX byte array into a list of animation steps for the visualizer."""
+        sequence = []
+        if len(hex_array) < 3: # Need at least Channel, 00, Length
+            return []
+
+        # Assuming length is the 3rd byte (index 2)
+        start_index_for_sequence = 3 
+        
+        for i in range(start_index_for_sequence, len(hex_array), 2):
+            if i + 1 < len(hex_array): # Ensure a full pair exists
+                duration_hex = hex_array[i]
+                brightness_hex = hex_array[i + 1]
+                if duration_hex and brightness_hex:
+                    sequence.append({
+                        'duration': self.hex_to_dec(duration_hex) * 10, # Convert to milliseconds
+                        'brightness': brightness_hex # Keep as HEX string for set_light_state_visual
+                    })
+            else: # Incomplete pair at the end
+                break # Stop processing if odd number of bytes remain
+
+        return sequence
+
+    def stop_visualizer(self):
+        """Stops the visualizer animation and turns off the lights."""
+        self.is_visualizer_running = False
+        if self.visualizer_animation_interval:
+            self.after_cancel(self.visualizer_animation_interval)
+            self.visualizer_animation_interval = None
+        # Ensure lights are turned off
+        self.set_light_state_visual(self.halo_left_circle, '00', 0, 0, 1)
+        self.set_light_state_visual(self.halo_right_circle, '00', 0, 0, 1)
+
+    # --- GIF Playback Functions ---
+    def load_gif(self):
+        file_path = filedialog.askopenfilename(filetypes=[("GIF files", "*.gif")])
+        if file_path:
+            try:
+                self.stop_gif_animation() # Stop any previous GIF animation
+
+                gif_image = Image.open(file_path)
+                
+                self.gif_frames = []
+                for frame in ImageSequence.Iterator(gif_image):
+                    # Resize frames to fit canvas
+                    frame = frame.resize((320, 240), Image.Resampling.LANCZOS)
+                    self.gif_frames.append(ImageTk.PhotoImage(frame))
+
+                self.gif_frame_index = 0
+                if self.gif_frames:
+                    self.animate_gif()
+            except Exception as e:
+                messagebox.showerror("GIF Error", f"Could not load GIF: {e}")
+
+    def animate_gif(self):
+        if self.gif_frames:
+            self.media_canvas.delete("all")
+            self.media_canvas.create_image(0, 0, anchor=tk.NW, image=self.gif_frames[self.gif_frame_index])
+            self.gif_frame_index = (self.gif_frame_index + 1) % len(self.gif_frames)
+            
+            # Get delay from GIF metadata if available, otherwise default
+            delay = 100 # Default to 100ms
+            # Check if current frame has duration info (some GIFs have varying frame delays)
+            if hasattr(self.gif_frames[self.gif_frame_index].__image__, 'info') and 'duration' in self.gif_frames[self.gif_frame_index].__image__.info:
+                delay = self.gif_frames[self.gif_frame_index].__image__.info['duration']
+
+            self.gif_animation_job = self.after(delay, self.animate_gif)
+        else:
+            self.stop_gif_animation()
+
+    def stop_gif_animation(self):
+        if self.gif_animation_job:
+            self.after_cancel(self.gif_animation_job)
+            self.gif_animation_job = None
+        self.gif_frames = []
+        self.gif_frame_index = 0
+        self.media_canvas.delete("all") # Clear canvas
+
+    def show_more_info(self):
+        messagebox.showinfo("More Info", "This section displays the parsed output of your HEX data for both FLM2 Links and Rechts. Use the Copy buttons to copy the HEX output.")
+
+# Main execution block
+if __name__ == "__main__":
+    root = tb.Window(themename="superhero")
+    root.title("BMW Welcome Light Editor")
+    root.geometry("1400x900")
+    
+    welcome_light_tab = WellcomeHeadlightTab(root)
+    welcome_light_tab.pack(fill="both", expand=True)
+    
+    root.mainloop()
