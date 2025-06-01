@@ -5423,6 +5423,15 @@
     },
     {
         "ecu": "HU_CIC/NBT/NBTevo"
+        "title": "تمكين التحكم الصوتي Siri",
+        "description": "تعيين CE_DEVICE_SPEECH_RECOGNITION إلى aktiv.",
+        "steps": [
+            "3003 CE_DEVICE_SPEECH_RECOGNITION: set to: aktiv"
+        ],
+        "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
+    },
+    {
+        "ecu": "HU_CIC/NBT/NBTevo"
         "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
         "description": "تعيين DOOR_LOCK_AFTER_DRIVING_AWAY إلى nicht_aktiv.",
         "steps": [
