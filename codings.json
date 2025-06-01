@@ -52,131 +52,131 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT/CIC",
+    "ecu": "HU_CIC/NBT/NBTevo/CIC",
     "description": " F10/F11 – Enable Developer Menu",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Enable WiFi Hot-Spot",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
-      "4. HU_NBT -> 3003 -> WLAN_STATUS -> - set to aktiv",
-      "5. HU_NBT -> 3003 -> WLAN_MODUS -> - set to ap",
-      "6. HU_NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_STATUS -> - set to aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_MODUS -> - set to ap",
+      "6. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Enable IPCE Web Server @ 172.16.222.1",
     "steps": [
-      "1. HU_NBT -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Change i-Drive Animation to ///M Logo",
     "steps": [
-      "1. HU_NBT -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Enable Time-Stamp Display for Call Log",
     "steps": [
-      "1. HU_NBT -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Enable Speech Input for E-Mail or SMS",
     "steps": [
-      "1. HU_NBT -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Disable Audible Chirp/Beep When Locking Car",
     "steps": [
-      "1. HU_NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT/CIC",
+    "ecu": "HU_CIC/NBT/NBTevo/CIC",
     "description": " F01/F10/F11 – Add Weather Band Radio (CIC Only)",
     "steps": [
-      "1. HU_CIC -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Navi Trip-Import",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Enable Sports Displays",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
-      "2. HU_CIC/NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo/NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
       "3. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> DREHMOMENT -> - set to lb_ft (displays ft lb)",
       "4. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> LEISTUNG -> - set to ps (displays hp)"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Enable Active Sound Design Configuration Menu",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> ASD_CONFIGURATION -> - set to aktiv",
-      "2. HU_CIC/NBT -> 3000 -> ASD_SOUND_4 -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> ASD_CONFIGURATION -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo/NBT -> 3000 -> ASD_SOUND_4 -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Disable Active Sound Design (///M5 Only)",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> ASD_SOUND_OFF -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> ASD_SOUND_OFF -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Enable ///M LapTimer",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> M_LAPTIMER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> M_LAPTIMER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Disable Auto-Locking of Doors once begin driving",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Enable Siri Voice Control",
     "steps": [
-      "1. HU_CIC/NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
     ]
   },
   {
@@ -430,58 +430,58 @@
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Add GPS current position in Navi menu",
     "steps": [
-      "1. HU_CIC -> 3000 HMI -> NAVI_POSITION_MENU -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 HMI -> NAVI_POSITION_MENU -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Add Pressure and Temperature Readings to the TPMS Screen",
     "steps": [
-      "1. HU_CIC/NBT -> 3001 -> RDC_SAFETY -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3001 -> RDC_SAFETY -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – Remove Legal disclaimers (Navi, PDC & Side View)",
     "steps": [
-      "1. Disables iDrive legal disclaimer during iDrive startup - HU_CIC/NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> ld_mit_timeout set to kein_ld",
-      "2. Disables camera legal disclaimer shown on PDC and Sideview - HU_CIC/NBT -> 3001 -> MACRO_NIVICAM_LDISCLAIMER -> ld_mit_timeout set to kein_ld",
-      "3. Disables camera legal disclaimer shown on Night Vision - HU_CIC -> 3001 -> VIDEO_NUR_MIT_HANDBREMSE -> ld_mit_timeout set to kein_ld",
-      "4. Disables camera legal disclaimer shown on Night Vision - HU_NBT -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - set to kein_ld"
+      "1. Disables iDrive legal disclaimer during iDrive startup - HU_CIC/NBT/NBTevo/NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> ld_mit_timeout set to kein_ld",
+      "2. Disables camera legal disclaimer shown on PDC and Sideview - HU_CIC/NBT/NBTevo/NBT -> 3001 -> MACRO_NIVICAM_LDISCLAIMER -> ld_mit_timeout set to kein_ld",
+      "3. Disables camera legal disclaimer shown on Night Vision - HU_CIC/NBT/NBTevo -> 3001 -> VIDEO_NUR_MIT_HANDBREMSE -> ld_mit_timeout set to kein_ld",
+      "4. Disables camera legal disclaimer shown on Night Vision - HU_CIC/NBT/NBTevo -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F10/F11 – DVD in Motion",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 HMI -> SPEEDLOCK_X_KMH_MAX -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
-      "2. HU_CIC/NBT -> 3000 HMI -> SPEEDLOCK_X_KMH_MIN -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
-      "3. HU_CIC -> 3000 HMI -> VIDEO_NUR_MIT_HANDBREMSE -> - set to nicht_aktiv / Werte=00",
-      "4. HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
-      "5. HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
-      "6. HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 HMI -> SPEEDLOCK_X_KMH_MAX -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
+      "2. HU_CIC/NBT/NBTevo/NBT -> 3000 HMI -> SPEEDLOCK_X_KMH_MIN -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
+      "3. HU_CIC/NBT/NBTevo -> 3000 HMI -> VIDEO_NUR_MIT_HANDBREMSE -> - set to nicht_aktiv / Werte=00",
+      "4. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
+      "6. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Navi Fuel-Stop Proposal Along Route",
     "steps": [
-      "1. HU_CIC -> 3000 HMI -> NAVI_FUELSTOP_PROPOSAL -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
+      "1. HU_CIC/NBT/NBTevo -> 3000 HMI -> NAVI_FUELSTOP_PROPOSAL -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F10/F11 – Turn Signals in HUD",
     "steps": [
-      "1. Enable Turn Signals in HUD - HU_NBT -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
+      "1. Enable Turn Signals in HUD - HU_CIC/NBT/NBTevo -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
       "2. Add Turn-Signals to HUD - KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> - set to aktiv",
       "3. Show Turn Signals in HUD - KOMBI -> 3008 -> HUD_PIA_BLINKER -> - set to aktiv",
       "4. Show Turn Signals in HUD - KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> - set to aktiv"
@@ -526,7 +526,7 @@
     "steps": [
       "1. High Beam Assistant is installed [1/4] - FRM -> 3050 -> FLA_VERBAUT -> nicht_aktiv / Werte=00 set to aktiv / Werte=01",
       "2. Set High Beam Assistant Default to Automatic [2/4] - FRM -> 3050 -> FLA_AUTO_AKTIV -> nicht_aktiv / Werte=00 set to aktiv / Werte=01",
-      "3. Enable High Beam Assistant [3/4] - HU_CIC -> 3000 HMI -> HIGH_BEAM_ASSISTANT -> nicht_aktiv / Werte=00 set to aktiv / Werte=01",
+      "3. Enable High Beam Assistant [3/4] - HU_CIC/NBT/NBTevo -> 3000 HMI -> HIGH_BEAM_ASSISTANT -> nicht_aktiv / Werte=00 set to aktiv / Werte=01",
       "4. Enable High Beam Assistant [4/4] - KAFAS -> 3015 -> FLA_ON_OFF -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
     ]
   },
@@ -537,7 +537,7 @@
     "steps": [
       "1. FRM -> 3050 -> DRL_MODUS -> drl_s / Werte=03 set to nicht_aktiv / drl_h / drl_l / drl_s / tfl_s / tfl_ece / tfl_s / drl_s_ohne_sl / tfl_s_ohne_s (0: DRL disabled;\n1: DRL_H via beam, halogen U.S. (without lights);\n2: DRL_L via low beam; \n3: DRL_S via separate TFLeuchte; U.S. Xenon (rings + bottom); \n4: TFL_S via separate TFLeuchte; ECE Xenon (rings + bottom);\n5: TFL_ECE (North Country Comfort);\n6: DRL_S_ohne_SL via separate TFLeuchte without taillight / tail lights, U.S.;\n7: TFL_S_ohne_SL via separate TFLeuchte without tail light / rear light, ECE.)",
       "2. Daytime Running Light (DRL) Brightness in % - FRM -> 3050 -> HELLIGKEIT_DRL -> wert_01 100% / Werte=64 set to wert_01 100% / wert_02 50% / wert_03 54% / wert_04 80% / wert_05 51% (NOT TESTED)",
-      "3. Day Driving Light Light settings (daytime) - Enables Day Light Driving as an option in your iDrive Lighting Option . It allows you to then tick/untick this option. Useful for countries where DRL is not mandatory - HU_CIC -> 3000 HMI -> DAYDRIVING_LIGHT -> standard / Werte=02 set to perm_off / Werte=00 or standard / Werte=02 or perm_on / Werte=01"
+      "3. Day Driving Light Light settings (daytime) - Enables Day Light Driving as an option in your iDrive Lighting Option . It allows you to then tick/untick this option. Useful for countries where DRL is not mandatory - HU_CIC/NBT/NBTevo -> 3000 HMI -> DAYDRIVING_LIGHT -> standard / Werte=02 set to perm_off / Werte=00 or standard / Werte=02 or perm_on / Werte=01"
     ]
   },
   {
@@ -754,203 +754,203 @@
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable Developer Menu",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable IPCE Web Enable WiFi Hot-Spot",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
-      "2. HU_ENTRY/HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
-      "3. HU_ENTRY/HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
-      "4. HU_ENTRY/HU_NBT -> 3003 -> WLAN_STATUS -> - set to aktiv",
-      "5. HU_ENTRY/HU_NBT -> 3003 -> WLAN_MODUS -> - set to ap",
-      "6. HU_ENTRY/HU_NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor",
-      "7. HU_ENTRY/HU_NBT -> 3003 -> WLAN_CHANNEL -> - set to channel_1 -14"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
+      "2. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
+      "3. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
+      "4. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> WLAN_STATUS -> - set to aktiv",
+      "5. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> WLAN_MODUS -> - set to ap",
+      "6. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor",
+      "7. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> WLAN_CHANNEL -> - set to channel_1 -14"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable IPCE Web Server @ 172.16.222.1",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Add GPS Current Location to Navi Menu Items",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable Speech InputEnable Time-Stamp Display for Call Log",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable Speech Input for E-Mail or SMS",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Disable Audible Chirp/Beep When Locking Car",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable Full Text Lines in Office While Driving",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Disable Office Function Speed Lock-Out",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable the function of saving video files to NBT Hard Drive for play later",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Add Weather Band Radio to sources",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv 01"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv 01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Display Tire Pressure & Temperaure in Vehicle Info",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3001 -> RDC_SAFETY -> - set to aktiv 01"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3001 -> RDC_SAFETY -> - set to aktiv 01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Remove Legal Disclaimers",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
-      "2. HU_ENTRY/HU_NBT -> 3000 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3001 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
+      "2. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – DVD-in-Motion activated",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
-      "2. HU_ENTRY/HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
-      "3. HU_ENTRY/HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
-      "4. HU_ENTRY/HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
-      "5. HU_ENTRY/HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
+      "2. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
+      "3. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
+      "4. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
+      "5. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable Video Files from USB",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
-      "2. HU_ENTRY/HU_NBT -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv",
-      "3. HU_ENTRY/HU_NBT -> 3000 -> ENT_CODEC_OGG -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
+      "2. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv",
+      "3. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_OGG -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Navi Trip-Import",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Change Navi Voice to British English",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
-      "2. HU_ENTRY/HU_NBT -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
+      "2. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Turn Signals in HUD",
     "steps": [
-      "1. Enable Turn Signals in HUD - HU_ENTRY/HU_NBT -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
+      "1. Enable Turn Signals in HUD - HU_ENTRY/HU_CIC/NBT/NBTevo -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
       "2. Show Turn Signals in HUD [1/2] - KOMBI -> 3008 -> HUD_PIA_BLINKER -> - set to aktiv",
       "3. Show Turn Signals in HUD [2/2] - KOMBI -> 3000 -> HUD_BLINKER_ENABLE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable Active Sound Design Configuration Menu",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ASD_CONFIGURATION -> - set to aktiv",
-      "2. HU_ENTRY/HU_NBT -> 3000 -> ASD_SOUND_4 -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ASD_CONFIGURATION -> - set to aktiv",
+      "2. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ASD_SOUND_4 -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Disable Active Sound Design",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> ASD_SOUND_OFF -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> ASD_SOUND_OFF -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Enable ///M LapTimer",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> M_LAPTIMER -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> M_LAPTIMER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Disable Auto-Locking of Doors once begin driving",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_ENTRY/HU_NBT",
+    "ecu": "HU_ENTRY/HU_CIC/NBT/NBTevo",
     "description": " F22 – Set cell phone ringer as primary",
     "steps": [
-      "1. HU_ENTRY/HU_NBT -> 3003 -> INBAND_RINGING -> - set to aktiv"
+      "1. HU_ENTRY/HU_CIC/NBT/NBTevo -> 3003 -> INBAND_RINGING -> - set to aktiv"
     ]
   },
   {
@@ -1166,72 +1166,72 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Changes Navigation Voice from English to British English",
     "steps": [
-      "1. [1/2] - HU_NBT2_EVO -> 3007 LANGUAGE, 32 -> LANGUAGE_ENGLISH_UK -> - set to master",
-      "2. [2/2] - HU_NBT2_EVO -> 3007 LANGUAGE, 32 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
+      "1. [1/2] - HU_CIC/NBT/NBTevo_EVO -> 3007 LANGUAGE, 32 -> LANGUAGE_ENGLISH_UK -> - set to master",
+      "2. [2/2] - HU_CIC/NBT/NBTevo_EVO -> 3007 LANGUAGE, 32 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Enables importing a trip into Navigation via USB Drive",
     "steps": [
-      "1. HU_NBT2_EVO -> 3006 NAVIGATION, 64 -> NAVI_TRIP_IMPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3006 NAVIGATION, 64 -> NAVI_TRIP_IMPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Disable house number first on destination input screen",
     "steps": [
-      "1. HU_NBT2_EVO -> 3006 NAVI -> NAVI_DESTINATION_INPUT_US -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3006 NAVI -> NAVI_DESTINATION_INPUT_US -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Adds Developer Menu to Settings. (Shows Build/Date/Versions/etc)",
     "steps": [
-      "1. HU_NBT2_EVO -> 3006 NAVIGATION, 64 -> ENTWICKLER_MENUE -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3006 NAVIGATION, 64 -> ENTWICKLER_MENUE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Enable Video Playback via USB (.avi, .mp4, .mkv, .m4v, etc.)",
     "steps": [
-      "1. HU_NBT2_EVO -> 3003 TELEPHON_TELEMATIK_ONLINE, 95 -> API_USB_VIDEO -> - set to both"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3003 TELEPHON_TELEMATIK_ONLINE, 95 -> API_USB_VIDEO -> - set to both"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Set volume level to be retained at 40% rather than startup on 25%",
     "steps": [
-      "1. HU_NBT2_EVO -> 3002 AUDIO_TUNER_TRAFFIC, 96 -> VOL_MAX_ON -> - set to werte=28"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3002 AUDIO_TUNER_TRAFFIC, 96 -> VOL_MAX_ON -> - set to werte=28"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Disable Legal Disclaimers",
     "steps": [
-      "1. Removes iDrive Initial Disclaimer - HU_NBT2_EVO -> 3001 EXBOX, 96 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
-      "2. Removes disclaimer for all cameras and PDC - HU_NBT2_EVO -> 3001 EXBOX, 96 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld"
+      "1. Removes iDrive Initial Disclaimer - HU_CIC/NBT/NBTevo_EVO -> 3001 EXBOX, 96 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
+      "2. Removes disclaimer for all cameras and PDC - HU_CIC/NBT/NBTevo_EVO -> 3001 EXBOX, 96 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": " F36 – Removes speed requirement to watch videos",
     "steps": [
-      "1. HU_NBT2_EVO -> 3000 HMI, 96 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none",
-      "2. HU_NBT2_EVO -> 3000 HMI, 96 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
-      "3. HU_NBT2_EVO -> 3000 HMI, 96 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
-      "4. HU_NBT2_EVO -> 3000 HMI, 96 -> SPEEDLOCK_X_KMH_MIN -> - set to Werte=FF",
-      "5. HU_NBT2_EVO -> 3000 HMI, 96 -> SPEEDLOCK_X_KMH_MAX -> - set to Werte=FF"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3000 HMI, 96 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none",
+      "2. HU_CIC/NBT/NBTevo_EVO -> 3000 HMI, 96 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
+      "3. HU_CIC/NBT/NBTevo_EVO -> 3000 HMI, 96 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
+      "4. HU_CIC/NBT/NBTevo_EVO -> 3000 HMI, 96 -> SPEEDLOCK_X_KMH_MIN -> - set to Werte=FF",
+      "5. HU_CIC/NBT/NBTevo_EVO -> 3000 HMI, 96 -> SPEEDLOCK_X_KMH_MAX -> - set to Werte=FF"
     ]
   },
   {
@@ -1427,27 +1427,27 @@
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F30/F32 – BMW Live Enabling",
     "steps": [
-      "1. Enable BMW Live - Part 1 - HU_CIC -> 3000 -> CONNECTED_DRIVE -> nicht_aktiv set to aktiv",
-      "2. Enable BMW Live - Part 2 - HU_CIC -> 3000 -> ONLINE_BROWSER_LIVE -> nicht_aktiv set to aktiv",
-      "3. Enable BMW Live - Part 3 - HU_CIC -> 3003 -> ONLINE_BROWSER -> - set to nur_bmw_internet_aktiv",
-      "4. Enable BMW Live - Part 4 - HU_CIC -> 3003 -> ONLINE_SERVICES -> aktiv set to nicht_aktiv",
-      "5. Enable BMW Live - Part 5 - HU_CIC -> 3003 -> ONLINE_SERVICES_GLS -> aktiv set to nicht_aktiv",
-      "6. Enable BMW Live - Part 6 - HU_CIC -> 3003 -> DUN_PROFILE -> nicht_aktiv set to aktiv",
-      "7. Enable BMW Live - Part 7 - HU_CIC -> 3003 -> PAN_PROFILE -> nicht_aktiv set to aktiv",
-      "8. Enable BMW Live - Part 8 - HU_CIC -> 3003 -> BT_DATA_SERVICE -> nicht_aktiv set to aktiv"
+      "1. Enable BMW Live - Part 1 - HU_CIC/NBT/NBTevo -> 3000 -> CONNECTED_DRIVE -> nicht_aktiv set to aktiv",
+      "2. Enable BMW Live - Part 2 - HU_CIC/NBT/NBTevo -> 3000 -> ONLINE_BROWSER_LIVE -> nicht_aktiv set to aktiv",
+      "3. Enable BMW Live - Part 3 - HU_CIC/NBT/NBTevo -> 3003 -> ONLINE_BROWSER -> - set to nur_bmw_internet_aktiv",
+      "4. Enable BMW Live - Part 4 - HU_CIC/NBT/NBTevo -> 3003 -> ONLINE_SERVICES -> aktiv set to nicht_aktiv",
+      "5. Enable BMW Live - Part 5 - HU_CIC/NBT/NBTevo -> 3003 -> ONLINE_SERVICES_GLS -> aktiv set to nicht_aktiv",
+      "6. Enable BMW Live - Part 6 - HU_CIC/NBT/NBTevo -> 3003 -> DUN_PROFILE -> nicht_aktiv set to aktiv",
+      "7. Enable BMW Live - Part 7 - HU_CIC/NBT/NBTevo -> 3003 -> PAN_PROFILE -> nicht_aktiv set to aktiv",
+      "8. Enable BMW Live - Part 8 - HU_CIC/NBT/NBTevo -> 3003 -> BT_DATA_SERVICE -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F30/F32 – Heads-Up Display",
     "steps": [
-      "1. Displays the HWY Junction Images on HUD **Works if updated. Minor visual errors.** - HU_NBT -> 3000 -> JUNCTION_VIEW_HUD -> nicht_aktiv set to aktiv",
-      "2. Adds checkbox Heads Up Display Settings for \"Entertainment/Telephone\" - HU_CIC -> 3000 -> HUD_ENTERTAINMENTLIST -> nicht_aktiv set to aktiv",
-      "3. Shows Active Cruise Control iBrake Distance in HUD (Part 1) - HU_CIC -> 3000 -> HUD_DISTANCE_INFO -> nicht_aktiv set to aktiv",
+      "1. Displays the HWY Junction Images on HUD **Works if updated. Minor visual errors.** - HU_CIC/NBT/NBTevo -> 3000 -> JUNCTION_VIEW_HUD -> nicht_aktiv set to aktiv",
+      "2. Adds checkbox Heads Up Display Settings for \"Entertainment/Telephone\" - HU_CIC/NBT/NBTevo -> 3000 -> HUD_ENTERTAINMENTLIST -> nicht_aktiv set to aktiv",
+      "3. Shows Active Cruise Control iBrake Distance in HUD (Part 1) - HU_CIC/NBT/NBTevo -> 3000 -> HUD_DISTANCE_INFO -> nicht_aktiv set to aktiv",
       "4. Shows Active Cruise Control iBrake Distance in HUD (Part 2) - KOMBI -> 3008 -> HUD_PIA_IBRAKE -> nicht_aktiv set to aktiv",
       "5. Shows Active Cruise Control iBrake Distance in HUD (Part 3) - KOMBI -> 3000 -> IBRAKE_ABSTAND_ENABLE -> nicht_aktiv set to aktiv",
       "6. Enable Entertainment Menu in HUD - KOMBI -> 3000 -> HUD_ENTERTAINMENT_ENABLE -> nicht_aktiv set to aktiv",
@@ -1458,38 +1458,38 @@
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F30/F32 – Advanced Real-Time Traffic Information Activation",
     "steps": [
-      "1. Real-Time Traffic Info - Part 1 - HU_CIC -> 3000 -> NAVI_TRAFFIC_INFO_MAP -> nicht_aktiv set to aktiv",
-      "2. Real-Time Traffic Info - Part 2 - HU_CIC -> 3002 -> TI_CA_TMC -> nicht_aktiv set to aktiv",
-      "3. Real-Time Traffic Info - Part 3 - HU_CIC -> 3002 -> TI_VINFO -> nicht_aktiv set to aktiv",
-      "4. Real-Time Traffic Info - Part 4 - HU_CIC -> 3002 -> TI_TMC_REGIONAL -> nicht_aktiv set to aktiv",
-      "5. Real-Time Traffic Info - Part 5 - HU_CIC -> 3002 -> TI_FALLBACK_DISABLED -> nicht_aktiv set to aktiv"
+      "1. Real-Time Traffic Info - Part 1 - HU_CIC/NBT/NBTevo -> 3000 -> NAVI_TRAFFIC_INFO_MAP -> nicht_aktiv set to aktiv",
+      "2. Real-Time Traffic Info - Part 2 - HU_CIC/NBT/NBTevo -> 3002 -> TI_CA_TMC -> nicht_aktiv set to aktiv",
+      "3. Real-Time Traffic Info - Part 3 - HU_CIC/NBT/NBTevo -> 3002 -> TI_VINFO -> nicht_aktiv set to aktiv",
+      "4. Real-Time Traffic Info - Part 4 - HU_CIC/NBT/NBTevo -> 3002 -> TI_TMC_REGIONAL -> nicht_aktiv set to aktiv",
+      "5. Real-Time Traffic Info - Part 5 - HU_CIC/NBT/NBTevo -> 3002 -> TI_FALLBACK_DISABLED -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F30/F32 – Video In Motion & Playback Features, Owner’s Manual in Motion and Camera in Motion",
     "steps": [
-      "1. Disable DVD/USB Video Speedlock - Part 1 (HU_CIC and HU_NBT) - HU_CIC -> 3000 -> SPEEDLOCK_X_KMH_MAX -> werte = 03 set to werte = FF",
-      "2. Disable DVD/USB Video Speedlock - Part 2 (HU_CIC and HU_NBT) - HU_CIC -> 3000 -> SPEEDLOCK_X_KMH_MIN -> werte = 03 set to werte = FF",
-      "3. Removes ‘Park’ and handbrake requirement to watch Videos - Part 3 (HU_CIC only) - HU_CIC -> 3000 -> VIDEO_NUR_MIT_HANDBREMSE -> aktiv set to nicht_aktiv",
-      "4. Removes Front Lock (Needed with VIDEO_HANDBRAKE) - Part 4 (HU_NBT only) - HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> aktiv set to nicht_aktiv",
-      "5. Removes requirement for handbrake to watch videos - Part 5 (HU_NBT only) - HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> aktiv set to nicht_aktiv",
-      "6. Removes speed requirement to watch videos - Part 6 (HU_NBT only) - HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none",
-      "7. Removes speed requirement to read service messages - Part 7 (HU_NBT only) - HU_NBT -> 3000 -> SERVICES_MESSAGES_SPEEDLOCK_CONDITION -> - set to none",
-      "8. Removes speed requirement to read office messages - Part 8 (HU_NBT only) - HU_NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to none",
-      "9. Enable Video Playback via USB (.avi, .mp4, .mkv, .m4v, etc.) - HU_NBT -> 3003 -> API_USB_VIDEO -> none set to both",
-      "10. Enable MC Video playback (Saving videos to internal HD does not work) - HU_NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> nicht_aktiv set to aktiv",
-      "11. Enable XVID codec for USB videos - HU_NBT -> 3000 -> ENT_CODEC_XVID -> nicht_aktiv set to aktiv",
-      "12. Enable XVCD codec for USB videos - HU_NBT -> 3000 -> ENT_CODEC_XVCD -> nicht_aktiv set to aktiv",
-      "13. Enable OGG codec during video playback - HU_NBT -> 3000 -> ENT_CODEC_OGG -> nicht_aktiv set to aktiv",
-      "14. Enables the ‘DVD Menu’ button when watching a DVD - HU_NBT -> 3000 -> ENT_VIDEO_HMI -> nicht_aktiv set to aktiv",
-      "15. Owner’s Manual in Motion - Part 1 (Only tested with HU_NBT, not sure about HU_CIC) - HU_NBT -> 3000 -> SL06_IBA_1 -> aktiv set to nicht_aktiv",
-      "16. Owner’s Manual in Motion - Part 2 (Only tested with HU_NBT, not sure about HU_CIC) - HU_NBT -> 3000 -> SL07_IBA_2 -> aktiv set to nicht_aktiv",
-      "17. Owner’s Manual in Motion - Part 3 (Only tested with HU_NBT, not sure about HU_CIC) - HU_NBT -> 3000 -> SL21_IBA_3 -> aktiv set to nicht_aktiv",
+      "1. Disable DVD/USB Video Speedlock - Part 1 (HU_CIC/NBT/NBTevo and HU_CIC/NBT/NBTevo) - HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MAX -> werte = 03 set to werte = FF",
+      "2. Disable DVD/USB Video Speedlock - Part 2 (HU_CIC/NBT/NBTevo and HU_CIC/NBT/NBTevo) - HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MIN -> werte = 03 set to werte = FF",
+      "3. Removes ‘Park’ and handbrake requirement to watch Videos - Part 3 (HU_CIC/NBT/NBTevo only) - HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_NUR_MIT_HANDBREMSE -> aktiv set to nicht_aktiv",
+      "4. Removes Front Lock (Needed with VIDEO_HANDBRAKE) - Part 4 (HU_CIC/NBT/NBTevo only) - HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> aktiv set to nicht_aktiv",
+      "5. Removes requirement for handbrake to watch videos - Part 5 (HU_CIC/NBT/NBTevo only) - HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> aktiv set to nicht_aktiv",
+      "6. Removes speed requirement to watch videos - Part 6 (HU_CIC/NBT/NBTevo only) - HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none",
+      "7. Removes speed requirement to read service messages - Part 7 (HU_CIC/NBT/NBTevo only) - HU_CIC/NBT/NBTevo -> 3000 -> SERVICES_MESSAGES_SPEEDLOCK_CONDITION -> - set to none",
+      "8. Removes speed requirement to read office messages - Part 8 (HU_CIC/NBT/NBTevo only) - HU_CIC/NBT/NBTevo -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to none",
+      "9. Enable Video Playback via USB (.avi, .mp4, .mkv, .m4v, etc.) - HU_CIC/NBT/NBTevo -> 3003 -> API_USB_VIDEO -> none set to both",
+      "10. Enable MC Video playback (Saving videos to internal HD does not work) - HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_VIDEO_SUPPORT -> nicht_aktiv set to aktiv",
+      "11. Enable XVID codec for USB videos - HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVID -> nicht_aktiv set to aktiv",
+      "12. Enable XVCD codec for USB videos - HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVCD -> nicht_aktiv set to aktiv",
+      "13. Enable OGG codec during video playback - HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_OGG -> nicht_aktiv set to aktiv",
+      "14. Enables the ‘DVD Menu’ button when watching a DVD - HU_CIC/NBT/NBTevo -> 3000 -> ENT_VIDEO_HMI -> nicht_aktiv set to aktiv",
+      "15. Owner’s Manual in Motion - Part 1 (Only tested with HU_CIC/NBT/NBTevo, not sure about HU_CIC/NBT/NBTevo) - HU_CIC/NBT/NBTevo -> 3000 -> SL06_IBA_1 -> aktiv set to nicht_aktiv",
+      "16. Owner’s Manual in Motion - Part 2 (Only tested with HU_CIC/NBT/NBTevo, not sure about HU_CIC/NBT/NBTevo) - HU_CIC/NBT/NBTevo -> 3000 -> SL07_IBA_2 -> aktiv set to nicht_aktiv",
+      "17. Owner’s Manual in Motion - Part 3 (Only tested with HU_CIC/NBT/NBTevo, not sure about HU_CIC/NBT/NBTevo) - HU_CIC/NBT/NBTevo -> 3000 -> SL21_IBA_3 -> aktiv set to nicht_aktiv",
       "18. The speed when it auto disables top camera view (FF = 255 km/h) - REM/PMA -> ????? -> V_SCHWELLE_1 -> werte = 24 set to werte = FF",
       "19. The speed when it auto disables rear camera view (FF = 255 km/h) - REM/PMA -> ????? -> V_SCHWELLE_2 -> werte = 0F set to werte = FF",
       "20. The distance when it auto disables top camera view (FF = 255 meters) - ASCM -> ????? -> D_SCHWELLE_1 -> werte = 32 set to werte = FF",
@@ -1503,34 +1503,34 @@
     "ecu": "CMB_MEDIA",
     "description": " F30/F32 – iDrive Features",
     "steps": [
-      "1. Plays ringtone streamed from cell phone (Works on iPhone, not Android) - CMB_MEDIA -> 3001 -> INBAND_RINGING (in HU_NBT) -> nicht_aktiv set to aktiv",
-      "2. Max amount of messages/addresses stored in vehicle, max 50 (HU_CIC only) - CMB_MEDIA -> 3008 -> MY_INFO_SUPPORTED_POIS -> wert_25 set to User Value",
+      "1. Plays ringtone streamed from cell phone (Works on iPhone, not Android) - CMB_MEDIA -> 3001 -> INBAND_RINGING (in HU_CIC/NBT/NBTevo) -> nicht_aktiv set to aktiv",
+      "2. Max amount of messages/addresses stored in vehicle, max 50 (HU_CIC/NBT/NBTevo only) - CMB_MEDIA -> 3008 -> MY_INFO_SUPPORTED_POIS -> wert_25 set to User Value",
       "3. Enables Basic Voice Recognition - CMB_MEDIA -> 3000 -> SYS_EIN_AUS -> nicht_aktiv set to aktiv",
       "4. Set the Ring Tone (if no Inband Ringing is set) - CMB_MEDIA -> 3001 -> RINGTONE -> ring_tone2 set to User Choice",
-      "5. Adds iDrive setting to turn on/off the audible confirmation when Alarm is armed - HU_CIC -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> nicht_aktiv set to aktiv",
-      "6. Removes L7 Logo from Tone (Sound) Menu - HU_CIC -> 3000 -> LOGIC7_SYMBOL -> aktiv set to nicht_aktiv",
-      "7. Add Tire Pressure and Individual Tire Temperature to the TPMS display - HU_CIC -> 3001 -> RDC_SAFETY -> nicht_aktiv set to aktiv",
-      "8. Adds Weatherband radio (NOAA in the US) to the Radio Sources - HU_CIC -> 3002 -> RADIO_WEATHERBAND -> nicht_aktiv set to aktiv",
-      "9. Adds Developer Menu to Settings. (Shows Build/Date/Versions/etc) - HU_CIC -> 3000 -> ENTWICKLER_MENUE -> nicht_aktiv set to aktiv",
-      "10. Changes DVD Region Code (WARNING: This will lock in after approx. 7 changes.) - HU_CIC -> 3001 -> AREA_CODE_DVD -> Country Value set to User Choice",
-      "11. Proposes a suggested Fuel Stop in a Route when it believe it will run out of gas - HU_CIC -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> nicht_activ set to activ",
-      "12. Alternative to getting Office to show up (Unknown on HU_NBT) - HU_CIC -> 3000 -> PIM_Macro -> nicht_activ set to activ",
-      "13. Allows volume level to be retained up to 100% rather than startup on 25% - HU_CIC -> 3002 -> VOL_MAX_ON -> 19 set to 32",
-      "14. Displays an entire text (SMS) message on iDrive rather than three lines - HU_NBT -> 3003 -> PIM_Driving_Text -> up_to_three_lines set to Whole_text",
-      "15. iDrive Contacts separated from Phone contacts (Office only shows iDrive ones) - HU_NBT -> 3003 -> CONTACTS_NAVI_SEPARATED -> nicht_aktiv set to aktiv",
-      "16. Show volume level on screen when adjusting - HU_NBT -> 3000 -> VOLUME_POPUP_DISPLAY -> nicht_aktiv set to aktiv",
-      "17. Changes notification chime (gong) from BMW to BMW i, Mini, and Rolls Royce - HU_NBT -> 3002 -> SOUND_SIGNAL_SET -> 00_BMW set to 03_BMW_i",
-      "18. Changes HU_NBT Startup Screen between Animation, Splash Screen, or blank - HU_NBT -> 3001 -> STARTUP_TYPE -> animation set to black/splash",
-      "19. Change iDrive Startup Animation. (Selections below table) - HU_NBT -> 3001 -> STARTUP_EMBLEM -> variant_0 set to variant_01",
-      "20. Changes the Gauges in Sports Display from BMW Amber to Red & Silver - HU_NBT -> 3000 -> M_VEHICLE -> nicht_aktiv set to aktiv",
-      "21. Makes the route simulator available under new menu \"Route preview” - Part 1 - HU_NBT -> 3000 -> ROUTE_FLIGHT -> nicht_aktiv set to aktiv",
-      "22. Makes the route simulator available under new menu \"Route preview” - Part 2 - HU_NBT -> 3000 -> NAVI_SCROLLING_ALONG_ROUTE -> nicht_aktiv set to aktiv",
-      "23. Enables ‘Route Info’ (Turn-by-Turn list of route) - HU_NBT -> 3000 -> NAVI_ROAD_PREVIEW -> nicht_aktiv set to aktiv",
-      "24. Enables importing a trip into Navigation via USB Drive - HU_NBT -> 3001 -> NAVI_TRIP_IMPORT -> nicht_aktiv set to aktiv",
-      "25. Activates Siri Eyes-Free Button (Hold down voice recognition button) - HU_NBT -> 3003 -> CE_DEVICE_SPEECH_RECONGNITION -> nicht_aktiv set to aktiv",
-      "26. Option to allow watch next track on Basic Kombi with a retrofitted HU_NBT - HU_NBT -> 3000 -> BASIS_KOMBI_MMI_LIST -> nicht_aktiv set to aktiv",
-      "27. Changes Navigation Voice from English to British English - Part 1 - HU_NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> nicht_aktiv set to master",
-      "28. Changes Navigation Voice from English to British English - Part 2 - HU_NBT -> 3000 -> LANGUAGE_ENGLISH_US -> master set to nicht_aktiv"
+      "5. Adds iDrive setting to turn on/off the audible confirmation when Alarm is armed - HU_CIC/NBT/NBTevo -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> nicht_aktiv set to aktiv",
+      "6. Removes L7 Logo from Tone (Sound) Menu - HU_CIC/NBT/NBTevo -> 3000 -> LOGIC7_SYMBOL -> aktiv set to nicht_aktiv",
+      "7. Add Tire Pressure and Individual Tire Temperature to the TPMS display - HU_CIC/NBT/NBTevo -> 3001 -> RDC_SAFETY -> nicht_aktiv set to aktiv",
+      "8. Adds Weatherband radio (NOAA in the US) to the Radio Sources - HU_CIC/NBT/NBTevo -> 3002 -> RADIO_WEATHERBAND -> nicht_aktiv set to aktiv",
+      "9. Adds Developer Menu to Settings. (Shows Build/Date/Versions/etc) - HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> nicht_aktiv set to aktiv",
+      "10. Changes DVD Region Code (WARNING: This will lock in after approx. 7 changes.) - HU_CIC/NBT/NBTevo -> 3001 -> AREA_CODE_DVD -> Country Value set to User Choice",
+      "11. Proposes a suggested Fuel Stop in a Route when it believe it will run out of gas - HU_CIC/NBT/NBTevo -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> nicht_activ set to activ",
+      "12. Alternative to getting Office to show up (Unknown on HU_CIC/NBT/NBTevo) - HU_CIC/NBT/NBTevo -> 3000 -> PIM_Macro -> nicht_activ set to activ",
+      "13. Allows volume level to be retained up to 100% rather than startup on 25% - HU_CIC/NBT/NBTevo -> 3002 -> VOL_MAX_ON -> 19 set to 32",
+      "14. Displays an entire text (SMS) message on iDrive rather than three lines - HU_CIC/NBT/NBTevo -> 3003 -> PIM_Driving_Text -> up_to_three_lines set to Whole_text",
+      "15. iDrive Contacts separated from Phone contacts (Office only shows iDrive ones) - HU_CIC/NBT/NBTevo -> 3003 -> CONTACTS_NAVI_SEPARATED -> nicht_aktiv set to aktiv",
+      "16. Show volume level on screen when adjusting - HU_CIC/NBT/NBTevo -> 3000 -> VOLUME_POPUP_DISPLAY -> nicht_aktiv set to aktiv",
+      "17. Changes notification chime (gong) from BMW to BMW i, Mini, and Rolls Royce - HU_CIC/NBT/NBTevo -> 3002 -> SOUND_SIGNAL_SET -> 00_BMW set to 03_BMW_i",
+      "18. Changes HU_CIC/NBT/NBTevo Startup Screen between Animation, Splash Screen, or blank - HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_TYPE -> animation set to black/splash",
+      "19. Change iDrive Startup Animation. (Selections below table) - HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> variant_0 set to variant_01",
+      "20. Changes the Gauges in Sports Display from BMW Amber to Red & Silver - HU_CIC/NBT/NBTevo -> 3000 -> M_VEHICLE -> nicht_aktiv set to aktiv",
+      "21. Makes the route simulator available under new menu \"Route preview” - Part 1 - HU_CIC/NBT/NBTevo -> 3000 -> ROUTE_FLIGHT -> nicht_aktiv set to aktiv",
+      "22. Makes the route simulator available under new menu \"Route preview” - Part 2 - HU_CIC/NBT/NBTevo -> 3000 -> NAVI_SCROLLING_ALONG_ROUTE -> nicht_aktiv set to aktiv",
+      "23. Enables ‘Route Info’ (Turn-by-Turn list of route) - HU_CIC/NBT/NBTevo -> 3000 -> NAVI_ROAD_PREVIEW -> nicht_aktiv set to aktiv",
+      "24. Enables importing a trip into Navigation via USB Drive - HU_CIC/NBT/NBTevo -> 3001 -> NAVI_TRIP_IMPORT -> nicht_aktiv set to aktiv",
+      "25. Activates Siri Eyes-Free Button (Hold down voice recognition button) - HU_CIC/NBT/NBTevo -> 3003 -> CE_DEVICE_SPEECH_RECONGNITION -> nicht_aktiv set to aktiv",
+      "26. Option to allow watch next track on Basic Kombi with a retrofitted HU_CIC/NBT/NBTevo - HU_CIC/NBT/NBTevo -> 3000 -> BASIS_KOMBI_MMI_LIST -> nicht_aktiv set to aktiv",
+      "27. Changes Navigation Voice from English to British English - Part 1 - HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_UK -> nicht_aktiv set to master",
+      "28. Changes Navigation Voice from English to British English - Part 2 - HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_US -> master set to nicht_aktiv"
     ]
   },
   {
@@ -1576,10 +1576,10 @@
       "3. Enable Launch Control (Sport Auto Tranny Required [In VO Coding]) - EGS -> 3000 -> Applikation_LC / LC -> nicht_aktiv set to aktiv",
       "4. Auto-Start-Stop set to ‘Off’ at every startup - FEM_BODY -> 3023 -> TCM_MSA_DEFAULT_OFF -> nicht_aktiv set to aktiv",
       "5. Auto-Start-Stop remembers if set to ‘On’ or ‘Off’ from previous shutdown - FEM_BODY -> 3023 -> TCM_MSA_MEMORY -> nicht_aktiv set to aktiv",
-      "6. Enables Sports Displays on non-Navi iDrive. (Doesn't work for diesel) - HU_CIC -> 3000 -> EFF_DYN_SPORT_CID -> nicht_aktiv set to aktiv",
-      "7. Adds Sports Display units in the Language/Units settings menu - HU_CIC -> 3000 -> EFF_DYN_SPORT_UNIT -> nicht_aktiv set to aktiv",
-      "8. Configure sport mode in iDrive (Part 1) - HU_NBT -> 3000 -> Macro_fds -> popup_only set to popup_and_config",
-      "9. Configure sport mode in iDrive (Part 2) (Optional for HU_CIC) - ICM -> 3000 -> ICMKOD_B_SPORTINDIVIDUALISIERBAR -> aus (00) set to ein (01)",
+      "6. Enables Sports Displays on non-Navi iDrive. (Doesn't work for diesel) - HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_CID -> nicht_aktiv set to aktiv",
+      "7. Adds Sports Display units in the Language/Units settings menu - HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_UNIT -> nicht_aktiv set to aktiv",
+      "8. Configure sport mode in iDrive (Part 1) - HU_CIC/NBT/NBTevo -> 3000 -> Macro_fds -> popup_only set to popup_and_config",
+      "9. Configure sport mode in iDrive (Part 2) (Optional for HU_CIC/NBT/NBTevo) - ICM -> 3000 -> ICMKOD_B_SPORTINDIVIDUALISIERBAR -> aus (00) set to ein (01)",
       "10. The initial following distance for Active Cruise Control is the closest distance - ICM -> 3000 -> C_Abstandsstufe_init -> Stufe_4 set to Stufe_1",
       "11. The vehicle will start in drive mode Eco Pro every startup - ICM -> 3000 -> ICMKOD_B_InitEco -> nicht_verbaut set to verbaut",
       "12. Enables Sport+ mode (Not Necessary with Sport Auto Tranny) - ICM -> 3000 -> ICMKOD_B_SPORTLENKUNG -> nicht_aktiv set to aktiv",
@@ -1621,11 +1621,11 @@
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F30/F32 – Disable Legal Disclaimers",
     "steps": [
-      "1. Removes iDrive Initial Disclaimer - HU_CIC/NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> ld_mit_timeout set to kein_ld",
-      "2. Removes disclaimer for all cameras and PDC - HU_CIC/NBT -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> ld_mit_timeout set to kein_ld"
+      "1. Removes iDrive Initial Disclaimer - HU_CIC/NBT/NBTevo/NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> ld_mit_timeout set to kein_ld",
+      "2. Removes disclaimer for all cameras and PDC - HU_CIC/NBT/NBTevo/NBT -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> ld_mit_timeout set to kein_ld"
     ]
   },
   {
@@ -1665,7 +1665,7 @@
     "ecu": "KOMBI",
     "description": " F30/F32 – Sets the clock via GPS signal (Needs the clock to be within 2 min. of the GPS time)",
     "steps": [
-      "1. KOMBI -> 3000 -> GPS_UHR (Intended for HU_CIC cars) -> nicht_aktiv set to aktiv"
+      "1. KOMBI -> 3000 -> GPS_UHR (Intended for HU_CIC/NBT/NBTevo cars) -> nicht_aktiv set to aktiv"
     ]
   },
   {
@@ -1746,10 +1746,10 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F30/F32 – Fog lights illuminate in the steered direction",
     "steps": [
-      "1. Shows Day-Running Lights option in iDrive Settings, in Lighting - HU_NBT -> 3000 -> Daydriving_light -> standard set to aktiv",
+      "1. Shows Day-Running Lights option in iDrive Settings, in Lighting - HU_CIC/NBT/NBTevo -> 3000 -> Daydriving_light -> standard set to aktiv",
       "2. Enables Day-Running Lights - FEM_BODY -> 3060 -> TFL_MODUS -> Off set to Tfl_s (0, A) or Drl_s (0, A, P) (Letters: 0: Off, A: Auto, P: Parking)",
       "3. Turns On Left Tail-light (Inner Part) on with DRL - REM -> 3062 -> MAPPING_TAGFAHRL_H2_L_OUTPUT -> off set to sl_2_l",
       "4. Turns On Right Tail-light (Inner Part) on with DRL - REM -> 3062 -> MAPPING_TAGFAHRL_H2_R_OUTPUT -> off set to sl_2_r",
@@ -1873,196 +1873,196 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Developer Menu",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable WiFi Hot-Spot",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
-      "4. HU_NBT -> 3003 -> WLAN_STATUS -> - set to aktiv",
-      "5. HU_NBT -> 3003 -> WLAN_MODUS -> - set to ap",
-      "6. HU_NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_STATUS -> - set to aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_MODUS -> - set to ap",
+      "6. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable IPCE Web Server @ 172.16.222.1",
     "steps": [
-      "1. HU_NBT -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Change i-Drive Animation to ///M Logo",
     "steps": [
-      "1. HU_NBT -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Disable Legal Disclaimers",
     "steps": [
-      "1. HU_NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
-      "2. HU_NBT -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld",
-      "3. HU_NBT -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
+      "2. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld",
+      "3. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Add Temperature & PSI to tire monitor screen",
     "steps": [
-      "1. HU_NBT -> 3001 -> RDC_SAFETY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> RDC_SAFETY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Time-Stamp Display for Call Log",
     "steps": [
-      "1. HU_NBT -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Speech Input for E-Mail or SMS",
     "steps": [
-      "1. HU_NBT -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Disable Audible Chirp/Beep When Locking Car",
     "steps": [
-      "1. HU_NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Full Text Lines in Office While Driving",
     "steps": [
-      "1. HU_NBT -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Disable Office Function Speed Lock-Out",
     "steps": [
-      "1. HU_NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable the function of saving video files to NBT Hard Drive for play later",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Add GPS Current Location to Navi Menu Items",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Video Files from USB",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_CODEC_OGG -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv",
-      "4. HU_NBT -> 3003 -> API_USB_VIDEO -> - set to both"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_OGG -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3003 -> API_USB_VIDEO -> - set to both"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Navi Fuel-Stop Proposal Along Route",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Navi Trip-Import",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Video-in-Motion activated",
     "steps": [
-      "1. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
-      "2. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
-      "3. HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
-      "4. HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
-      "5. HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Change Navi Voice to British English",
     "steps": [
-      "1. HU_NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
-      "2. HU_NBT -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Sports Displays",
     "steps": [
-      "1. HU_NBT -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
       "3. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> DREHMOMENT -> - set to lb_ft (displays ft lb)",
       "4. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> LEISTUNG -> - set to ps (displays hp)"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Disable Auto-Locking of Doors once begin driving",
     "steps": [
-      "1. HU_NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Enable Siri Voice Control",
     "steps": [
-      "1. HU_NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F48 – Set cell phone ringer as primary",
     "steps": [
-      "1. HU_NBT -> 3001 -> INBAND_RINGING -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> INBAND_RINGING -> - set to aktiv"
     ]
   },
   {
@@ -2434,231 +2434,231 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable Developer Menu",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable WiFi Hot-Spot",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
-      "4. HU_NBT -> 3003 -> WLAN_STATUS -> - set to aktiv",
-      "5. HU_NBT -> 3003 -> WLAN_MODUS -> - set to ap",
-      "6. HU_NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_STATUS -> - set to aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_MODUS -> - set to ap",
+      "6. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable IPCE Web Server @ 172.16.222.1",
     "steps": [
-      "1. HU_NBT -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Change i-Drive Animation to ///M Logo",
     "steps": [
-      "1. HU_NBT -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Disable Legal Disclaimers",
     "steps": [
-      "1. HU_NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
-      "2. HU_NBT -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld",
-      "3. HU_NBT -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
+      "2. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld",
+      "3. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_NVICAM_LDISCLAIMER -> - set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Add Temperature & PSI to tire monitor screen",
     "steps": [
-      "1. HU_NBT -> 3001 -> RDC_SAFETY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> RDC_SAFETY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable Time-Stamp Display for Call Log",
     "steps": [
-      "1. HU_NBT -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable Speech Input for E-Mail or SMS",
     "steps": [
-      "1. HU_NBT -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Disable Audible Chirp/Beep When Locking Car",
     "steps": [
-      "1. HU_NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01/F10/F11 – Enable Full Text Lines in Office While Driving",
     "steps": [
-      "1. HU_NBT -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01/F10/F11 – Disable Office Function Speed Lock-Out",
     "steps": [
-      "1. HU_NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01/F10/F11 – Enable the function of saving video files to NBT Hard Drive for play later",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Add Weather Band Radio (CIC Only)",
     "steps": [
-      "1. HU_CIC -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Turn Signals in HUD",
     "steps": [
-      "1. Enable Turn Signals in HUD - HU_NBT -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
-      "2. Add Turn-Signals to HUD - HU_NBT -> 3000 -> HUD_TURNSIGNAL -> - set to aktiv",
+      "1. Enable Turn Signals in HUD - HU_CIC/NBT/NBTevo -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
+      "2. Add Turn-Signals to HUD - HU_CIC/NBT/NBTevo -> 3000 -> HUD_TURNSIGNAL -> - set to aktiv",
       "3. Show Turn Signals in HUD - KOMBI -> 3008 -> HUD_PIA_BLINKER -> - set to aktiv",
       "4. Show Turn Signals in HUD - KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Add GPS Current Location to Navi Menu Items",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F01/F10/F11 – Enable Video Files from USB",
     "steps": [
-      "1. HU_CIC/NBT -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
-      "2. HU_CIC/NBT -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv",
-      "3. HU_CIC/NBT -> 3003 -> API_USB_VIDEO -> - set to both"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo/NBT -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo/NBT -> 3003 -> API_USB_VIDEO -> - set to both"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Navi Fuel-Stop Proposal Along Route",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Navi Trip-Import",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01/F10/F11 – Change Navi Voice to British English",
     "steps": [
-      "1. HU_CIC -> 3000 -> VOICE_LANGUAGE_RR_US -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
-      "3. HU_NBT -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> VOICE_LANGUAGE_RR_US -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – DVD-in-Motion activated",
     "steps": [
-      "1. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
-      "2. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
-      "3. HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
-      "4. HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
-      "5. HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none=00"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC/NBT",
+    "ecu": "HU_CIC/NBT/NBTevo/NBT",
     "description": " F01/F10/F11 – Enable Volume On-Screen Display",
     "steps": [
-      "1. HU_CIC/NBT -> 3002 -> VOLUME_POPUP_DISPLAY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo/NBT -> 3002 -> VOLUME_POPUP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable Sports Displays",
     "steps": [
-      "1. HU_NBT -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
       "3. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> DREHMOMENT -> - set to lb_ft (displays ft lb)",
       "4. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> LEISTUNG -> - set to ps (displays hp)"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable ///M LapTimer",
     "steps": [
-      "1. HU_NBT -> 3000 -> M_LAPTIMER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> M_LAPTIMER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Disable Auto-Locking of Doors once begin driving",
     "steps": [
-      "1. HU_NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Enable Siri Voice Control",
     "steps": [
-      "1. HU_NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F01 – Set cell phone ringer as primary",
     "steps": [
-      "1. HU_NBT -> 3001 -> INBAND_RINGING -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> INBAND_RINGING -> - set to aktiv"
     ]
   },
   {
@@ -2691,7 +2691,7 @@
       "1. FRM -> 3050 -> FLA_AUTO_AKTIV -> - set to automatisch – werte=01",
       "2. FRM -> 3050 -> FLA_VERBAUT -> - set to aktiv",
       "3. KAFAS2 -> 3050 -> FLA_ON_OFF -> - set to aktiv – werte=01",
-      "4. HU_NBT -> 3000 -> HIGH_BEAM_ASSISTANT -> - set to aktiv"
+      "4. HU_CIC/NBT/NBTevo -> 3000 -> HIGH_BEAM_ASSISTANT -> - set to aktiv"
     ]
   },
   {
@@ -2942,153 +2942,153 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Developer Menu",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv 01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Change i-Drive Animation to ///M Logo",
     "steps": [
-      "1. HU_NBT -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> - set to variant_01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Remove Legal Disclaimers",
     "steps": [
-      "1. HU_NBT -> 3001  -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
-      "2. HU_NBT -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001  -> LEGAL_DISCLAIMER_TIME -> - set to kein_ld",
+      "2. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> - set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Add Temperature & PSI to tire monitor screen",
     "steps": [
-      "1. HU_NBT -> 3001 -> RDC_SAFETY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> RDC_SAFETY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Time-Stamp Display for Call Log",
     "steps": [
-      "1. HU_NBT -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> TIMESTAMP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Speech Input for E-Mail or SMS",
     "steps": [
-      "1. HU_NBT -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> SPEECH_2_TEXT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Disable Audible Chirp/Beep When Locking Car",
     "steps": [
-      "1. HU_NBT -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ACOUSTICAL_LOCK_CONFIRM -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Full Text Lines in Office While Driving",
     "steps": [
-      "1. HU_NBT -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> PIM_DRIVING_TEXT_LENGTH -> - set to whole text_07"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Disable Office Function Speed Lock-Out",
     "steps": [
-      "1. HU_NBT -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> OFFICE_MESSAGES_SPEEDLOCK_CONDITION -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable the function of saving video files to NBT Hard Drive for play later",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_VIDEO_SUPPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Add Weather Band Radio (CIC Only)",
     "steps": [
-      "1. HU_CIC -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3002 -> RADIO_WEATHERBAND -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Turn Signals in HUD",
     "steps": [
-      "1. Enable Turn Signals in HUD - HU_NBT -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
-      "2. Add Turn-Signals to HUD - HU_NBT -> 3000 -> HUD_TURNSIGNAL -> - set to aktiv",
+      "1. Enable Turn Signals in HUD - HU_CIC/NBT/NBTevo -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv",
+      "2. Add Turn-Signals to HUD - HU_CIC/NBT/NBTevo -> 3000 -> HUD_TURNSIGNAL -> - set to aktiv",
       "3. Show Turn Signals in HUD - KOMBI -> 3008 -> HUD_PIA_BLINKER -> - set to aktiv",
       "4. Show Turn Signals in HUD - KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Volume On-Screen Display",
     "steps": [
-      "1. HU_NBT -> 3002 -> VOLUME_POPUP_DISPLAY -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3002 -> VOLUME_POPUP_DISPLAY -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Sports Displays",
     "steps": [
-      "1. HU_NBT -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
       "3. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> DREHMOMENT -> - set to lb_ft (displays ft lb)",
       "4. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> LEISTUNG -> - set to ps (displays hp)"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable ///M LapTimer",
     "steps": [
-      "1. HU_NBT -> 3000 -> M_LAPTIMER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> M_LAPTIMER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Disable Auto-Locking of Doors once begin driving",
     "steps": [
-      "1. HU_NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Enable Siri Voice Control",
     "steps": [
-      "1. HU_NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Set cell phone ringer as primary",
     "steps": [
-      "1. HU_NBT -> 3001 -> INBAND_RINGING -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> INBAND_RINGING -> - set to aktiv"
     ]
   },
   {
@@ -3271,37 +3271,37 @@
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Add Pressure and Temperature Readings to the TPMS Screen",
     "steps": [
-      "1. HU_CIC -> 3001 EXBOX -> RDC_SAFETY -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
+      "1. HU_CIC/NBT/NBTevo -> 3001 EXBOX -> RDC_SAFETY -> nicht_aktiv / Werte=00 set to aktiv / Werte=01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Disables camera legal disclaimer",
     "steps": [
-      "1. HU_CIC -> 3001 EXBOX -> MACRO_CAM_LEGALDISCLAIMER -> ld_mit_timeout set to kein_ld",
-      "2. HU_CIC -> 3001 EXBOX -> MACRO_NIVICAM_LDISCLAIMER -> ld_mit_timeout set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001 EXBOX -> MACRO_CAM_LEGALDISCLAIMER -> ld_mit_timeout set to kein_ld",
+      "2. HU_CIC/NBT/NBTevo -> 3001 EXBOX -> MACRO_NIVICAM_LDISCLAIMER -> ld_mit_timeout set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – Disables iDrive legal disclaimer during iDrive startup",
     "steps": [
-      "1. HU_CIC -> 3001 EXBOX -> MACRO_CAM_LEGALDISCLAIMER -> ld_mit_timeout set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001 EXBOX -> MACRO_CAM_LEGALDISCLAIMER -> ld_mit_timeout set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_CIC",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F25 – DVD in Motion",
     "steps": [
-      "1. HU_CIC -> 3000 HMI -> SPEEDLOCK_X_KMH_MAX -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
-      "2. HU_CIC -> 3000 HMI -> SPEEDLOCK_X_KMH_MIN -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
-      "3. HU_CIC -> 3000 HMI -> VIDEO_NUR_MIT_HANDBREMSE -> - set to nicht_aktiv / Werte=00"
+      "1. HU_CIC/NBT/NBTevo -> 3000 HMI -> SPEEDLOCK_X_KMH_MAX -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
+      "2. HU_CIC/NBT/NBTevo -> 3000 HMI -> SPEEDLOCK_X_KMH_MIN -> 3_kmh = 3 or 8_kmh = 8 set to value = FF",
+      "3. HU_CIC/NBT/NBTevo -> 3000 HMI -> VIDEO_NUR_MIT_HANDBREMSE -> - set to nicht_aktiv / Werte=00"
     ]
   },
   {
@@ -3356,11 +3356,11 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Sailing / Coasting Function – EcoPro Mode",
     "steps": [
-      "1. Add Tick-box in Eco-Pro Config Screen - HU_NBT -> 3000 HMI -> EFF_DYN_SAILING -> nicht_aktiv set to aktiv",
-      "2. Add Sailing Odometer in Eco-Pro Status Screen - HU_NBT -> 3000 HMI -> SAILING_COUNTER -> nicht_aktiv set to aktiv",
+      "1. Add Tick-box in Eco-Pro Config Screen - HU_CIC/NBT/NBTevo -> 3000 HMI -> EFF_DYN_SAILING -> nicht_aktiv set to aktiv",
+      "2. Add Sailing Odometer in Eco-Pro Status Screen - HU_CIC/NBT/NBTevo -> 3000 HMI -> SAILING_COUNTER -> nicht_aktiv set to aktiv",
       "3. DME -> 3701 OHNE_ZEITLIMIT, 10 -> SEGELN -> off set to on",
       "4. DME -> 3701 OHNE_ZEITLIMIT, 10 -> SEGELN_CPL -> off set to on",
       "5. EGS -> 3000 Applikation, 02 -> SEGELN -> nicht_aktiv set to aktiv",
@@ -3772,139 +3772,139 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – HUD Turnsignal (does not work on 6WB)",
     "steps": [
-      "1. HU_NBT -> 3001 -> HUD_TURNSIGNAL -> nicht_aktiv set to aktiv",
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> HUD_TURNSIGNAL -> nicht_aktiv set to aktiv",
       "2. KOMBI -> 3008 -> HUD_PIA_BLINKER -> nicht_aktiv set to aktiv",
       "3. KOMBI -> 3000 -> BLINKER_HUD_ENABLE -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Enable video playback via USB",
     "steps": [
-      "1. HU_NBT -> 3003 -> API_USB_VIDEO -> none set to both"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> API_USB_VIDEO -> none set to both"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Enable other playable video format via USB",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_CODEC_OGG -> nicht_aktiv set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_CODEC_XVID -> nicht_aktiv set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_CODEC_VCD -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_OGG -> nicht_aktiv set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVID -> nicht_aktiv set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_VCD -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – DVD in Motion",
     "steps": [
-      "1. HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> aktiv set to nicht_aktiv",
-      "2. (if available) - HU_NBT -> 3000 ->  -> - set to nicht_aktiv",
-      "3. (if available) - HU_NBT -> 3000 ->  -> - set to none",
-      "4. HU_NBT -> 3000 ->  -> - set to werte=ff",
-      "5. HU_NBT -> 3000 ->  -> - set to werte=ff"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> aktiv set to nicht_aktiv",
+      "2. (if available) - HU_CIC/NBT/NBTevo -> 3000 ->  -> - set to nicht_aktiv",
+      "3. (if available) - HU_CIC/NBT/NBTevo -> 3000 ->  -> - set to none",
+      "4. HU_CIC/NBT/NBTevo -> 3000 ->  -> - set to werte=ff",
+      "5. HU_CIC/NBT/NBTevo -> 3000 ->  -> - set to werte=ff"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Shows entire text message on iDrive rather than 3 lines",
     "steps": [
-      "1. HU_NBT -> 3003 -> PIM_Driving_Text -> up_to_three_lines set to Whole_text"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> PIM_Driving_Text -> up_to_three_lines set to Whole_text"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Enables Time-Stamp Display for Call Logs",
     "steps": [
-      "1. HU_NBT -> 3003 -> TIMESTAMP_DISPLAY -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> TIMESTAMP_DISPLAY -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Tire Pressure and Temperature on Vehicle Status",
     "steps": [
-      "1. HU_NBT -> 3001 -> RDC_DRUCK_TEMP -> druck set to druck_und_temperatur"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> RDC_DRUCK_TEMP -> druck set to druck_und_temperatur"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Navi zooms in when approaching a turn",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_AUTOZOOM -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_AUTOZOOM -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Rear View Camera Zoom (trailer hitch)",
     "steps": [
-      "1. HU_NBT -> 3001 -> MACRO_TRAILER_COUPLING -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_TRAILER_COUPLING -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Phone Ringtone Plays Through Car Bluetooth When Called",
     "steps": [
-      "1. HU_NBT -> 3001 -> INBAND_RINGING -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> INBAND_RINGING -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Gong/Chime Sound",
     "steps": [
-      "1. HU_NBT -> 3002 -> SOUND_SIGNAL_SET -> bmw set to bmw_i, mini, rolls royce"
+      "1. HU_CIC/NBT/NBTevo -> 3002 -> SOUND_SIGNAL_SET -> bmw set to bmw_i, mini, rolls royce"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – X Drive Display",
     "steps": [
-      "1. HU_NBT -> 3000 -> X_VIEW -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> X_VIEW -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Changes Sports Display color from Orange to Red/Silver",
     "steps": [
-      "1. HU_NBT -> 3000 -> M_VEHICLE -> nicht_aktiv set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> M_VEHICLE -> nicht_aktiv set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – M Splash Screen",
     "steps": [
-      "1. HU_NBT -> 3001 -> STARTUP_EMBLEM -> variant_00 set to variant_01"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> variant_00 set to variant_01"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Disables Cameras legal disclaimer",
     "steps": [
-      "1. HU_NBT -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> id_mit_timeout set to kein_ld",
-      "2. HU_NBT -> 3001 -> MACRO_NIVICAM_LDISCLAIMER -> id_mit_timeout set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_CAM_LEGALDISCLAIMER -> id_mit_timeout set to kein_ld",
+      "2. HU_CIC/NBT/NBTevo -> 3001 -> MACRO_NIVICAM_LDISCLAIMER -> id_mit_timeout set to kein_ld"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F15 – Disables iDrive legal disclaimer",
     "steps": [
-      "1. HU_NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> id_mit_timeout set to kein_ld"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> LEGAL_DISCLAIMER_TIME -> id_mit_timeout set to kein_ld"
     ]
   },
   {
@@ -3960,137 +3960,137 @@
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable Developer Menu",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENTWICKLER_MENUE -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable WiFi Hot-Spot",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
-      "4. HU_NBT -> 3003 -> WLAN_STATUS -> - set to aktiv",
-      "5. HU_NBT -> 3003 -> WLAN_MODUS -> - set to ap",
-      "6. HU_NBT -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_COVERART -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP_VIDEO -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_MC_WLAN_STREAM_DMP -> - set to aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_STATUS -> - set to aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_MODUS -> - set to ap",
+      "6. HU_CIC/NBT/NBTevo -> 3003 -> WLAN_SIGNAL_STRENGTH -> - set to outdoor"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable IPCE Web Server @ 172.16.222.1",
     "steps": [
-      "1. HU_NBT -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> IPCE_WEBSERVER -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Add GPS Current Location to Navi Menu Items",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_POSITION_MENU -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable Video Files from USB",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_CODEC_OGG -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_OGG -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVID -> - set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVCD -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Navi Fuel-Stop Proposal Along Route",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_FUELSTOP_PROPOSAL -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Navi Trip-Import",
     "steps": [
-      "1. HU_NBT -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> NAVI_TRIP_IMPORT -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Video-in-Motion activated",
     "steps": [
-      "1. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
-      "2. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
-      "3. HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
-      "4. HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
-      "5. HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MAX -> - set to werte = FF",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MIN -> - set to werte = FF",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> - set to nicht_aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> - set to nicht_aktiv",
+      "5. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> - set to none"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Change Navi Voice to British English",
     "steps": [
-      "1. HU_NBT -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
-      "2. HU_NBT -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_UK -> - set to master",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> LANGUAGE_ENGLISH_US -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Add Turn-Signals to HUD",
     "steps": [
-      "1. HU_NBT -> 3000 -> HUD_TURNSIGNAL -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> HUD_TURNSIGNAL -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable Turn Signals in HUD",
     "steps": [
-      "1. HU_NBT -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> HUD_TURNSIGNAL -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable Sports Displays",
     "steps": [
-      "1. HU_NBT -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
-      "2. HU_NBT -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_CID -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> EFF_DYN_SPORT_UNIT -> - set to aktiv",
       "3. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> DREHMOMENT -> - set to lb_ft (displays ft lb)",
       "4. *To change units displayed to be ft lb and hp - KOMBI -> 3008 -> LEISTUNG -> - set to ps (displays hp)"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Enable Siri Voice Control",
     "steps": [
-      "1. HU_NBT -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3003 -> CE_DEVICE_SPEECH_RECOGNITION -> - set to aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Disable Auto-Locking of Doors once begin driving",
     "steps": [
-      "1. HU_NBT -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> DOOR_LOCK_AFTER_DRIVING_AWAY -> - set to nicht_aktiv"
     ]
   },
   {
     "series": "",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": " F85 – Set cell phone ringer as primary",
     "steps": [
-      "1. HU_NBT -> 3001 -> INBAND_RINGING -> - set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> INBAND_RINGING -> - set to aktiv"
     ]
   },
   {
@@ -4099,7 +4099,7 @@
     "description": " F85 – High-Beam Assistant – Auto-On",
     "steps": [
       "1. BDC_BODY -> 3068 -> FLA_AKTIVIERUNG -> - set to LDS_in_A_oder_2",
-      "2. HU_NBT -> 3000 -> HIGH_BEAM_ASSISTANT -> - set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> HIGH_BEAM_ASSISTANT -> - set to aktiv",
       "3. KAFAS2 -> 3050 -> FLA_ON_OFF -> - set to aktiv"
     ]
   },
@@ -5036,7 +5036,7 @@
   },
   {
     "series": "G",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": "LARGE SCREEN",
     "steps": [
       "DISPLAY_SIZE_RESOLUTION = 8.8_1280x480",
@@ -5067,12 +5067,12 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إعادة ترميز لتعزيز البلوتوث (Enhanced Bluetooth)",
         "description": "أو إعادة ترميز إذا كان الترميز موجودًا بالفعل. يتطلب تغيير FA (VO) لإزالة 6NH وإضافة 6NS.",
         "steps": [
             "Change FA (VO) to Remove 6NH from VO & Add 6NS to VO",
-            "VO Code HU_NBT",
+            "VO Code HU_CIC/NBT/NBTevo",
             "Read FA(VO)→Activate FA(VO)→Read SVT Right-Click ECU & Select Code"
         ],
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
@@ -5404,7 +5404,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "مساعد الضوء العالي - تشغيل تلقائي (HIGH_BEAM_ASSISTANT)",
         "description": "تعيين HIGH_BEAM_ASSISTANT إلى aktiv.",
         "steps": [
@@ -5413,7 +5413,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعيين رنين الهاتف الخلوي كـ أساسي (INBAND_RINGING)",
         "description": "تعيين INBAND_RINGING إلى aktiv.",
         "steps": [
@@ -5422,7 +5422,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين التحكم الصوتي Siri",
         "description": "تعيين CE_DEVICE_SPEECH_RECOGNITION إلى aktiv.",
         "steps": [
@@ -5431,7 +5431,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
         "description": "تعيين DOOR_LOCK_AFTER_DRIVING_AWAY إلى nicht_aktiv.",
         "steps": [
@@ -5440,7 +5440,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ///M LapTmer",
         "description": "تعيين M_LAPTIMER إلى aktiv.",
         "steps": [
@@ -5449,7 +5449,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_CID",
         "description": "تعيين EFF_DYN_SPORT_CID إلى aktiv.",
         "steps": [
@@ -5458,7 +5458,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_UNIT",
         "description": "تعيين EFF_DYN_SPORT_UNIT إلى aktiv.",
         "steps": [
@@ -5485,7 +5485,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين عرض مستوى الصوت على الشاشة",
         "description": "تعيين VOLUME_POPUP_DISPLAY إلى aktiv.",
         "steps": [
@@ -5494,7 +5494,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين إشارات الانعطاف في شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -5503,7 +5503,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MAX",
         "description": "تعيين SPEEDLOCK_X_KMH_MAX إلى werte = FF.",
         "steps": [
@@ -5512,7 +5512,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MIN",
         "description": "تعيين SPEEDLOCK_X_KMH_MIN إلى werte = FF.",
         "steps": [
@@ -5521,7 +5521,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: VIDEO_HANDBRAKE",
         "description": "تعيين VIDEO_HANDBRAKE إلى nicht_aktiv.",
         "steps": [
@@ -5530,7 +5530,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: VIDEO_FRONT_LOCKED",
         "description": "تعيين VIDEO_FRONT_LOCKED إلى nicht_aktiv.",
         "steps": [
@@ -5539,7 +5539,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: VIDEO_SPEEDLOCK_CONDITION",
         "description": "تعيين VIDEO_SPEEDLOCK_CONDITION إلى none.",
         "steps": [
@@ -5548,7 +5548,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تغيير صوت نظام الملاحة إلى الإنجليزية البريطانية",
         "description": "تعيين VOICE_LANGUAGE_RR_US إلى aktiv.",
         "steps": [
@@ -5557,7 +5557,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تغيير لغة نظام الملاحة إلى الإنجليزية البريطانية",
         "description": "تعيين LANGUAGE_ENGLISH_UK إلى master و LANGUAGE_ENGLISH_US إلى nicht_aktiv.",
         "steps": [
@@ -5567,7 +5567,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "استيراد رحلة الملاحة",
         "description": "تعيين NAVI_TRIP_IMPORT إلى aktiv.",
         "steps": [
@@ -5576,7 +5576,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "اقتراح محطات الوقود في نظام الملاحة على طول الطريق",
         "description": "تعيين NAVI_FUELSTOP_PROPOSAL إلى aktiv.",
         "steps": [
@@ -5585,7 +5585,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVID",
         "description": "تعيين ENT_CODEC_XVID إلى aktiv.",
         "steps": [
@@ -5594,7 +5594,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVCD",
         "description": "تعيين ENT_CODEC_XVCD إلى aktiv.",
         "steps": [
@@ -5603,7 +5603,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ملفات الفيديو من USB: API_USB_VIDEO",
         "description": "تعيين API_USB_VIDEO إلى both.",
         "steps": [
@@ -5612,7 +5612,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة الموقع الحالي لنظام تحديد المواقع (GPS) إلى عناصر قائمة الملاحة",
         "description": "تعيين NAVI_POSITION_MENU إلى aktiv.",
         "steps": [
@@ -5621,7 +5621,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة إشارات الانعطاف إلى شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -5630,7 +5630,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة راديو Weather Band (CIC فقط)",
         "description": "تعيين RADIO_WEATHERBAND إلى aktiv.",
         "steps": [
@@ -5639,7 +5639,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين وظيفة حفظ ملفات الفيديو على محرك الأقراص الثابتة NBT للتشغيل لاحقًا",
         "description": "تعيين ENT_MC_VIDEO_SUPPORT إلى aktiv.",
         "steps": [
@@ -5648,7 +5648,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل قفل سرعة وظيفة Office",
         "description": "تعيين OFFICE_MESSAGES_SPEEDLOCK_CONDITION إلى nicht_aktiv.",
         "steps": [
@@ -5657,7 +5657,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين خطوط النص الكاملة في Office أثناء القيادة",
         "description": "تعيين PIM_DRIVING_TEXT_LENGTH إلى whole text_07.",
         "steps": [
@@ -5666,7 +5666,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل صوت الصفير/الرنين عند قفل السيارة",
         "description": "تعيين ACOUSTICAL_LOCK_CONFIRM إلى nicht_aktiv.",
         "steps": [
@@ -5675,7 +5675,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة",
         "description": "تعيين SPEECH_2_TEXT إلى aktiv.",
         "steps": [
@@ -5684,7 +5684,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين عرض الطابع الزمني لسجل المكالمات",
         "description": "تعيين TIMESTAMP_DISPLAY إلى aktiv.",
         "steps": [
@@ -5693,7 +5693,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة درجة الحرارة و PSI إلى شاشة مراقبة الإطارات",
         "description": "تعيين RDC_SAFETY إلى aktiv.",
         "steps": [
@@ -5702,7 +5702,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل إخلاء المسؤولية القانونية: LEGAL_DISCLAIMER_TIME",
         "description": "تعيين LEGAL_DISCLAIMER_TIME إلى kein_ld.",
         "steps": [
@@ -5711,7 +5711,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_CAM_LEGALDISCLAIMER",
         "description": "تعيين MACRO_CAM_LEGALDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -5720,7 +5720,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_NVICAM_LDISCLAIMER",
         "description": "تعيين MACRO_NVICAM_LDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -5729,7 +5729,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تغيير رسوم بدء تشغيل i-Drive إلى شعار ///M",
         "description": "تعيين STARTUP_EMBLEM إلى variant_01.",
         "steps": [
@@ -5738,7 +5738,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين خادم الويب IPCE على 172.16.222.1",
         "description": "تعيين IPCE_WEBSERVER إلى aktiv.",
         "steps": [
@@ -5747,7 +5747,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_COVERART",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_COVERART إلى aktiv.",
         "steps": [
@@ -5756,7 +5756,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_VIDEO",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_VIDEO إلى aktiv.",
         "steps": [
@@ -5765,7 +5765,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP إلى aktiv.",
         "steps": [
@@ -5774,7 +5774,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: WLAN_STATUS",
         "description": "تعيين WLAN_STATUS إلى aktiv.",
         "steps": [
@@ -5783,7 +5783,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: WLAN_MODUS",
         "description": "تعيين WLAN_MODUS إلى ap.",
         "steps": [
@@ -5792,7 +5792,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: WLAN_SIGNAL_STRENGTH",
         "description": "تعيين WLAN_SIGNAL_STRENGTH إلى outdoor.",
         "steps": [
@@ -5801,7 +5801,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين قائمة المطور (Developer Menu)",
         "description": "تعيين ENTWICKLER_MENUE إلى aktiv 01.",
         "steps": [
@@ -6035,29 +6035,29 @@
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT/CIC",
+        "ecu": "HU_CIC/NBT/NBTevo/CIC",
         "title": "G30 Remote Engine Start Coding: HVAC_REMOTE_ENGINE_START",
         "description": "I've found and changed the following parameters:",
         "steps": [
-            "HU_NBT2: 3000 HMI: 252: HVAC_REMOTE_ENGINE_START aktiv"
+            "HU_CIC/NBT/NBTevo: 3000 HMI: 252: HVAC_REMOTE_ENGINE_START aktiv"
         ],
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "G30 Remote Engine Start Coding: ASSIST_REMOTE_HVAC",
         "description": "I've found and changed the following parameters:",
         "steps": [
-            "HU_NBT2: 3001 EXBOX: 18: ASSIST_REMOTE_HVAC aktiv"
+            "HU_CIC/NBT/NBTevo: 3001 EXBOX: 18: ASSIST_REMOTE_HVAC aktiv"
         ],
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Video in Motion",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - SPEEDLOCK_FREISCHALTMENT - aktiv"
+            "HU_CIC/NBT/NBTevo - SPEEDLOCK_FREISCHALTMENT - aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
@@ -6090,39 +6090,39 @@
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Extra Video Codec Support",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - ENT_CODEC_XVID - aktiv",
-            "HU_NBT2 - ENT_CODEC_XVCD - aktiv"
+            "HU_CIC/NBT/NBTevo - ENT_CODEC_XVID - aktiv",
+            "HU_CIC/NBT/NBTevo - ENT_CODEC_XVCD - aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Play Videos from USB",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - API_USB_VIDEO - both"
+            "HU_CIC/NBT/NBTevo - API_USB_VIDEO - both"
         ],
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Save video to internal hard drive",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - ENT_MC_VIDEO_SUPPORT - Aktiv"
+            "HU_CIC/NBT/NBTevo - ENT_MC_VIDEO_SUPPORT - Aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Fullscreen CarPlay",
         "description": "I didn't show fullscreen CarPlay because my iDrive system is version V and version X or newer is required to do fullscreen CarPlay without buying those online services for the newer fullscreen CarPlay.",
         "steps": [
-            "HU_NBT2 - CARPLAY_FULLSCREEN - Aktiv"
+            "HU_CIC/NBT/NBTevo - CARPLAY_FULLSCREEN - Aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
@@ -6137,7 +6137,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU CIC / HU NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Slider for Ambiance light",
         "description": "FDL code to enable slider for ambiance light.",
         "steps": [
@@ -6155,7 +6155,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Activate Sport+ Mode - Step 2",
         "description": "Steps to activate Sport+ Mode.",
         "steps": [
@@ -6176,7 +6176,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Activate Oil Level Menu",
         "description": "FDL code to activate oil level menu.",
         "steps": [
@@ -6194,7 +6194,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Removes Disclaimers in iDrive",
         "description": "FDL code to remove iDrive disclaimers.",
         "steps": [
@@ -6203,7 +6203,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "DVD in Motion: SPEEDLOCK_X_KMH_MIN",
         "description": "FDL code for DVD in Motion.",
         "steps": [
@@ -6212,7 +6212,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "DVD in Motion: SPEEDLOCK_X_KMH_MAX",
         "description": "FDL code for DVD in Motion.",
         "steps": [
@@ -6221,7 +6221,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "DVD in Motion: VIDEO_HANDBRAKE",
         "description": "FDL code for DVD in Motion.",
         "steps": [
@@ -6257,7 +6257,7 @@
         "source": "20220916_175608.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Enable Cell Phone Ringtone in the Car",
         "description": "FDL code to enable cell phone ringtone in the car.",
         "steps": [
@@ -6307,12 +6307,12 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "إعادة ترميز لتعزيز البلوتوث (Enhanced Bluetooth)",
         "description": "أو إعادة ترميز إذا كان الترميز موجودًا بالفعل. يتطلب تغيير FA (VO) لإزالة 6NH وإضافة 6NS.",
         "steps": [
             "Change FA (VO) to Remove 6NH from VO & Add 6NS to VO [cite: 1]",
-            "VO Code HU_NBT [cite: 1]",
+            "VO Code HU_CIC/NBT/NBTevo [cite: 1]",
             "Read FA(VO)→Activate FA(VO)→Read SVT Right-Click ECU & Select Code [cite: 1]"
         ],
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
@@ -6644,7 +6644,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "مساعد الضوء العالي - تشغيل تلقائي (HIGH_BEAM_ASSISTANT)",
         "description": "تعيين HIGH_BEAM_ASSISTANT إلى aktiv.",
         "steps": [
@@ -6653,7 +6653,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعيين رنين الهاتف الخلوي كـ أساسي (INBAND_RINGING)",
         "description": "تعيين INBAND_RINGING إلى aktiv.",
         "steps": [
@@ -6662,7 +6662,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين التحكم الصوتي Siri",
         "description": "تعيين CE_DEVICE_SPEECH_RECOGNITION إلى aktiv.",
         "steps": [
@@ -6671,7 +6671,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل القفل التلقائي للأبواب بمجرد بدء القيادة",
         "description": "تعيين DOOR_LOCK_AFTER_DRIVING_AWAY إلى nicht_aktiv.",
         "steps": [
@@ -6680,7 +6680,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ///M LapTmer",
         "description": "تعيين M_LAPTIMER إلى aktiv.",
         "steps": [
@@ -6689,7 +6689,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_CID",
         "description": "تعيين EFF_DYN_SPORT_CID إلى aktiv.",
         "steps": [
@@ -6698,7 +6698,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين شاشات العرض الرياضية: EFF_DYN_SPORT_UNIT",
         "description": "تعيين EFF_DYN_SPORT_UNIT إلى aktiv.",
         "steps": [
@@ -6725,7 +6725,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين عرض مستوى الصوت على الشاشة",
         "description": "تعيين VOLUME_POPUP_DISPLAY إلى aktiv.",
         "steps": [
@@ -6734,7 +6734,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين إشارات الانعطاف في شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -6743,7 +6743,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MAX",
         "description": "تعيين SPEEDLOCK_X_KMH_MAX إلى werte = FF.",
         "steps": [
@@ -6752,7 +6752,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: SPEEDLOCK_X_KMH_MIN",
         "description": "تعيين SPEEDLOCK_X_KMH_MIN إلى werte = FF.",
         "steps": [
@@ -6761,7 +6761,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: VIDEO_HANDBRAKE",
         "description": "تعيين VIDEO_HANDBRAKE إلى nicht_aktiv.",
         "steps": [
@@ -6770,7 +6770,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: VIDEO_FRONT_LOCKED",
         "description": "تعيين VIDEO_FRONT_LOCKED إلى nicht_aktiv.",
         "steps": [
@@ -6779,7 +6779,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تفعيل DVD-in-Motion: VIDEO_SPEEDLOCK_CONDITION",
         "description": "تعيين VIDEO_SPEEDLOCK_CONDITION إلى none.",
         "steps": [
@@ -6788,7 +6788,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_CIC",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تغيير صوت نظام الملاحة إلى الإنجليزية البريطانية",
         "description": "تعيين VOICE_LANGUAGE_RR_US إلى aktiv.",
         "steps": [
@@ -6797,7 +6797,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "تغيير لغة نظام الملاحة إلى الإنجليزية البريطانية",
         "description": "تعيين LANGUAGE_ENGLISH_UK إلى master و LANGUAGE_ENGLISH_US إلى nicht_aktiv.",
         "steps": [
@@ -6807,7 +6807,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "استيراد رحلة الملاحة",
         "description": "تعيين NAVI_TRIP_IMPORT إلى aktiv.",
         "steps": [
@@ -6816,7 +6816,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "اقتراح محطات الوقود في نظام الملاحة على طول الطريق",
         "description": "تعيين NAVI_FUELSTOP_PROPOSAL إلى aktiv.",
         "steps": [
@@ -6825,7 +6825,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVID",
         "description": "تعيين ENT_CODEC_XVID إلى aktiv.",
         "steps": [
@@ -6834,7 +6834,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ملفات الفيديو من USB: ENT_CODEC_XVCD",
         "description": "تعيين ENT_CODEC_XVCD إلى aktiv.",
         "steps": [
@@ -6843,7 +6843,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين ملفات الفيديو من USB: API_USB_VIDEO",
         "description": "تعيين API_USB_VIDEO إلى both.",
         "steps": [
@@ -6852,7 +6852,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة الموقع الحالي لنظام تحديد المواقع (GPS) إلى عناصر قائمة الملاحة",
         "description": "تعيين NAVI_POSITION_MENU إلى aktiv.",
         "steps": [
@@ -6861,7 +6861,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة إشارات الانعطاف إلى شاشة العرض الرأسية (HUD)",
         "description": "تعيين HUD_TURNSIGNAL إلى aktiv.",
         "steps": [
@@ -6870,7 +6870,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة راديو Weather Band (CIC فقط)",
         "description": "تعيين RADIO_WEATHERBAND إلى aktiv.",
         "steps": [
@@ -6879,7 +6879,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين وظيفة حفظ ملفات الفيديو على محرك الأقراص الثابتة NBT للتشغيل لاحقًا",
         "description": "تعيين ENT_MC_VIDEO_SUPPORT إلى aktiv.",
         "steps": [
@@ -6888,7 +6888,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل قفل سرعة وظيفة Office",
         "description": "تعيين OFFICE_MESSAGES_SPEEDLOCK_CONDITION إلى nicht_aktiv.",
         "steps": [
@@ -6897,7 +6897,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين خطوط النص الكاملة في Office أثناء القيادة",
         "description": "تعيين PIM_DRIVING_TEXT_LENGTH إلى whole text_07.",
         "steps": [
@@ -6906,7 +6906,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل صوت الصفير/الرنين عند قفل السيارة",
         "description": "تعيين ACOUSTICAL_LOCK_CONFIRM إلى nicht_aktiv.",
         "steps": [
@@ -6915,7 +6915,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين إدخال الصوت للبريد الإلكتروني أو الرسائل القصيرة",
         "description": "تعيين SPEECH_2_TEXT إلى aktiv.",
         "steps": [
@@ -6924,7 +6924,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين عرض الطابع الزمني لسجل المكالمات",
         "description": "تعيين TIMESTAMP_DISPLAY إلى aktiv.",
         "steps": [
@@ -6933,7 +6933,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "إضافة درجة الحرارة و PSI إلى شاشة مراقبة الإطارات",
         "description": "تعيين RDC_SAFETY إلى aktiv.",
         "steps": [
@@ -6942,7 +6942,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل إخلاء المسؤولية القانونية: LEGAL_DISCLAIMER_TIME",
         "description": "تعيين LEGAL_DISCLAIMER_TIME إلى kein_ld.",
         "steps": [
@@ -6951,7 +6951,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_CAM_LEGALDISCLAIMER",
         "description": "تعيين MACRO_CAM_LEGALDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -6960,7 +6960,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تعطيل إخلاء المسؤولية القانونية: MACRO_NVICAM_LDISCLAIMER",
         "description": "تعيين MACRO_NVICAM_LDISCLAIMER إلى kein_ld.",
         "steps": [
@@ -6969,7 +6969,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تغيير رسوم بدء تشغيل i-Drive إلى شعار ///M",
         "description": "تعيين STARTUP_EMBLEM إلى variant_01.",
         "steps": [
@@ -6978,7 +6978,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين خادم الويب IPCE على 172.16.222.1",
         "description": "تعيين IPCE_WEBSERVER إلى aktiv.",
         "steps": [
@@ -6987,7 +6987,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_COVERART",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_COVERART إلى aktiv.",
         "steps": [
@@ -6996,7 +6996,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP_VIDEO",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP_VIDEO إلى aktiv.",
         "steps": [
@@ -7005,7 +7005,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: ENT_MC_WLAN_STREAM_DMP",
         "description": "تعيين ENT_MC_WLAN_STREAM_DMP إلى aktiv.",
         "steps": [
@@ -7014,7 +7014,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: WLAN_STATUS",
         "description": "تعيين WLAN_STATUS إلى aktiv.",
         "steps": [
@@ -7023,7 +7023,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: WLAN_MODUS",
         "description": "تعيين WLAN_MODUS إلى ap.",
         "steps": [
@@ -7032,7 +7032,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين نقطة اتصال WiFi: WLAN_SIGNAL_STRENGTH",
         "description": "تعيين WLAN_SIGNAL_STRENGTH إلى outdoor.",
         "steps": [
@@ -7041,7 +7041,7 @@
         "source": "BMW Coding Parameters - F01 - For 5GT and 7 Series_230509_202333.pdf"
     },
     {
-        "ecu": "HU NBT or HU CIC",
+        "ecu": "HU_CIC/NBT/NBTevo,
         "title": "تمكين قائمة المطور (Developer Menu)",
         "description": "تعيين ENTWICKLER_MENUE إلى aktiv 01.",
         "steps": [
@@ -7275,29 +7275,29 @@
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "G30 Remote Engine Start Coding: HVAC_REMOTE_ENGINE_START",
         "description": "I've found and changed the following parameters:",
         "steps": [
-            "HU_NBT2: 3000 HMI: 252: HVAC_REMOTE_ENGINE_START aktiv"
+            "HU_CIC/NBT/NBTevo: 3000 HMI: 252: HVAC_REMOTE_ENGINE_START aktiv"
         ],
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "G30 Remote Engine Start Coding: ASSIST_REMOTE_HVAC",
         "description": "I've found and changed the following parameters:",
         "steps": [
-            "HU_NBT2: 3001 EXBOX: 18: ASSIST_REMOTE_HVAC aktiv"
+            "HU_CIC/NBT/NBTevo: 3001 EXBOX: 18: ASSIST_REMOTE_HVAC aktiv"
         ],
         "source": "20221009_181245.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Video in Motion",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - SPEEDLOCK_FREISCHALTMENT - aktiv"
+            "HU_CIC/NBT/NBTevo - SPEEDLOCK_FREISCHALTMENT - aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
@@ -7330,39 +7330,39 @@
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Extra Video Codec Support",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - ENT_CODEC_XVID - aktiv",
-            "HU_NBT2 - ENT_CODEC_XVCD - aktiv"
+            "HU_CIC/NBT/NBTevo - ENT_CODEC_XVID - aktiv",
+            "HU_CIC/NBT/NBTevo - ENT_CODEC_XVCD - aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Play Videos from USB",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - API_USB_VIDEO - both"
+            "HU_CIC/NBT/NBTevo - API_USB_VIDEO - both"
         ],
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Save video to internal hard drive",
         "description": "Coding my BMW F01 (G30) for FDL.",
         "steps": [
-            "HU_NBT2 - ENT_MC_VIDEO_SUPPORT - Aktiv"
+            "HU_CIC/NBT/NBTevo - ENT_MC_VIDEO_SUPPORT - Aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
     {
-        "ecu": "HU_NBT2",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Fullscreen CarPlay",
         "description": "I didn't show fullscreen CarPlay because my iDrive system is version V and version X or newer is required to do fullscreen CarPlay without buying those online services for the newer fullscreen CarPlay.",
         "steps": [
-            "HU_NBT2 - CARPLAY_FULLSCREEN - Aktiv"
+            "HU_CIC/NBT/NBTevo - CARPLAY_FULLSCREEN - Aktiv"
         ],
         "source": "20220912_172958.jpg"
     },
@@ -7377,7 +7377,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU CIC / HU NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Slider for Ambiance light",
         "description": "FDL code to enable slider for ambiance light.",
         "steps": [
@@ -7395,7 +7395,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Activate Sport+ Mode - Step 2",
         "description": "Steps to activate Sport+ Mode.",
         "steps": [
@@ -7416,7 +7416,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Activate Oil Level Menu",
         "description": "FDL code to activate oil level menu.",
         "steps": [
@@ -7434,7 +7434,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Removes Disclaimers in iDrive",
         "description": "FDL code to remove iDrive disclaimers.",
         "steps": [
@@ -7443,7 +7443,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "DVD in Motion: SPEEDLOCK_X_KMH_MIN",
         "description": "FDL code for DVD in Motion.",
         "steps": [
@@ -7452,7 +7452,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "DVD in Motion: SPEEDLOCK_X_KMH_MAX",
         "description": "FDL code for DVD in Motion.",
         "steps": [
@@ -7461,7 +7461,7 @@
         "source": "20220916_175603.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "DVD in Motion: VIDEO_HANDBRAKE",
         "description": "FDL code for DVD in Motion.",
         "steps": [
@@ -7497,7 +7497,7 @@
         "source": "20220916_175608.jpg"
     },
     {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Enable Cell Phone Ringtone in the Car",
         "description": "FDL code to enable cell phone ringtone in the car.",
         "steps": [
@@ -7636,30 +7636,30 @@
 
   {
     "series": "F15/F16",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": "Disables iDrive legal disclaimer",
     "steps": [
-      "1. HU_NBT -> 3001 -> LEGAL_DISCLAIMER_TIME -> set to kein_ld (default: id_mit_timeout)"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> LEGAL_DISCLAIMER_TIME -> set to kein_ld (default: id_mit_timeout)"
     ]
   },
   {
     "series": "F15/F16",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": "M Splash Screen",
     "steps": [
-      "1. HU_NBT -> 3001 -> STARTUP_EMBLEM -> set to variant_01 (default: variant_00)"
+      "1. HU_CIC/NBT/NBTevo -> 3001 -> STARTUP_EMBLEM -> set to variant_01 (default: variant_00)"
     ]
   },
   {
     "series": "F15/F16",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": "DVD in Motion",
     "steps": [
-      "1. HU_NBT -> 3000 -> VIDEO_HANDBRAKE -> set to nicht_aktiv (default: aktiv)",
-      "2. HU_NBT -> 3000 -> VIDEO_FRONT_LOCKED -> set to nicht_aktiv",
-      "3. HU_NBT -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> set to none",
-      "4. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MAX -> set to werte=ff",
-      "5. HU_NBT -> 3000 -> SPEEDLOCK_X_KMH_MIN -> set to werte=ff"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_HANDBRAKE -> set to nicht_aktiv (default: aktiv)",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_FRONT_LOCKED -> set to nicht_aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> set to none",
+      "4. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MAX -> set to werte=ff",
+      "5. HU_CIC/NBT/NBTevo -> 3000 -> SPEEDLOCK_X_KMH_MIN -> set to werte=ff"
     ]
   },
   {
@@ -7727,13 +7727,13 @@
   },
   {
     "series": "F22",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": "Enable Video Playback via USB",
     "steps": [
-      "1. HU_NBT -> 3000 -> ENT_CODEC_XVID -> set to aktiv",
-      "2. HU_NBT -> 3000 -> ENT_CODEC_XVCD -> set to aktiv",
-      "3. HU_NBT -> 3000 -> ENT_CODEC_OGG -> set to aktiv",
-      "4. HU_NBT -> 3003 -> API_USB_VIDEO -> set to both"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVID -> set to aktiv",
+      "2. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_XVCD -> set to aktiv",
+      "3. HU_CIC/NBT/NBTevo -> 3000 -> ENT_CODEC_OGG -> set to aktiv",
+      "4. HU_CIC/NBT/NBTevo -> 3003 -> API_USB_VIDEO -> set to both"
     ]
   },
   {
@@ -7764,14 +7764,14 @@
   },
   {
     "series": "F36",
-    "ecu": "HU_NBT2_EVO",
+    "ecu": "HU_CIC/NBT/NBTevo_EVO",
     "description": "Removes speed requirement to watch videos",
     "steps": [
-      "1. HU_NBT2_EVO -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> set to none",
-      "2. HU_NBT2_EVO -> 3000 -> VIDEO_HANDBRAKE -> set to nicht_aktiv",
-      "3. HU_NBT2_EVO -> 3000 -> VIDEO_FRONT_LOCKED -> set to nicht_aktiv",
-      "4. HU_NBT2_EVO -> 3000 -> SPEEDLOCK_X_KMH_MIN -> set to werte=FF",
-      "5. HU_NBT2_EVO -> 3000 -> SPEEDLOCK_X_KMH_MAX -> set to werte=FF"
+      "1. HU_CIC/NBT/NBTevo_EVO -> 3000 -> VIDEO_SPEEDLOCK_CONDITION -> set to none",
+      "2. HU_CIC/NBT/NBTevo_EVO -> 3000 -> VIDEO_HANDBRAKE -> set to nicht_aktiv",
+      "3. HU_CIC/NBT/NBTevo_EVO -> 3000 -> VIDEO_FRONT_LOCKED -> set to nicht_aktiv",
+      "4. HU_CIC/NBT/NBTevo_EVO -> 3000 -> SPEEDLOCK_X_KMH_MIN -> set to werte=FF",
+      "5. HU_CIC/NBT/NBTevo_EVO -> 3000 -> SPEEDLOCK_X_KMH_MAX -> set to werte=FF"
     ]
   },
   {
@@ -7825,18 +7825,18 @@
   },
   {
     "series": "I01",
-    "ecu": "HU_NBT",
+    "ecu": "HU_CIC/NBT/NBTevo",
     "description": "Enable Hold-Mode for Range Extender",
     "steps": [
-      "1. HU_NBT -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
+      "1. HU_CIC/NBT/NBTevo -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
     ]
   },
   {
-        "ecu": "HU_NBT",
+        "ecu": "HU_CIC/NBT/NBTevo",
         "title": "Enable Hold-Mode for Range Extender",
         "description": "FDL code to enable Hold-Mode for Range Extender.",
           "steps": [
-              "HU_NBT -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
+              "HU_CIC/NBT/NBTevo -> 3000 -> EV_MENU_AVAILABLE -> set to aktiv"
           ],
           "source": "20220916_175608.jpg"
       },
