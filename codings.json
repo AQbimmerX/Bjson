@@ -4570,7 +4570,7 @@
   },
   {
     "series": "",
-    "ecu": "(default)",
+    "ecu": "",
     "description": " G20 – Change startup mode",
     "steps": []
   },
